@@ -20,6 +20,7 @@ Ce rapport présente une **synthèse unificatrice révolutionnaire** intégrant 
 
 - L'algèbre de Clifford **Cl(6,6)** comme cadre mathématique fondamental
 - Les **72 pentades** de Rowlands étendues comme briques relationnelles
+- Le réseau géométrique extrémal en 72 dimensions de Gabriele Nebe
 - La cosmologie **bicosmique** de Jean-Pierre Petit
 - La physique multidimensionnelle des **Ummites** (Ibozoo Uû)
 - La métaphysique des **octaves de Lipnick** (72 dimensions/octave)
