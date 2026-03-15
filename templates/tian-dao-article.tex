@@ -1,0 +1,301 @@
+\documentclass[11pt]{article}
+% commande d'exécution simple :
+% pandoc RAPPORT.md --template=template_jpp8.tex -o RAPPORT.pdf --pdf-engine=xelatex
+% pandoc RAPPORT.md --template=template_jpp9.tex  --listings -o RAPPORT.pdf --pdf-engine=xelatex
+% pandoc Rapport.md --template=template_jpp10.tex --listings --citeproc  -o rapport.pdf --pdf-engine=xelatex
+
+
+% ==================== ENCODAGE ET LANGUE ====================
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\frenchbsetup{StandardLists=true}
+
+% ==================== POLICES PRINCIPALES ====================
+\setmainfont{Libertinus Serif}
+\setmonofont{Libertinus Mono}
+\setCJKmainfont{Noto Serif CJK SC}
+
+% ==================== MATHÉMATIQUES ====================
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{unicode-math}
+\setmathfont{Libertinus Math}
+\usepackage{dsfont}
+
+% ==================== COMMANDES PERSONNALISÉES ====================
+\usepackage{pifont}
+\newcommand{\bra}[1]{\langle #1|}
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\braket}[2]{\langle #1|#2\rangle}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+% Symboles de validation
+\providecommand{\cmark}{\ding{51}}
+\providecommand{\xmark}{\ding{55}}
+\providecommand{\wmark}{\ding{73}}
+\newcommand{\symSucces}{\textcolor{success}{\cmark}}
+\newcommand{\symEchec}{\textcolor{failure}{\xmark}}
+\newcommand{\symAttention}{\textcolor{warning}{\wmark}}
+
+% ==================== TABLE DES MATIÈRES ====================
+\usepackage{tocloft}
+
+\setlength{\cftbeforesecskip}{2pt}
+\setlength{\cftsecindent}{0pt}
+\setlength{\cftsubsecindent}{10pt}
+\setlength{\cftsubsubsecindent}{20pt}
+
+\setcounter{tocdepth}{2}   % profondeur de la table des matières
+
+% ==================== GÉOMÉTRIE ET MISE EN PAGE ====================
+\usepackage{geometry}
+\geometry{
+    margin=2.5cm,
+    headsep=4mm,
+    footskip=12pt
+}
+
+% Interlignes et espacements
+\setlength{\baselineskip}{14pt}
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\itemsep}{2pt}
+\setlength{\topsep}{2pt}
+\setlength{\abovedisplayskip}{8pt}
+\setlength{\belowdisplayskip}{8pt}
+\setlength{\abovedisplayshortskip}{4pt}
+\setlength{\belowdisplayshortskip}{4pt}
+
+% ==================== TABLEAUX AMÉLIORÉS ====================
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{adjustbox}
+\setlength{\LTpre}{6pt}
+\setlength{\LTpost}{6pt}
+\setlength{\extrarowheight}{2pt}
+\renewcommand{\arraystretch}{1.2}
+
+% ==================== LISTES ====================
+\usepackage{enumitem}
+\setlist{nosep, left=0pt}
+
+% ==================== COULEURS ====================
+\usepackage{xcolor}
+\definecolor{success}{RGB}{0,150,0}
+\definecolor{failure}{RGB}{200,0,0}
+\definecolor{warning}{RGB}{255,140,0}
+\definecolor{codebg}{RGB}{245,245,245}
+
+% ==================== CODE ET LISTINGS ====================
+\usepackage{listings}
+\usepackage{framed}
+%\usepackage{fancyvrb}   % optionnel
+\definecolor{shadecolor}{rgb}{0.9,0.9,0.9}
+% Les environnements Shaded et Highlighting seront définis par pandoc via $highlighting-macros$
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    backgroundcolor=\color{codebg},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!50!black},
+    stringstyle=\color{red},
+    showstringspaces=false,
+    tabsize=4,
+    language=Python
+}
+% ==================== BOÎTES ET ENCADRÉS ====================
+\usepackage{tikz}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{tcolorbox}
+\tcbuselibrary{most}
+
+\newtcolorbox{validationbox}[2][]{
+    colback=green!5!white,
+    colframe=green!75!black,
+    fonttitle=\bfseries,
+    title=#2,
+    #1
+}
+
+\newtcolorbox{errorbox}[2][]{
+    colback=red!5!white,
+    colframe=red!75!black,
+    fonttitle=\bfseries,
+    title=#2,
+    #1
+}
+
+\newtcolorbox{warningbox}[2][]{
+    colback=orange!5!white,
+    colframe=orange!75!black,
+    fonttitle=\bfseries,
+    title=#2,
+    #1
+}
+
+% ==================== EN-TÊTE ET PIED DE PAGE ====================
+\usepackage{fancyhdr}
+
+% Style normal
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\textsc{Modèle Cl(6,6) — Rapport de Synthèse}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Style "plain" = même numérotation que fancy
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyhead[C]{\textsc{Modèle Cl(6,6) — Rapport de Synthèse}}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+% Première page sans numéro
+\fancypagestyle{firstpage}{
+  \fancyhf{}
+  \fancyhead[C]{\textsc{Modèle Cl(6,6)}}
+  \fancyfoot[C]{}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+% ==================== HYPERLIENS ====================
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+% ==================== PROTECTION LIGNES ORPHELINES ====================
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+
+% ==================== DÉFINITIONS POUR PANDOC ====================
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{2pt}\setlength{\parskip}{6pt}
+}
+\newcommand{\passthrough}[1]{#1}
+
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{CSLReferences}[2]%
+ {\par\noindent\setlength{\parindent}{0pt}}%
+ {\par}
+\newcommand{\CSLBlock}[1]{#1\par}
+\newcommand{\CSLLeftMargin}[1]{\hspace*{\cslhangindent}#1}
+\newcommand{\CSLRightInline}[1]{#1}
+\newcommand{\CSLIndent}[1]{\hspace*{\cslhangindent}#1}
+$endif$
+
+% ==================== VARIABLES PANDOC ====================
+\title{$title$}
+\author{$for(author)$$author$$sep$ \\ $endfor$}
+\date{$date$}
+
+% ==================== REDÉFINITION DE \maketitle ====================
+\makeatletter
+\renewcommand{\maketitle}{
+  \begin{center}
+    \vspace*{1cm}
+    {\fontsize{18}{24}\selectfont \textbf{\@title} \par}
+    \vspace{1cm}
+    {\Large
+      \begin{tabular}[t]{c}
+        \@author
+      \end{tabular}\par}
+    \vspace{1cm}
+    {\Large \@date \par}
+  \end{center}
+  \vspace{1cm}
+}
+\makeatother
+
+% ==================== CORPS DU DOCUMENT ====================
+\begin{document}
+
+\maketitle
+\thispagestyle{firstpage}
+
+% --- Mesure de la hauteur totale des abstracts ---
+\newlength{\abstractheight}
+\setbox0=\vbox{
+  $if(abstract_fr)$
+  \begin{center}
+  \begin{minipage}{0.85\textwidth}
+  \noindent \textbf{Résumé :} $abstract_fr$
+  \end{minipage}
+  \end{center}
+  \vspace{0.5cm}
+  $endif$
+  $if(abstract_en)$
+  \begin{center}
+  \begin{minipage}{0.85\textwidth}
+  \noindent \textbf{Abstract:} $abstract_en$
+  \end{minipage}
+  \end{center}
+  \vspace{1cm}
+  $endif$
+}
+\abstractheight=\ht0
+\advance\abstractheight by \dp0
+
+% Calcul de l'espace restant sur la page après le titre
+\newlength{\remaining}
+\remaining=\dimexpr\textheight - \pagetotal\relax
+
+% Si la hauteur des abstracts dépasse l'espace restant, on agrandit la page
+\ifdim\abstractheight > \remaining
+  \enlargethispage{\dimexpr\abstractheight - \remaining\relax}
+\fi
+
+% --- Affichage effectif des abstracts ---
+$if(abstract_fr)$
+\begin{center}
+\begin{minipage}{0.85\textwidth}
+\noindent \textbf{Résumé :} $abstract_fr$
+\end{minipage}
+\end{center}
+\vspace{0.5cm}
+$endif$
+
+$if(abstract_en)$
+\begin{center}
+\begin{minipage}{0.85\textwidth}
+\noindent \textbf{Abstract:} $abstract_en$
+\end{minipage}
+\end{center}
+\vspace{1cm}
+$endif$
+
+\clearpage
+\pagestyle{fancy}
+
+$body$
+
+\end{document}

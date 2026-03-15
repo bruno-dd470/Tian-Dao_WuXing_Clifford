@@ -1,0 +1,22 @@
+# Fichiers temporaires LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# Fichiers Python
+__pycache__/
+*.pyc
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de données volumineux
+data/raw/
+data/processed/
