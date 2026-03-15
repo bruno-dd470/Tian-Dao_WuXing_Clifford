@@ -1,0 +1,64 @@
+================================================================================
+RAPPORT FINAL - FLARE 56015
+================================================================================
+Date: 20260227_150423
+Durée totale: 33.1 secondes
+Fichier: L260227082523F357373F17_PH00.fits
+Photons: 175340
+
+
+📊 Fenêtre 25 MeV:
+----------------------------------------
+  Bandes analysées: 210
+  Excès moyen: -92.89%
+  Écart-type: 13.60%
+  Excès max: -99.97% à 6662 MeV
+
+  ⚠️ Pics détectés (210):
+    •   6662 MeV: -99.97% (signif. 2.4σ)
+    •   7112 MeV: -99.97% (signif. 2.4σ)
+    •   7512 MeV: -99.97% (signif. 2.4σ)
+    •   8512 MeV: -99.97% (signif. 2.4σ)
+    •   8962 MeV: -99.97% (signif. 2.4σ)
+
+📊 Fenêtre 50 MeV:
+----------------------------------------
+  Bandes analysées: 126
+  Excès moyen: -88.82%
+  Écart-type: 24.45%
+  Excès max: -99.97% à 9125 MeV
+
+  ⚠️ Pics détectés (122):
+    •   9125 MeV: -99.97% (signif. 2.4σ)
+    •  11525 MeV: -99.97% (signif. 2.4σ)
+    •  12025 MeV: -99.97% (signif. 2.4σ)
+    •  12525 MeV: -99.97% (signif. 2.4σ)
+    •   8425 MeV: -99.97% (signif. 2.6σ)
+
+📊 Fenêtre 100 MeV:
+----------------------------------------
+  Bandes analysées: 66
+  Excès moyen: -79.50%
+  Écart-type: 45.76%
+  Excès max: +132.36% à 150 MeV
+
+  ⚠️ Pics détectés (64):
+    •    150 MeV: +132.36% (signif. 294.8σ)
+    •  12050 MeV: -99.97% (signif. 2.4σ)
+    •   9850 MeV: -99.96% (signif. 3.0σ)
+    •  11050 MeV: -99.95% (signif. 3.2σ)
+    •   9050 MeV: -99.95% (signif. 3.3σ)
+
+📊 Fenêtre 200 MeV:
+----------------------------------------
+  Bandes analysées: 37
+  Excès moyen: -66.06%
+  Écart-type: 79.18%
+  Excès max: +288.58% à 200 MeV
+
+  ⚠️ Pics détectés (35):
+    •    200 MeV: +288.58% (signif. 831.3σ)
+    •    300 MeV: +156.22% (signif. 365.4σ)
+    •  18100 MeV: -99.97% (signif. 2.4σ)
+    •  14100 MeV: -99.96% (signif. 3.0σ)
+    •  12100 MeV: -99.95% (signif. 3.2σ)

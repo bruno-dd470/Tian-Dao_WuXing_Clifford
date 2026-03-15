@@ -21,3 +21,9 @@ Thumbs.db
 # Fichiers de données volumineux
 data/raw/
 data/processed/
+
+*.fits
+*.npy
+data/Zeeman/Raw/
+data/Zeeman/Processed/
+drafts/
