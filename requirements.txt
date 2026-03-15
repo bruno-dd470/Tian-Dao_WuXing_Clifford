@@ -1,0 +1,44 @@
+# =====================================================================
+# REQUIREMENTS.TXT – Système Pentadique Cl(6,6)
+# Version allégée pour installation avec pip
+# =====================================================================
+
+# Calcul scientifique
+numpy>=1.21.0
+scipy>=1.7.0
+
+# Visualisation
+matplotlib>=3.4.0
+
+# Astronomie / FITS
+astropy>=5.0.0
+
+# Algèbre de Clifford
+clifford>=1.5.0
+
+# Barres de progression
+tqdm>=4.62.0
+
+# YAML (configuration)
+pyyaml>=5.4.0
+
+# Calcul formel (optionnel)
+sympy>=1.9
+
+# Graphes (optionnel)
+networkx>=2.6
+
+# Tests et développement
+pytest>=6.2.0
+pylint>=2.10.0
+black>=21.9b0
+
+# EasyFermi (téléchargement données Fermi)
+easyfermi>=0.1.0
+
+# =====================================================================
+# NOTE IMPORTANTE :
+# - fermipy n'est pas disponible sur PyPI ; installez-le via conda
+#   (voir environment.yml) ou suivez les instructions officielles.
+# - mayavi et pyvista (visualisation 3D avancée) nécessitent aussi conda.
+# =====================================================================

@@ -1,0 +1,52 @@
+# =====================================================================
+# ENVIRONMENT.YML – Environnement Conda pour le Système Pentadique
+# Crée un environnement nommé "pentadic" avec toutes les dépendances.
+# =====================================================================
+
+name: pentadic
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python
+  - python=3.9
+
+  # Calcul scientifique
+  - numpy>=1.21
+  - scipy>=1.7
+
+  # Visualisation
+  - matplotlib>=3.4
+  - mayavi>=4.7          # 3D avancé (optionnel)
+  - pyvista>=0.32        # 3D avancé (optionnel)
+
+  # Astronomie
+  - astropy>=5.0
+
+  # Algèbre de Clifford
+  - clifford>=1.5
+
+  # Barres de progression
+  - tqdm>=4.62
+
+  # YAML
+  - pyyaml>=5.4
+
+  # Calcul formel
+  - sympy>=1.9
+
+  # Graphes
+  - networkx>=2.6
+
+  # Tests / dev
+  - pytest>=6.2
+  - pylint>=2.10
+  - black>=21.9b0
+
+  # Fermi-LAT
+  - fermipy>=1.0          # disponible sur conda-forge
+
+  # Pip pour les paquets non-conda
+  - pip
+  - pip:
+    - easyfermi>=0.1.0    # téléchargement données Fermi
