@@ -264,7 +264,7 @@ La **couche hybride W** est un élément central du modèle permettant de relier
 1. **L'algèbre de Clifford Cl(6,6)** – représentée par des spineurs de dimension 32 et des projecteurs \(P_1, P_2\) qui encodent les 72 pentades sous une forme vectorielle de dimension 10 (concaténation de \(P_1\) et \(P_2\)).
 2. **Le réseau de Nebe** – un réseau exceptionnel en 72 dimensions, qui possède des propriétés géométriques remarquables (norme minimale 8, groupe d'automorphismes d'ordre 4 838 400, etc.).
 
-### Rôle de la couche W
+## Rôle de la couche W
 
 - **Projection** : La couche W est une matrice apprenable de taille \(72 \times 10\) qui transforme un vecteur de l'espace Cl(6,6) (10D) en un vecteur de l'espace de Nebe (72D). Elle établit ainsi un **pont mathématique** entre ces deux constructions.
 - **Validation structurelle** : En entraînant W à produire des vecteurs 72D qui satisfont aux propriétés du réseau de Nebe (normes, orthogonalité, etc.), on vérifie que la structure algébrique de Cl(6,6) est bien compatible avec la géométrie du réseau. Une corrélation élevée (0.8864) entre la sortie de W et une cible théorique montre que ce lien est effectif.

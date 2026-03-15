@@ -3,6 +3,8 @@ title: "TRANSITIONS ANGULAIRES ENTRE PARTICULES"
 subtitle: "Une réinterprétation géométrique des réactions fondamentales dans le cadre des pentades Cl(6,6)"
 author: "Bruno DE DOMINICIS"
 date: "Mars 2026"
+toc: true
+toc-depth: 3
 abstract_fr: |
   Nous présentons une reformulation des transitions entre particules élémentaires (désintégration $\beta$, annihilation $e^+e^-$, fusion nucléaire $pp$, désintégration du muon, oscillations de neutrinos, production de paires) comme des réarrangements d'angles dans le réseau d'Ibozoo Uû, où chaque particule est décrite par une pentade de l'algèbre de Clifford $\text{Cl}(6,6)$. Les générateurs $i,j,k,I,J,K$ sont interprétés comme des angles. Nous définissons un opérateur de transition $T$ agissant sur l'espace de Hilbert des pentades, décomposé en parties structure, feu, eau et mixte, et nous établissons des règles de sélection (conservation des générateurs, chiralité). Une formulation angulaire relie $T$ à des rotations dans l'espace à 6 dimensions. L'exemple de la désintégration $\beta$ est traité en détail. Ce formalisme offre une vision géométrique unifiée des interactions, en accord avec les concepts ummites.
 abstract_en: |
