@@ -12,15 +12,15 @@ En effet, dans notre projet, le *Yijing* apparaît comme une préfiguration empi
 
 ## Publications
 
-Le projet comprend cinq articles principaux, chacun disponible en anglais (cliquez sur le titre pour y accéder). Des versions françaises sont également disponibles dans les mêmes dossiers.
+Le projet comprend cinq articles principaux, chacun disponible en anglais et en français.
 
-| Titre (anglais) | Fichier |
-|-----------------|---------|
-| **1. The Cl(6,6) Pentadic Model: A Fundamental Unification** | [`PUBLICATION_1_Pentadic_Theory.md`](articles/PUBLICATION_1_Théorie_Pentadique/PUBLICATION_1_Pentadic_Theory.md) |
-| **2. Experimental Validation of Nebe's 72‑Dimensional Network via the Zeeman Effect** | [`PUBLICATION_2_Zeeman_Effect.md`](articles/PUBLICATION_2_Effet_Zeeman/PUBLICATION_2_Zeeman_Effect.md) |
-| **3. Discovery of a 200 MeV Gamma Resonance in the Magnetar 1E 1048.1‑5937** | [`PUBLICATION_3_Magnetars_en.md`](articles/PUBLICATION_3_Magnetars/PUBLICATION_3_Magnetars_en.md) |
-| **4. Cosmological Unification through Pentadic Systems and Clifford Algebra Cl(6,6)** | [`PUBLICATION_4_UNIFYING_SYNTHESIS.md`](articles/PUBLICATION_4_Rapport_de_Synthese/PUBLICATION_4_UNIFYING_SYNTHESIS.md) |
-| **5. Angular Transitions between Particles – A Geometric Reinterpretation** | [`PUBLICATION_5_PENTADIC_TRANSITIONS.md`](articles/PUBLICATION_5_Transitions_Pentadiques/PUBLICATION_5_PENTADIC_TRANSITIONS.md) |
+| Titre (français) | Fichier |
+|------------------|---------|
+| **1. Le modèle pentadique Cl(6,6) : une unification fondamentale** | [`PUBLICATION_1_Théorie_Pentadique.md`](articles/PUBLICATION_1_Théorie_Pentadique/PUBLICATION_1_Théorie_Pentadique.md) |
+| **2. Validation expérimentale du réseau 72-dimensionnel de Nebe par l'effet Zeeman** | [`PUBLICATION_2_Effet_Zeeman.md`](articles/PUBLICATION_2_Effet_Zeeman/PUBLICATION_2_Effet_Zeeman.md) |
+| **3. Découverte d'une résonance gamma à 200 MeV dans le magnétar 1E 1048.1‑5937** | [`PUBLICATION_3_Magnetars.md`](articles/PUBLICATION_3_Magnetars/PUBLICATION_3_Magnetars.md) |
+| **4. Unification cosmologique par les systèmes pentadiques et l'algèbre de Clifford Cl(6,6)** | [`PUBLICATION_4_RAPPORT_DE_SYNTHÈSE.md`](articles/PUBLICATION_4_Rapport_de_Synthese/PUBLICATION_4_RAPPORT_DE_SYNTHÈSE.md) |
+| **5. Transitions angulaires entre particules – Une réinterprétation géométrique** | [`PUBLICATION_5_TRANSITIONS_PENTADIQUES.md`](articles/PUBLICATION_5_Transitions_Pentadiques/PUBLICATION_5_TRANSITIONS_PENTADIQUES.md) |
 
 Les PDF et les fichiers Markdown se trouvent dans les mêmes dossiers. Chaque article peut être compilé en PDF à l'aide de Pandoc avec le modèle LaTeX fourni (voir [Compilation des articles](#compilation-des-articles)).
 
