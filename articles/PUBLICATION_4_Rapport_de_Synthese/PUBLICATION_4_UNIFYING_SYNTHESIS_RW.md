@@ -1,6 +1,3 @@
-I'll update your file with KaTeX-compatible environments. Here's the corrected version:
-
-```markdown
 ---
 title: "COSMOLOGICAL UNIFICATION THROUGH PENTADIC SYSTEMS AND CLIFFORD ALGEBRA Cl(6,6)"
 author: "Bruno DE DOMINICIS"
