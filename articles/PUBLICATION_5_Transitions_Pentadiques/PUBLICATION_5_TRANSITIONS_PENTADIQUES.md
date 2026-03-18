@@ -26,15 +26,15 @@ Une transition $A \to B + C + \dots$ devient un **réarrangement des angles** da
 **Neutron** (notre proposition) :
 
 $$
-P(n) = \{ iI,\; jJ,\; kK,\; i'k,\; 1j \}
+P(n) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \}
 $$
 
-Angles : $\{\theta_1\theta_4,\; \theta_2\theta_5,\; \theta_3\theta_6,\; (\theta_1\theta_2\theta_3\theta_4\theta_5\theta_6)\cdot\theta_3,\; 1\cdot\theta_2\}$
+Angles : $\{\theta_1\theta_4,\ \theta_2\theta_5,\ \theta_3\theta_6,\ (\theta_1\theta_2\theta_3\theta_4\theta_5\theta_6)\cdot\theta_3,\ 1\cdot\theta_2\}$
 
 **Proton** :
 
 $$
-P(p) = \{ iI,\; jJ,\; kK,\; i'k,\; 1j \}
+P(p) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \}
 $$
 
 … mais c’est identique ! Corrigeons.
@@ -42,25 +42,25 @@ $$
 **Neutron corrigé** (sans charge électrique) :
 
 $$
-P(n) = \{ iI,\; jJ,\; kK,\; i'k,\; 1i \} \qquad (\text{Eau } = 1i \text{ au lieu de } 1j)
+P(n) = \{ iI,\ jJ,\ kK,\ i'k,\ 1i \} \qquad (\text{Eau } = 1i \text{ au lieu de } 1j)
 $$
 
 **Proton** (avec charge) :
 
 $$
-P(p) = \{ iI,\; jJ,\; kK,\; i'k,\; 1j \}
+P(p) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \}
 $$
 
 **Électron** :
 
 $$
-P(e^-) = \{ iI,\; iJ,\; iK,\; i'k,\; 1j \}
+P(e^-) = \{ iI,\ iJ,\ iK,\ i'k,\ 1j \}
 $$
 
 **Antineutrino** :
 
 $$
-P(\bar{\nu}_e) = \{ iK,\; iJ,\; iI,\; i'j,\; 1k \}
+P(\bar{\nu}_e) = \{ iK,\ iJ,\ iI,\ i'j,\ 1k \}
 $$
 
 ### 1.2 Transition angulaire
@@ -94,19 +94,19 @@ En termes d’angles :
 **Positron** :
 
 $$
-P(e^+) = \{ -iI,\; -iJ,\; -iK,\; -i'k,\; -1j \}
+P(e^+) = \{ -iI,\ -iJ,\ -iK,\ -i'k,\ -1j \}
 $$
 
 **Électron** :
 
 $$
-P(e^-) = \{ iI,\; iJ,\; iK,\; i'k,\; 1j \}
+P(e^-) = \{ iI,\ iJ,\ iK,\ i'k,\ 1j \}
 $$
 
 **Photon** (simplifié) :
 
 $$
-P(\gamma) = \{ iI,\; iJ,\; iK,\; 0,\; 0 \} \quad (\text{pas de Feu/Eau})
+P(\gamma) = \{ iI,\ iJ,\ iK,\ 0,\ 0 \} \quad (\text{pas de Feu/Eau})
 $$
 
 ### Transition angulaire
@@ -132,7 +132,7 @@ Deux protons fusionnent pour former un deutéron, un positron et un neutrino.
 Pentade effective du deutéron :
 
 $$
-P(d) = \{ iI,\; jJ,\; kK,\; i'k,\; 1j \} \quad (\text{comme proton mais avec liaison})
+P(d) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \} \quad (\text{comme proton mais avec liaison})
 $$
 
 ### Transition angulaire
@@ -156,25 +156,25 @@ En termes d’angles : des angles de couleur se recombinent pour former une stru
 **Muon** :
 
 $$
-P(\mu^-) = \{ jI,\; jJ,\; jK,\; i'i,\; 1k \}
+P(\mu^-) = \{ jI,\ jJ,\ jK,\ i'i,\ 1k \}
 $$
 
 **Électron** :
 
 $$
-P(e^-) = \{ iI,\; iJ,\; iK,\; i'k,\; 1j \}
+P(e^-) = \{ iI,\ iJ,\ iK,\ i'k,\ 1j \}
 $$
 
 **Neutrino muonique** :
 
 $$
-P(\nu_\mu) = \{ jK,\; jI,\; jJ,\; i'k,\; 1i \}
+P(\nu_\mu) = \{ jK,\ jI,\ jJ,\ i'k,\ 1i \}
 $$
 
 **Antineutrino électronique** :
 
 $$
-P(\bar{\nu}_e) = \{ iK,\; iJ,\; iI,\; i'j,\; 1k \}
+P(\bar{\nu}_e) = \{ iK,\ iJ,\ iI,\ i'j,\ 1k \}
 $$
 
 ### Transition angulaire
@@ -197,13 +197,13 @@ $$
 **Neutrino électronique** :
 
 $$
-P(\nu_e) = \{ iK,\; iJ,\; iI,\; i'j,\; 1k \}
+P(\nu_e) = \{ iK,\ iJ,\ iI,\ i'j,\ 1k \}
 $$
 
 **Neutrino muonique** :
 
 $$
-P(\nu_\mu) = \{ jK,\; jI,\; jJ,\; i'k,\; 1i \}
+P(\nu_\mu) = \{ jK,\ jI,\ jJ,\ i'k,\ 1i \}
 $$
 
 ### Transition angulaire
@@ -285,7 +285,7 @@ $$
 Soit $\mathcal{H}$ l’espace de Hilbert des états pentadiques, de dimension 72 (ou 144 dans $Cl(6,6)$) :
 
 $$
-\mathcal{H} = \operatorname{span}\{ |P_1\rangle, |P_2\rangle, \dots, |P_{72}\rangle \}
+\mathcal{H} = \mathrm{span}\{ |P_1\rangle, |P_2\rangle, \dots, |P_{72}\rangle \}
 $$
 
 où chaque $|P_a\rangle$ est un état de base correspondant à une pentade spécifique.
@@ -341,9 +341,9 @@ Transitions qui mélangent structure, feu et eau :
 $$
 \begin{aligned}
 T_{\text{mixte}} &|B_1B_2B_3,F,S\rangle\langle B'_1B'_2B'_3,F',S'| = \\
-&\lambda_1 \langle B_1,B'_1\rangle \; |B'_2B'_3,F',S'\rangle\langle B_2B_3,F,S| \\
-+&\lambda_2 \langle F,F'\rangle \; |B_1B_2B_3,S'\rangle\langle B'_1B'_2B'_3,S| \\
-+&\lambda_3 \langle S,S'\rangle \; |B_1B_2B_3,F'\rangle\langle B'_1B'_2B'_3,F|
+&\lambda_1 \langle B_1,B'_1\rangle \ |B'_2B'_3,F',S'\rangle\langle B_2B_3,F,S| \\
++&\lambda_2 \langle F,F'\rangle \ |B_1B_2B_3,S'\rangle\langle B'_1B'_2B'_3,S| \\
++&\lambda_3 \langle S,S'\rangle \ |B_1B_2B_3,F'\rangle\langle B'_1B'_2B'_3,F|
 \end{aligned}
 $$
 
@@ -352,7 +352,7 @@ $$
 On peut écrire $T$ comme un élément de l’algèbre tensorielle sur $Cl(6,0)$ :
 
 $$
-T = \sum_{a,b} g_{ab} \; (E_a \otimes E_b^*)
+T = \sum_{a,b} g_{ab} \ (E_a \otimes E_b^*)
 $$
 
 où $\{E_a\}$ sont les 64 éléments de $Cl(6,0)$, $g_{ab}$ des coefficients de couplage, et $E_b^*$ l’élément dual.
@@ -391,7 +391,7 @@ $$
 En factorisant :
 
 $$
-T_\beta = G_F \; (J_{\text{hadronique}})\cdot(J_{\text{leptonique}})
+T_\beta = G_F \ (J_{\text{hadronique}})\cdot(J_{\text{leptonique}})
 $$
 
 avec
@@ -411,7 +411,7 @@ $$
 L’hamiltonien d’interaction devient :
 
 $$
-H_{\text{int}} = \sum_{P,Q,R,\dots} T_{PQ\dots}^{RS\dots}\; a_P^\dagger a_Q^\dagger \cdots a_R a_S \cdots
+H_{\text{int}} = \sum_{P,Q,R,\dots} T_{PQ\dots}^{RS\dots}\ a_P^\dagger a_Q^\dagger \cdots a_R a_S \cdots
 $$
 
 ## Lien avec la théorie des champs
@@ -486,7 +486,7 @@ $$
 avec $T_{\text{local}}$ agissant sur les 64 éléments de $Cl(6,0)$ selon :
 
 $$
-T_{\text{local}} = \sum_{a,b} g_{ab}\; (e_a \otimes e_b^*)
+T_{\text{local}} = \sum_{a,b} g_{ab}\ (e_a \otimes e_b^*)
 $$
 
 et les règles de sélection :
