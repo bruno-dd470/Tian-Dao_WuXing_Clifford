@@ -630,33 +630,19 @@ $$
 
 ## Fichiers Principaux
 
-\begin{tabular}{|l|l|l|}
-\hline
-\textbf{Fichier} & \textbf{Description} & \textbf{Statut} \\
-\hline
-\texttt{MODULE\_1\_72\_pentades.py} & Construction des 72 pentades & ✓ Fonctionnel \\
-\hline
-\texttt{MODULE\_2\_ACTION\_DE\_PSL27\_SUR\_LES\_7\_GÉNÉRATEURS.py} & Groupe $\text{PSL}_2(7)$ & ✓ Fonctionnel \\
-\hline
-\texttt{MODULE\_3\_ACTION\_DE\_SL2\_25\_SUR\_LES\_24\_PENTADES\_YANG.py} & Groupe $\text{SL}_2(25)$ & ✓ Fonctionnel \\
-\hline
-\texttt{MODULE\_4\_VÉRIFICATION\_EXPLICITE\_DU\_PRODUIT\_TENSORIEL.py} & Produit tensoriel Barnes ⊗ Leech & ✓ Fonctionnel \\
-\hline
-\texttt{MODULE\_5\_CALCUL\_DES\_VECTEURS\_MINIMAUX.py} & Estimation des $6.2\times10^9$ vecteurs minimaux & ✓ Fonctionnel \\
-\hline
-\texttt{MODULE\_6\_APPLICATION\_AUX\_DONNÉES\_EHT\_RÉELLES.py} & Application aux données EHT (M87*, SgrA*, etc.) & ✓ Fonctionnel \\
-\hline
-\texttt{MODULE\_7\_VISUALISATION\_3D\_DU\_RÉSEAU\_}$\Gamma$\texttt{.py} & Visualisation 3D du réseau de 72 pentades & ✓ Fonctionnel \\
-\hline
-\texttt{MODULE\_8\_INTERFACE\_UTILISATEUR\_POUR\_LE\_SYSTÈME\_PENTADIQUE.py} & Interface graphique utilisateur (Tkinter) & ✓ Fonctionnel \\
-\hline
-\texttt{CLIFFORD6\_TORCH\_Architecture\_rigoureuse\_Cl66.py} & Architecture Torch de $\text{Cl}(6,6)$ & ✓ Fonctionnel \\
-\hline
-\texttt{couche\_hybride\_W\_DS.py} & Couche hybride $W : \mathbb{R}^{10} \to \mathbb{R}^{72}$ & ✓ Fonctionnel \\
-\hline
-\texttt{VALIDATION\_UNIFIÉE\_CL66\_SCRIPT\_MAITRE.py} & \textbf{Script de validation globale} (fusionne tous les tests) & ✓ Résultats 2026-03-15 \\
-\hline
-\end{tabular}
+| Fichier | Description | Statut |
+|---------|-------------|--------|
+| `MODULE_1_72_pentades.py` | Construction des 72 pentades | ✓ Fonctionnel |
+| `MODULE_2_ACTION_DE_PSL27_SUR_LES_7_GÉNÉRATEURS.py` | Groupe $\text{PSL}_2(7)$ | ✓ Fonctionnel |
+| `MODULE_3_ACTION_DE_SL2_25_SUR_LES_24_PENTADES_YANG.py` | Groupe $\text{SL}_2(25)$ | ✓ Fonctionnel |
+| `MODULE_4_VÉRIFICATION_EXPLICITE_DU_PRODUIT_TENSORIEL.py` | Produit tensoriel Barnes ⊗ Leech | ✓ Fonctionnel |
+| `MODULE_5_CALCUL_DES_VECTEURS_MINIMAUX.py` | Estimation des $6.2\times10^9$ vecteurs minimaux | ✓ Fonctionnel |
+| `MODULE_6_APPLICATION_AUX_DONNÉES_EHT_RÉELLES.py` | Application aux données EHT (M87*, SgrA*, etc.) | ✓ Fonctionnel |
+| `MODULE_7_VISUALISATION_3D_DU_RÉSEAU_Γ.py` | Visualisation 3D du réseau de 72 pentades | ✓ Fonctionnel |
+| `MODULE_8_INTERFACE_UTILISATEUR_POUR_LE_SYSTÈME_PENTADIQUE.py` | Interface graphique utilisateur (Tkinter) | ✓ Fonctionnel |
+| `CLIFFORD6_TORCH_Architecture_rigoureuse_Cl66.py` | Architecture Torch de $\text{Cl}(6,6)$ | ✓ Fonctionnel |
+| `couche_hybride_W_DS.py` | Couche hybride $W : \mathbb{R}^{10} \to \mathbb{R}^{72}$ | ✓ Fonctionnel |
+| `VALIDATION_UNIFIÉE_CL66_SCRIPT_MAITRE.py` | **Script de validation globale** (fusionne tous les tests) | ✓ Résultats 2026-03-15 |
 
 ## Fichier de Résultats
 
