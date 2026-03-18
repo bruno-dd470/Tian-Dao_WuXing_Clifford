@@ -152,25 +152,16 @@ sont en excellent accord avec les prédictions théoriques, validant expériment
 [6] Kass, R. E., & Raftery, A. E. (1995). *Journal of the American Statistical Association*, 90(430), 773-795.
 
 [7] Lettre ummite D 58-5  https://www.jp-petit.org/ummo/fr/pdf/D58-5.pdf
-Vous devez tenir compte que toute la structure de la Mécanique Quantique créée par les Physiciens de la
-Terre est une véritable entéléchie qui n'a pas de base réelle (Ndt: Il faut comprendre cette phrase par: "Vous
-devez tenir compte que toute la structure de la Mécanique Quantique créée par les Physiciens de la Terre est
-une véritable construction mentale speculative qui n'a pas de base réelle"). Par exemple nous allons vous
-citer un concept qui est familier aux physiciens terrestres : le SPIN DE L'ÉLECTRON.
-Vous êtes (à cause de l'état embryonnaire de vos recherches), incapables de donner par exemple une
-explication satisfaisante de l'effet, appelé par vous "de ZEEMAN"; vous créez le concept de moment
-angulaire du SPIN et vous construisez tout un modèle mathématique sur une hypothèse aussi fragile. Nous
-vous signalons qu'à lui seul ce faux concept a retardé, au niveau de la physique terrestre, l'élaboration d'un
-modèle atomique plus ajusté à la réalité. Ce que vous appelez SPIN est très différent de ce que vos
-mathématiciens postulent.
-En effet : si vous considérez un Réseau spatial de N dimensions, la déformation en deux axes axiaux [ndt:
-:"dos ejes axiales"] orientés orthogonalement et qui se coupent en un IBOZOO UU (point spatial) donnera
-lieu à un effet qui, dans le cas que vous appelez CHAMP ÉLECTROSTATIQUE - CHAMP
-MAGNÉTIQUE, invite les spécialistes de votre Planète à le représenter par un vecteur et à lui assigner un
-numéro quantique. Pour que le comprennent mieux les profanes en Physique, c'est un peu comme si
-quelqu'un contemplait d'une lointaine montagne le pique-nique d'une famille et qu'il confondait le drap
-étendu au sol avec la jupe d'une excursionniste assise sur celui-ci, en un unique vêtement.
 
+> **Remarque :** Le passage suivant est une citation directe tirée des textes ummites et reflète leur point de vue sur la mécanique quantique. Il est présenté ici par souci d'exhaustivité.
+> "Vous devez tenir compte que toute la structure de la Mécanique Quantique créée par les Physiciens de la Terre est une véritable entéléchie (= construction mentale speculative) qui n'a pas de base réelle. Par exemple nous allons vous citer un concept qui est familier aux physiciens terrestres : le SPIN DE L'ÉLECTRON. Vous êtes (à cause de l'état embryonnaire de vos recherches), incapables de donner par exemple une
+explication satisfaisante de l'effet, appelé par vous "de ZEEMAN"; vous créez le concept de moment angulaire du SPIN et vous construisez tout un modèle mathématique sur une hypothèse aussi fragile. Nous
+vous signalons qu'à lui seul ce faux concept a retardé, au niveau de la physique terrestre, l'élaboration d'un modèle atomique plus ajusté à la réalité. Ce que vous appelez SPIN est très différent de ce que vos
+mathématiciens postulent.
+En effet : si vous considérez un Réseau spatial de N dimensions, la déformation en deux axes axiaux [ndt: :"dos ejes axiales"] orientés orthogonalement et qui se coupent en un IBOZOO UU (point spatial) donnera
+lieu à un effet qui, dans le cas que vous appelez CHAMP ÉLECTROSTATIQUE - CHAMP MAGNÉTIQUE, invite les spécialistes de votre Planète à le représenter par un vecteur et à lui assigner un
+numéro quantique. Pour que le comprennent mieux les profanes en Physique, c'est un peu comme si quelqu'un contemplait d'une lointaine montagne le pique-nique d'une famille et qu'il confondait le drap
+étendu au sol avec la jupe d'une excursionniste assise sur celui-ci, en un unique vêtement."
 
 # Remerciements
 

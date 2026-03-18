@@ -109,7 +109,7 @@ This discovery constitutes:
 
 [8] Lipnick Y. (2026). *Explorer of the Invisible*, 6th edition, Editions Oviloroi.fr
 
-*[Note: The original French document included a reference to a figure here. The figure is not provided, so it is omitted.]*
+<img src="../figures/Pentadic/lipnick_hierarchies_spirituelles_235Ko.jpg" alt="Spiritual Hierarchies according to Yann Lipnick" width="100%">
 
 # Acknowledgments
 

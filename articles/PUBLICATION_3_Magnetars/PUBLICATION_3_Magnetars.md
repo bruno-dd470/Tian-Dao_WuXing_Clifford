@@ -105,7 +105,9 @@ Cette découverte constitue :
 
 [8] Lipnick Y. Explorateur de l'invisible, 2026, 6e édition, Editions Oviloroi.fr
 
-![Les hiérarchies spirituelles selon Y. Lipnick](figures/lipnick_hierarchies_spirituelles_235Ko.pdf){ width=100% }
+%![Les hiérarchies spirituelles selon Y. Lipnick](figures/lipnick_hierarchies_spirituelles_235Ko.pdf){ width=100% }
+
+<img src="../figures/Pentadic/lipnick_hierarchies_spirituelles_235Ko.jpg" alt="Les hiérarchies spirituelles selon Y. Lipnick" width="100%">
 
 # Remerciements
 

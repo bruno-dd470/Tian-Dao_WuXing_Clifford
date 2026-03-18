@@ -1,6 +1,6 @@
 ---
 title: "ANGULAR TRANSITIONS BETWEEN PARTICLES"
-subtitle: "Une réinterprétation géométrique des réactions fondamentales dans le cadre des pentades Cl(6,6)"
+subtitle: "A geometric reinterpretation of fundamental reactions within the framework of Cl(6,6) pentads"
 author: "Bruno DE DOMINICIS"
 date: "March 2026"
 abstract_fr: |
@@ -23,31 +23,31 @@ A transition $A \to B + C + \dots$ becomes a **rearrangement of angles** in the 
 
 **Neutron** (our proposal):
 
-$$P(n) = \{ iI,\; jJ,\; kK,\; i'k,\; 1j \}$$
+$$P(n) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \}$$
 
-Angles: $\{\theta_1\theta_4,\; \theta_2\theta_5,\; \theta_3\theta_6,\; (\theta_1\theta_2\theta_3\theta_4\theta_5\theta_6)\cdot\theta_3,\; 1\cdot\theta_2\}$
+Angles: $\{\theta_1\theta_4,\ \theta_2\theta_5,\ \theta_3\theta_6,\ (\theta_1\theta_2\theta_3\theta_4\theta_5\theta_6)\cdot\theta_3,\ 1\cdot\theta_2\}$
 
 **Proton**:
 
-$$P(p) = \{ iI,\; jJ,\; kK,\; i'k,\; 1j \}$$
+$$P(p) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \}$$
 
 … but it's identical! Let's correct it.
 
 **Corrected neutron** (without electric charge):
 
-$$P(n) = \{ iI,\; jJ,\; kK,\; i'k,\; 1i \} \qquad (\text{Water } = 1i \text{ instead of } 1j)$$
+$$P(n) = \{ iI,\ jJ,\ kK,\ i'k,\ 1i \} \qquad (\text{Water } = 1i \text{ instead of } 1j)$$
 
 **Proton** (with charge):
 
-$$P(p) = \{ iI,\; jJ,\; kK,\; i'k,\; 1j \}$$
+$$P(p) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \}$$
 
 **Electron**:
 
-$$P(e^-) = \{ iI,\; iJ,\; iK,\; i'k,\; 1j \}$$
+$$P(e^-) = \{ iI,\ iJ,\ iK,\ i'k,\ 1j \}$$
 
 **Antineutrino**:
 
-$$P(\bar{\nu}_e) = \{ iK,\; iJ,\; iI,\; i'j,\; 1k \}$$
+$$P(\bar{\nu}_e) = \{ iK,\ iJ,\ iI,\ i'j,\ 1k \}$$
 
 ### Angular transition
 
@@ -77,15 +77,15 @@ In terms of angles:
 
 **Positron**:
 
-$$P(e^+) = \{ -iI,\; -iJ,\; -iK,\; -i'k,\; -1j \}$$
+$$P(e^+) = \{ -iI,\ -iJ,\ -iK,\ -i'k,\ -1j \}$$
 
 **Electron**:
 
-$$P(e^-) = \{ iI,\; iJ,\; iK,\; i'k,\; 1j \}$$
+$$P(e^-) = \{ iI,\ iJ,\ iK,\ i'k,\ 1j \}$$
 
 **Photon** (simplified):
 
-$$P(\gamma) = \{ iI,\; iJ,\; iK,\; 0,\; 0 \} \quad (\text{no Fire/Water})$$
+$$P(\gamma) = \{ iI,\ iJ,\ iK,\ 0,\ 0 \} \quad (\text{no Fire/Water})$$
 
 ### Angular transition
 
@@ -107,7 +107,7 @@ Two protons fuse to form a deuteron, a positron and a neutrino.
 
 Effective pentad of the deuteron:
 
-$$P(d) = \{ iI,\; jJ,\; kK,\; i'k,\; 1j \} \quad (\text{like proton but with bond})$$
+$$P(d) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \} \quad (\text{like proton but with bond})$$
 
 ### Angular transition
 
@@ -127,19 +127,19 @@ In terms of angles: color angles recombine to form a stable bound structure.
 
 **Muon**:
 
-$$P(\mu^-) = \{ jI,\; jJ,\; jK,\; i'i,\; 1k \}$$
+$$P(\mu^-) = \{ jI,\ jJ,\ jK,\ i'i,\ 1k \}$$
 
 **Electron**:
 
-$$P(e^-) = \{ iI,\; iJ,\; iK,\; i'k,\; 1j \}$$
+$$P(e^-) = \{ iI,\ iJ,\ iK,\ i'k,\ 1j \}$$
 
 **Muon neutrino**:
 
-$$P(\nu_\mu) = \{ jK,\; jI,\; jJ,\; i'k,\; 1i \}$$
+$$P(\nu_\mu) = \{ jK,\ jI,\ jJ,\ i'k,\ 1i \}$$
 
 **Electron antineutrino**:
 
-$$P(\bar{\nu}_e) = \{ iK,\; iJ,\; iI,\; i'j,\; 1k \}$$
+$$P(\bar{\nu}_e) = \{ iK,\ iJ,\ iI,\ i'j,\ 1k \}$$
 
 ### Angular transition
 
@@ -158,11 +158,11 @@ $$P(\mu^-) \to P(e^-) + P(\bar{\nu}_e) + P(\nu_\mu)$$
 
 **Electron neutrino**:
 
-$$P(\nu_e) = \{ iK,\; iJ,\; iI,\; i'j,\; 1k \}$$
+$$P(\nu_e) = \{ iK,\ iJ,\ iI,\ i'j,\ 1k \}$$
 
 **Muon neutrino**:
 
-$$P(\nu_\mu) = \{ jK,\; jI,\; jJ,\; i'k,\; 1i \}$$
+$$P(\nu_\mu) = \{ jK,\ jI,\ jJ,\ i'k,\ 1i \}$$
 
 ### Angular transition
 
@@ -235,7 +235,7 @@ $$\text{Prob} = \big| \langle P_{\text{final}} | e^{-i H_{\text{int}} t} | P_{\t
 Let $\mathcal{H}$ be the Hilbert space of pentadic states, of dimension 72 (or 144 in $Cl(6,6)$):
 
 $$
-\mathcal{H} = \operatorname{span}\{ |P_1\rangle, |P_2\rangle, \dots, |P_{72}\rangle \}
+\mathcal{H} = \mathrm{span}\{ |P_1\rangle, |P_2\rangle, \dots, |P_{72}\rangle \}
 $$
 
 where each $|P_a\rangle$ is a basis state corresponding to a specific pentad.
@@ -291,9 +291,9 @@ Transitions that mix structure, fire and water:
 $$
 \begin{aligned}
 T_{\text{mixed}} &|B_1B_2B_3,F,S\rangle\langle B'_1B'_2B'_3,F',S'| = \\
-&\lambda_1 \langle B_1,B'_1\rangle \; |B'_2B'_3,F',S'\rangle\langle B_2B_3,F,S| \\
-+&\lambda_2 \langle F,F'\rangle \; |B_1B_2B_3,S'\rangle\langle B'_1B'_2B'_3,S| \\
-+&\lambda_3 \langle S,S'\rangle \; |B_1B_2B_3,F'\rangle\langle B'_1B'_2B'_3,F|
+&\lambda_1 \langle B_1,B'_1\rangle \ |B'_2B'_3,F',S'\rangle\langle B_2B_3,F,S| \\
++&\lambda_2 \langle F,F'\rangle \ |B_1B_2B_3,S'\rangle\langle B'_1B'_2B'_3,S| \\
++&\lambda_3 \langle S,S'\rangle \ |B_1B_2B_3,F'\rangle\langle B'_1B'_2B'_3,F|
 \end{aligned}
 $$
 
@@ -302,7 +302,7 @@ $$
 We can write $T$ as an element of the tensor algebra over $Cl(6,0)$:
 
 $$
-T = \sum_{a,b} g_{ab} \; (E_a \otimes E_b^*)
+T = \sum_{a,b} g_{ab} \ (E_a \otimes E_b^*)
 $$
 
 where $\{E_a\}$ are the 64 elements of $Cl(6,0)$, $g_{ab}$ are coupling coefficients, and $E_b^*$ is the dual element.
@@ -341,7 +341,7 @@ $$
 Factoring out:
 
 $$
-T_\beta = G_F \; (J_{\text{hadronic}})\cdot(J_{\text{leptonic}})
+T_\beta = G_F \ (J_{\text{hadronic}})\cdot(J_{\text{leptonic}})
 $$
 
 with
@@ -361,7 +361,7 @@ $$
 The interaction Hamiltonian becomes:
 
 $$
-H_{\text{int}} = \sum_{P,Q,R,\dots} T_{PQ\dots}^{RS\dots}\; a_P^\dagger a_Q^\dagger \cdots a_R a_S \cdots
+H_{\text{int}} = \sum_{P,Q,R,\dots} T_{PQ\dots}^{RS\dots}\ a_P^\dagger a_Q^\dagger \cdots a_R a_S \cdots
 $$
 
 ## Connection to field theory
@@ -436,7 +436,7 @@ $$
 with $T_{\text{local}}$ acting on the 64 elements of $Cl(6,0)$ according to:
 
 $$
-T_{\text{local}} = \sum_{a,b} g_{ab}\; (e_a \otimes e_b^*)
+T_{\text{local}} = \sum_{a,b} g_{ab}\ (e_a \otimes e_b^*)
 $$
 
 and the selection rules:

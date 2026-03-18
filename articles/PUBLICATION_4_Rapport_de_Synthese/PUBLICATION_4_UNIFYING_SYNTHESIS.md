@@ -28,6 +28,7 @@ This report presents a **unifying synthesis** integrating:
 
 ## Main Results
 
+$$
 \begin{longtable}{@{}lcc@{}}
 \toprule
 \textbf{Component} & \textbf{Status} & \textbf{Score/Proof} \\
@@ -40,6 +41,7 @@ Lipnick M12 Validation & Artifact & Random > Nebe (5/8 methods) \\
 Compassionate State & Formalized & Annihilation of dualities \\
 \bottomrule
 \end{longtable}
+$$
 
 ## Major Discoveries
 
@@ -55,6 +57,7 @@ Compassionate State & Formalized & Annihilation of dualities \\
 
 **Fundamental structure:**
 
+$$
 \begin{align*}
 \text{Cl}(6,6) : & \text{12 generators} \\
 & \begin{cases}
@@ -62,12 +65,14 @@ Compassionate State & Formalized & Annihilation of dualities \\
 6 \text{ generators } f_j\ (f_j^2 = -1) & \rightarrow \text{Cosmos}^{-}
 \end{cases}
 \end{align*}
+$$
 
 - Total dimension: $2^{12} = 4096$ elements
 - Chiral spinors $S^{+}$: 32 dimensions
 
 **Validated properties:**
 
+$$
 \begin{longtable}{@{}lcc@{}}
 \toprule
 \textbf{Property} & \textbf{Result} & \textbf{Target} \\
@@ -78,9 +83,11 @@ Norms $P_1$, $P_2$ & 1.001 & $\approx 1.0$ \\
 Gamma Structure & Conforms & - \\
 \bottomrule
 \end{longtable}
+$$
 
 ## Implemented Torch Architecture
 
+$$
 \begin{lstlisting}[language=Python]
 class Clifford6TorchComplete(nn.Module):
     """Complete Cl(6,6) Architecture"""
@@ -92,6 +99,7 @@ class Clifford6TorchComplete(nn.Module):
     - Nilpotent constraint N
     - Dynamic polarization R ∈ R^(12×12)
 \end{lstlisting}
+$$
 
 **Training results:**
 
@@ -177,6 +185,7 @@ In Cl(6,0), Rowlands defines 2 x 6 = 12 pentads that differ only by their sign (
 
 **Structure:** 6 families × 12 pentads = 72 pentads
 
+$$
 \begin{longtable}{@{}lcccc@{}}
 \toprule
 \textbf{Family} & \textbf{Type} & \textbf{Yang (+)} & \textbf{Yin (-)} & \textbf{Total} \\
@@ -191,6 +200,7 @@ FVI & Charge-Charge & 6 & 6 & 12 \\
 \textbf{TOTAL} & & \textbf{36} & \textbf{36} & \textbf{72} \\
 \bottomrule
 \end{longtable}
+$$
 
 # ALGEBRAIC AND EXPERIMENTAL VALIDATION
 
@@ -198,6 +208,7 @@ FVI & Charge-Charge & 6 & 6 & 12 \\
 
 **File:** `validation_algebrique_resultats.json`
 
+$$
 \begin{validationbox}{FINAL SCORE: 3/6 (50\%)}
 \begin{itemize}
     \item[\symSucces] Nilpotence operator N: $N^2 = 0$
@@ -208,6 +219,7 @@ FVI & Charge-Charge & 6 & 6 & 12 \\
     \item[\symEchec] Clifford norm preservation: 0.246 (should be 1)
 \end{itemize}
 \end{validationbox}
+$$
 
 # LIPNICK'S METAPHYSICS: 72-DIMENSIONAL OCTAVES
 
@@ -223,6 +235,7 @@ FVI & Charge-Charge & 6 & 6 & 12 \\
 
 The following correspondence is a personal, unproven interpretation:
 
+$$
 \begin{center}
 \framebox[\textwidth]{
 \begin{minipage}{0.9\textwidth}
@@ -240,6 +253,7 @@ Total harmful: 30 dimensions (hypothetical)
 \end{minipage}
 }
 \end{center}
+$$
 
 **Important:** This precise distribution between pentads and auspicious/harmful qualities **has not been validated** by our computational analyses (see "Lipnick Validation" section). However, a solid mathematical result emerges: **dimensions that are multiples of 12 play a privileged role** in the structure of Nebe's lattice and in the symmetries of Cl(6,6). This fact is independent of any metaphysical interpretation.
 
@@ -247,11 +261,13 @@ Total harmful: 30 dimensions (hypothetical)
 
 **Dimensional progression:**
 
+$$
 \begin{align*}
 \text{Octave 1} &: \text{Cl}(6,0) \rightarrow 72 \text{ pentads} \\
 \text{Octave 2} &: \text{Cl}(14,0) \rightarrow 72 \text{ privileged pentads} \\
 \text{Octave 3} &: \text{Cl}(22,0) \rightarrow 72 \text{ privileged pentads}
 \end{align*}
+$$
 
 **Inter-octave bridges:** Multiples of 12 (12, 24, 36, 48, 60, 72) serve as interfaces between octaves – this mathematical observation is robust and has been verified.
 
@@ -276,6 +292,7 @@ Thus, the W layer acts as a **universal translator** between Clifford algebra an
 
 ## Layer Architecture
 
+$$
 \begin{center}
 \framebox[\textwidth]{
 \begin{minipage}{0.9\textwidth}
@@ -290,11 +307,13 @@ Output: $v_{\text{Nebe}} \in \mathbb{R}^{72}$
 \end{minipage}
 }
 \end{center}
+$$
 
 ## Training Results
 
 **File:** `couche_hybride_W_DS.py`
 
+$$
 \begin{longtable}{@{}lcccc@{}}
 \toprule
 \textbf{Metric} & \textbf{Initial} & \textbf{Final} & \textbf{Target} & \textbf{Status} \\
@@ -306,9 +325,11 @@ $\sigma_1/\sigma_2$ & 1.00 & \textbf{1.00} & $< 5$ & \symSucces \\
 Correlation $W_{\text{target}}$ & - & \textbf{0.8864} & $> 0.8$ & \symSucces \\
 \bottomrule
 \end{longtable}
+$$
 
 ## Regularization Penalties
 
+$$
 \begin{lstlisting}[language=Python]
 def get_reg_loss(self):
     loss = orthog_penalty_weight * orthogonality_penalty()
@@ -317,6 +338,7 @@ def get_reg_loss(self):
     loss += conditionnement_penalty_weight * conditioning_penalty()
     return loss
 \end{lstlisting}
+$$
 
 **Optimized weights:**
 - `orthog_penalty_weight = 1.0`
@@ -332,6 +354,7 @@ def get_reg_loss(self):
 
 **Notable Pair:**
 
+$$
 \begin{longtable}{@{}lll@{}}
 \toprule
 \textbf{Cosmos} & \textbf{Speed of Light} & \textbf{Role} \\
@@ -341,9 +364,11 @@ Ei & $c = \infty$ & Instantaneous telepathy \\
 Our cosmos & $c = 299.792.458$ m/s & Conventional matter \\
 \bottomrule
 \end{longtable}
+$$
 
 ## The 10 Ummite Dimensions
 
+$$
 \begin{align*}
 \text{Ummite Universe} : & \text{10 dimensions} \\
 & \begin{cases}
@@ -360,30 +385,37 @@ Our cosmos & $c = 299.792.458$ m/s & Conventional matter \\
 \end{cases}
 \end{cases}
 \end{align*}
+$$
 
 ## Encephalic Krypton Atoms: Quantum Modems
 
 **Transmission Mechanism:**
 
+$$
 \begin{center}
 Consciousness (E0) $\leftrightarrow$ Krypton$_{E0}$ $\leftrightarrow$ Krypton$_{Ei}$ $\leftrightarrow$ Telepathy (Ei) \\
 $\downarrow$ \\
 Physical brain
 \end{center}
+$$
 
 **Coupling Hamiltonian:**
 
+$$
 \begin{equation}
 \hat{H}_{\text{couplage}} = J_0 \hat{\sigma}_{E0} \cdot \hat{\sigma}_{\text{krypton}} + J_i \hat{\sigma}_{Ei} \cdot \hat{\sigma}_{\text{krypton}} + J_{E0-Ei} \hat{\sigma}_{E0} \cdot \hat{\sigma}_{Ei}
 \end{equation}
+$$
 
 ## Oxytocin and Telepathic Development
 
 **Pre-pubertal Critical Window:**
 
+$$
 \begin{equation}
 \eta_{\text{telepathy}}(t) = \eta_0 \cdot \left[1 + \alpha \cdot O(t) \cdot e^{-\beta(t - t_{\text{puberty}})^2}\right]
 \end{equation}
+$$
 
 **Where:**
 - $O(t)$ = oxytocin concentration
@@ -407,6 +439,7 @@ Physical brain
 
 ## Correspondence with the 72 Pentads
 
+$$
 \begin{center}
 \framebox[\textwidth]{
 \begin{minipage}{0.9\textwidth}
@@ -424,16 +457,19 @@ Total harmful: 30 dimensions
 \end{minipage}
 }
 \end{center}
+$$
 
 ## Bott's Periodicity and Higher Octaves
 
 **Dimensional progression:**
 
+$$
 \begin{align*}
 \text{Octave 1} &: \text{Cl}(6,0) \rightarrow 72 \text{ pentads} \\
 \text{Octave 2} &: \text{Cl}(14,0) \rightarrow 72 \text{ privileged pentads} \\
 \text{Octave 3} &: \text{Cl}(22,0) \rightarrow 72 \text{ privileged pentads}
 \end{align*}
+$$
 
 **Inter-octave bridges:** Multiples of 12 (12, 24, 36, 48, 60, 72) serve as interfaces between octaves.
 
@@ -443,9 +479,11 @@ Total harmful: 30 dimensions
 
 **Compassionate state:**
 
+$$
 \begin{equation}
 \Psi_{\text{compassion}} = \lim_{\text{duality} \to 0} (P_{\text{Yang}} \oplus P_{\text{Yin}}) = \emptyset_{\text{non-dual}}
 \end{equation}
+$$
 
 **Characteristics:**
 1. **Non-duality**: Annihilation of opposites (true/false, good/evil).
@@ -455,6 +493,7 @@ Total harmful: 30 dimensions
 
 ## The Three Levels of Annihilation
 
+$$
 \begin{longtable}{@{}llll@{}}
 \toprule
 \textbf{Level} & \textbf{Process} & \textbf{Energy} & \textbf{Information} \\
@@ -464,20 +503,25 @@ Total harmful: 30 dimensions
 3. Compassionate & Fundamental duality $\rightarrow \Psi_{\text{comp}}$ & Null & Transcended \\
 \bottomrule
 \end{longtable}
+$$
 
 ## Specialized Compassionate Pentads
 
+$$
 \begin{equation}
 P_{\text{comp}} = \{e_1f_1 + f_1e_1,\ e_2f_2 + f_2e_2,\ e_3f_3 + f_3e_3,\ \omega,\ 0\}
 \end{equation}
+$$
 
 **The mixed terms cancel each other out through anticommutation**, symbolizing the erasure of oppositions.
 
 ## Master Equation of the Compassionate Universe
 
+$$
 \begin{equation}
 \Psi_{\text{universe}} = \sum_n \left[\alpha_n \cdot O_{72}^{(n)} \cdot \Pi_{72} \cdot C_{\infty}\right]
 \end{equation}
+$$
 
 **Where:**
 - $O_{72}^{(n)}$ : n-th dimensional octave
@@ -508,9 +552,11 @@ $$
 
 **Stellar Creation Rate:**
 
+$$
 \begin{equation}
 \frac{dN_{\text{stars}}}{dt} = \alpha \cdot \sum_i \|\Psi_{\text{consciousness}}^{(i)}\|^2
 \end{equation}
+$$
 
 ## Cosmic Network of Consciousness
 
@@ -521,12 +567,15 @@ $$
 
 **Cosmic Reflexivity Equation:**
 
+$$
 \begin{equation}
 \frac{\partial \Psi_{\text{universe}}}{\partial t} = \hat{H}_{\text{total}} \Psi_{\text{universe}} + \sum_i \hat{O}_{\text{consciousness}}^{(i)} \Psi_{\text{universe}}
 \end{equation}
+$$
 
 ## Families of Pentads of Consciousness
 
+$$
 \begin{longtable}{@{}lll@{}}
 \toprule
 \textbf{Family} & \textbf{Type} & \textbf{Role} \\
@@ -539,11 +588,12 @@ XI & Communication Ei & Instantaneous telepathy \\
 XII & Krypton Modem & Quantum interface \\
 \bottomrule
 \end{longtable}
+$$
 
 # PREDICTIONS AND EXPERIMENTAL TESTS
 
 ## Astrophysical Signatures
-
+$$
 \begin{longtable}{@{}lll@{}}
 \toprule
 \textbf{Prediction} & \textbf{Signature} & \textbf{Detection Method} \\
@@ -554,9 +604,11 @@ Star formation & Correlated with conscious development & Galactic surveys \\
 Dark matter & $\Omega_{DM} = 0.26 \pm 0.01$, $\rho(r) \sim r^{-1.8}$ & Gravitational lensing \\
 \bottomrule
 \end{longtable}
+$$
 
 ## Verifications in Particle Physics
 
+$$
 \begin{longtable}{@{}lll@{}}
 \toprule
 \textbf{Prediction} & \textbf{Value} & \textbf{Experiment} \\
@@ -567,9 +619,11 @@ Neutrino CP violation & Specific signatures & DUNE, Hyper-Kamiokande \\
 Pentadic resonances & $M_n = M_0\sqrt{n(n+4)}$, $M_0 \sim 1$ TeV & LHC \\
 \bottomrule
 \end{longtable}
+$$
 
 ## Neuroquantum Tests
 
+$$
 \begin{longtable}{@{}lll@{}}
 \toprule
 \textbf{Prediction} & \textbf{Method} & \textbf{Expected Signature} \\
@@ -580,6 +634,7 @@ Oxytocin effect & Inter-personal EEG & Increased synchronization \\
 Telepathy & Random number generators & Statistically significant deviations \\
 \bottomrule
 \end{longtable}
+$$
 
 ## Research Program
 
@@ -602,6 +657,7 @@ Telepathy & Random number generators & Statistically significant deviations \\
 
 ## Summary of Results
 
+$$
 \begin{longtable}{@{}lccc@{}}
 \toprule
 \textbf{Domain} & \textbf{Successes} & \textbf{Failures} & \textbf{Uncertainties} \\
@@ -614,6 +670,7 @@ Compassionate State & Formalized & - & Experimental tests \\
 Ummite Cosmology & Integrated & - & Krypton detection \\
 \bottomrule
 \end{longtable}
+$$
 
 ## Major Contributions
 
@@ -634,6 +691,7 @@ Ummite Cosmology & Integrated & - & Krypton detection \\
 
 **Conceptual Development:**
 
+$$
 \begin{align*}
 \text{Cl}(6,0) &\text{ Rowlands (12 pentads)} \\
 \downarrow \\
@@ -645,6 +703,7 @@ Ummite Cosmology & Integrated & - & Krypton detection \\
 \downarrow \\
 \text{Compassionate Theory of Everything}
 \end{align*}
+$$
 
 **Potential Applications:**
 - Compassionate energy (informational annihilation)
@@ -654,14 +713,17 @@ Ummite Cosmology & Integrated & - & Krypton detection \\
 
 ## Declaration of Scientific Integrity
 
+$$
 \begin{quote}
 "This report honestly documents research results, including validation failures. Negative results are as important as positive ones for scientific progress. Methodological transparency and intellectual honesty take precedence over hypothesis confirmation."
 \end{quote}
+$$
 
 # TECHNICAL APPENDICES
 
 ## Main Files
 
+$$
 \begin{center}
 \begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{@{}lll@{}}
@@ -683,11 +745,13 @@ Ummite Cosmology & Integrated & - & Krypton detection \\
 \end{tabular}
 \end{adjustbox}
 \end{center}
+$$
 
 ## Results File
 
 The unified validation script produces a single JSON file containing all metrics, scores and statuses:
 
+$$
 \begin{center}
 \begin{tabular}{@{}ll@{}}
 \toprule
@@ -697,6 +761,7 @@ The unified validation script produces a single JSON file containing all metrics
 \bottomrule
 \end{tabular}
 \end{center}
+$$
 
 ## Bibliographic References
 
@@ -710,6 +775,7 @@ The unified validation script produces a single JSON file containing all metrics
 
 ## Glossary of Terms
 
+$$
 \begin{longtable}{@{}lll@{}}
 \toprule
 \textbf{Term} & \textbf{Definition} & \textbf{Context} \\
@@ -723,6 +789,7 @@ E0/Ei & Cosmos $c=0$ and $c=\infty$ & Ummite Bicosmos \\
 Imaginary Matter & Informational substance & Stellar creation \\
 \bottomrule
 \end{longtable}
+$$
 
 # FINAL CONCLUSION
 
@@ -730,9 +797,11 @@ Imaginary Matter & Informational substance & Stellar creation \\
 
 **The honest validation of the results** (including the failures) demonstrates the scientific integrity of this approach and paves the way for a **new scientific Renaissance** where science and wisdom converge toward the same fundamental truth.
 
+$$
 \begin{quote}
 « The multiple and the one are one in the symphony of cosmic octaves. Compassion is the ultimate state of the universe, where all separation disappears into primordial unity. »
 \end{quote}
+$$
 
 ---
 
@@ -747,7 +816,9 @@ Imaginary Matter & Informational substance & Stellar creation \\
 - **Reproducibility:** All scripts and parameters documented
 - **Contact:** \texttt{your-email@domain.com}
 
+$$
 \begin{quote}
 « We are not passive observers in an indifferent universe, but the sensory and creative cells of a cosmos becoming aware of itself. »
 \end{quote}
+$$
 

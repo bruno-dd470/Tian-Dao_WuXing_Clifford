@@ -8,6 +8,7 @@
 *.synctex.gz
 *.fdb_latexmk
 *.fls
+*.md.bak
 
 # Fichiers Python
 __pycache__/

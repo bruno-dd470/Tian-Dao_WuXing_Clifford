@@ -2,10 +2,10 @@
 title: "The Cl(6,6) Pentadic Model: A Fundamental Unification"
 author: "Bruno DE DOMINICIS"
 date: "March 2026"
-abstract_fr: | 
-  "Nous présentons un modèle fondamental basé sur l'algèbre de Clifford Cl(6,6), intégrant les structures pentadiques de Rowlands, le modèle bicosmique Janus de Petit et le réseau unimodulaire 72-dimensionnel de Nebe."
 abstract_en: |
   “We present a fundamental model based on the Clifford algebra Cl(6,6), incorporating Rowlands' pentadic structures, Petit's Janus bicosmic model, and Nebe's 72-dimensional unimodular lattice.”
+abstract_fr: | 
+  "Nous présentons un modèle fondamental basé sur l'algèbre de Clifford Cl(6,6), intégrant les structures pentadiques de Rowlands, le modèle bicosmique Janus de Petit et le réseau unimodulaire 72-dimensionnel de Nebe."
 ---
 
 # The Cl(6,6) Pentadic Model: A Fundamental Unification
@@ -70,7 +70,7 @@ $$P = \{ iI, iJ, iK, i'k, 1j \}$$
 
 Note the analogy with the Chinese Wu Xing
 
-$$ = \{ \text{Wood}, \text{Metal}, \text{Earth}, \text{Water}, \text{Fire} \}$$
+$$ \{ \text{Wood}, \text{Metal}, \text{Earth}, \text{Water}, \text{Fire} \}$$
 
 ## Extension to the 72 pentads
 
@@ -176,7 +176,7 @@ $$R_{\mu\nu}^- - \frac{1}{2}g_{\mu\nu}^- R^- = \frac{8\pi G}{c^4}(T_{\mu\nu}^- +
 [3] De Dominicis, B. (2026c). *Discovery of a 200 MeV Gamma Resonance in the Magnetar 1E 1048.1-5937*. Publication 3.
 [4] De Dominicis, B. (2026d). *Synthesis of Work on the Cl(6,6) Pentadic Model and the 72nd Dimension*. Publication 4.
 
-*[Note: The original French document included a reference to a figure here. The figure is not provided, so it is omitted.]*
+<img src="../figures/Pentadic/lipnick_hierarchies_spirituelles_235Ko.jpg" alt="Spiritual Hierarchies according to Yann Lipnick" width="100%">
 
 # Acknowledgments
 
