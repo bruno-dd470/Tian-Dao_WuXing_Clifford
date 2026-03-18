@@ -630,19 +630,33 @@ $$
 
 ## Main Files
 
-| **File** | **Description** | **Status** |
-|---|---|---|
-| $\texttt{MODULE\_1\_72\_pentades.py}$ | Construction of the 72 pentads | ✓ Functional |
-| $\texttt{MODULE\_2\_ACTION\_DE\_PSL27\_SUR\_LES\_7\_GÉNÉRATEURS.py}$ | Group $\text{PSL}_2(7)$ | ✓ Functional |
-| $\texttt{MODULE\_3\_ACTION\_DE\_SL2\_25\_SUR\_LES\_24\_PENTADES\_YANG.py}$ | Group $\text{SL}_2(25)$ | ✓ Functional |
-| $\texttt{MODULE\_4\_VÉRIFICATION\_EXPLICITE\_DU\_PRODUIT\_TENSORIEL.py}$ | Tensor product Barnes ⊗ Leech | ✓ Functional |
-| $\texttt{MODULE\_5\_CALCUL\_DES\_VECTEURS\_MINIMAUX.py}$ | Estimation of $6.2\times10^9$ minimal vectors | ✓ Functional |
-| $\texttt{MODULE\_6\_APPLICATION\_AUX\_DONNÉES\_EHT\_RÉELLES.py}$ | Application to EHT data (M87*, SgrA*, etc.) | ✓ Functional |
-| $\texttt{MODULE\_7\_VISUALISATION\_3D\_DU\_RÉSEAU\_}\Gamma\texttt{.py}$ | 3D visualization of the 72 pentad network | ✓ Functional |
-| $\texttt{MODULE\_8\_INTERFACE\_UTILISATEUR\_POUR\_LE\_SYSTÈME\_PENTADIQUE.py}$ | Graphical user interface (Tkinter) | ✓ Functional |
-| $\texttt{CLIFFORD6\_TORCH\_Architecture\_rigoureuse\_Cl66.py}$ | Torch architecture for $\text{Cl}(6,6)$ | ✓ Functional |
-| $\texttt{couche\_hybride\_W\_DS.py}$ | Hybrid layer $W : \mathbb{R}^{10} \to \mathbb{R}^{72}$ | ✓ Functional |
-| $\texttt{VALIDATION\_UNIFIÉE\_CL66\_SCRIPT\_MAITRE.py}$ | **Global validation script** (merges all tests) | ✓ Results 2026-03-15 |
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{File} & \textbf{Description} & \textbf{Status} \\
+\hline
+\texttt{MODULE\_1\_72\_pentades.py} & Construction of the 72 pentads & ✓ Functional \\
+\hline
+\texttt{MODULE\_2\_ACTION\_DE\_PSL27\_SUR\_LES\_7\_GÉNÉRATEURS.py} & Group $\text{PSL}_2(7)$ & ✓ Functional \\
+\hline
+\texttt{MODULE\_3\_ACTION\_DE\_SL2\_25\_SUR\_LES\_24\_PENTADES\_YANG.py} & Group $\text{SL}_2(25)$ & ✓ Functional \\
+\hline
+\texttt{MODULE\_4\_VÉRIFICATION\_EXPLICITE\_DU\_PRODUIT\_TENSORIEL.py} & Tensor product Barnes ⊗ Leech & ✓ Functional \\
+\hline
+\texttt{MODULE\_5\_CALCUL\_DES\_VECTEURS\_MINIMAUX.py} & Estimation of $6.2\times10^9$ minimal vectors & ✓ Functional \\
+\hline
+\texttt{MODULE\_6\_APPLICATION\_AUX\_DONNÉES\_EHT\_RÉELLES.py} & Application to EHT data (M87*, SgrA*, etc.) & ✓ Functional \\
+\hline
+\texttt{MODULE\_7\_VISUALISATION\_3D\_DU\_RÉSEAU\_}$\Gamma$\texttt{.py} & 3D visualization of the 72 pentad network & ✓ Functional \\
+\hline
+\texttt{MODULE\_8\_INTERFACE\_UTILISATEUR\_POUR\_LE\_SYSTÈME\_PENTADIQUE.py} & Graphical user interface (Tkinter) & ✓ Functional \\
+\hline
+\texttt{CLIFFORD6\_TORCH\_Architecture\_rigoureuse\_Cl66.py} & Torch architecture for $\text{Cl}(6,6)$ & ✓ Functional \\
+\hline
+\texttt{couche\_hybride\_W\_DS.py} & Hybrid layer $W : \mathbb{R}^{10} \to \mathbb{R}^{72}$ & ✓ Functional \\
+\hline
+\texttt{VALIDATION\_UNIFIÉE\_CL66\_SCRIPT\_MAITRE.py} & \textbf{Global validation script} (merges all tests) & ✓ Results 2026-03-15 \\
+\hline
+\end{tabular}
 
 ## Results File
 
