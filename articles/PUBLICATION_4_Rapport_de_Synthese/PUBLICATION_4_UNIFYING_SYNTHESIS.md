@@ -418,9 +418,9 @@ $$
 \hline
 \textbf{Level} & \textbf{Process} & \textbf{Energy} & \textbf{Information} \\
 \hline
-1. \text{Energetic} & \text{Matter}^+/\text{Antimatter}^+ \rightarrow \gamma & E = 2mc^2 & \text{Conserved} \\
-2. \text{Informational} & \text{Matter}^+/\text{Matter}^- \rightarrow \emptyset & \text{Null} & \text{Annihilated} \\
-3. \text{Compassionate} & \text{Fundamental duality} \rightarrow \Psi_{\text{comp}} & \text{Null} & \text{Transcended} \\
+\text{1. Energetic} & \text{Matter}^+/\text{Antimatter}^+ \rightarrow \gamma & E = 2mc^2 & \text{Conserved} \\
+\text{2. Informational} & \text{Matter}^+/\text{Matter}^- \rightarrow \emptyset & \text{Null} & \text{Annihilated} \\
+\text{3. Compassionate} & \text{Fundamental duality} \rightarrow \Psi_{\text{comp}} & \text{Null} & \text{Transcended} \\
 \hline
 \end{array}
 $$

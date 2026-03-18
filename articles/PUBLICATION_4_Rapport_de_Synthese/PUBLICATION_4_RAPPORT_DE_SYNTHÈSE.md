@@ -418,9 +418,9 @@ $$
 \hline
 \textbf{Niveau} & \textbf{Processus} & \textbf{Énergie} & \textbf{Information} \\
 \hline
-1. \text{Énergétique} & \text{Matière}^+/\text{Antimatière}^+ \rightarrow \gamma & E = 2mc^2 & \text{Conservée} \\
-2. \text{Informationnel} & \text{Matière}^+/\text{Matière}^- \rightarrow \emptyset & \text{Nulle} & \text{Annihilée} \\
-3. \text{Compassionnel} & \text{Dualité fondamentale} \rightarrow \Psi_{\text{comp}} & \text{Nulle} & \text{Transcendée} \\
+\text{1. Énergétique} & \text{Matière}^+/\text{Antimatière}^+ \rightarrow \gamma & E = 2mc^2 & \text{Conservée} \\
+\text{2. Informationnel} & \text{Matière}^+/\text{Matière}^- \rightarrow \emptyset & \text{Nulle} & \text{Annihilée} \\
+\text{3. Compassionnel} & \text{Dualité fondamentale} \rightarrow \Psi_{\text{comp}} & \text{Nulle} & \text{Transcendée} \\
 \hline
 \end{array}
 $$
