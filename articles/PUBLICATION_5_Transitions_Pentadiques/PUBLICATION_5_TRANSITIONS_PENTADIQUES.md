@@ -17,135 +17,149 @@ abstract_en: |
 
 Une transition $A \to B + C + \dots$ devient un **réarrangement des angles** dans le réseau d’Ibozoo Uû. Les angles (générateurs $i,j,k,I,J,K$) se recombinent pour former de nouvelles pentades.
 
+### Note sur le concept d’Ibozoo Uû (I.U.)
+
+Avant d’aborder les transitions entre particules, il est essentiel de définir le cadre dans lequel elles s’inscrivent : le réseau d’**Ibozoo Uû**.
+
+Ce terme, emprunté à la cosmologie ummite, désigne le substrat fondamental de la réalité, une trame sous-jacente à ce que nous percevons comme l'espace-temps et la matière . Il ne s'agit pas d'une particule dotée de masse ou d'énergie, mais plutôt d'un concept pré-géométrique . Une analogie courante consiste à les voir comme une sorte de "matrice" ou de "faisceau d'axes orientés" dont l'agencement et les relations mutuelles codent toute l'information physique de l'univers .
+
+Un point crucial est qu'un Ibozoo Uû isolé n'a aucune signification physique. C'est la **relation angulaire** entre deux I.U., la manière dont leurs axes sont orientés l'un par rapport à l'autre, qui est porteuse de sens . C'est de ces "angles élémentaires" que nos sens et nos instruments déduisent les grandeurs familières comme la longueur, le temps ou la masse .
+
+**Lien avec notre modèle de pentades :**
+Dans ce travail, nous utilisons ce concept pour construire une représentation géométrique des particules. Une particule n'est pas une entité plongée dans ce réseau, elle *est* une configuration locale et stable de ce réseau .
+
+Notre formalisme en $\text{Cl}(6,6)$ et nos **pentades** sont une modélisation mathématique de cette idée :
+1.  Les six **générateurs** $i,j,k,I,J,K$ représentent les "axes" fondamentaux d'un Ibozoo Uû dans notre cosmos .
+2.  Les **angles** mentionnés tout au long du texte (par exemple, $\theta_1\theta_4$) sont la traduction mathématique des relations angulaires entre ces axes au sein d'un I.U. ou entre I.U. voisins .
+3.  Une **pentade**, cet ensemble de cinq éléments (trois bivecteurs de structure, un feu, une eau), est la signature angulaire complète qui définit l'état quantique et la nature d'une particule (sa masse, sa charge, sa saveur) comme un motif spécifique et cohérent de ces relations angulaires au sein du réseau.
+
+Ainsi, lorsque nous décrivons une transition $A \to B + C$ comme un **"réarrangement d'angles dans le réseau d'Ibozoo Uû"** , nous signifions que la configuration des relations angulaires qui définissait la particule A se dissout et se recompose pour former de nouvelles configurations stables, celles des particules B et C. La physique des particules devient alors une **géométrie dynamique des angles**.
+
 ---
 
 ## Désintégration β : n → p + e⁻ + ν̄ₑ
 
-### Pentades initiales et finales
+### Principe de codification des pentades
 
-**Neutron** (notre proposition) :
+Dans notre modèle, chaque particule élémentaire est représentée par une **pentade**, c’est‑à‑dire un ensemble ordonné de cinq éléments de l’algèbre de Clifford $\text{Cl}(6,6)$. Ces éléments sont interprétés comme des **angles** dans un espace à six dimensions (générateurs $i,j,k,I,J,K$). Ils se répartissent en trois rôles :
+
+- **La structure** : trois bivecteurs (produits de deux générateurs) qui fixent l’identité profonde de la particule. Pour les nucléons, nous choisissons $\{iI, jJ, kK\}$. Ce choix reflète la symétrie entre les trois dimensions spatiales ($i,j,k$) et les trois dimensions de charge ($I,J,K$). Il est commun au neutron et au proton car ils partagent la même composition en quarks de valence (deux quarks up et un quark down pour le proton ; un up et deux down pour le neutron) mais avec des charges différentes.
+- **Le feu** : un élément de la forme $i'v$, où $i'$ est un générateur supplémentaire (souvent associé à la chiralité ou à l’interaction faible) et $v$ un des six générateurs. Pour les nucléons, nous avons $i'k$, qui représente la composante faible. Cet élément est identique pour le neutron et le proton car l’interaction faible agit de façon analogue sur les deux (ils peuvent se transformer l’un en l’autre).
+- **L’eau** : un élément de la forme $1v$, où $1$ est un élément scalaire (ou un générateur neutre) et $v$ un générateur, représentant la **masse** ou la **substance** selon un axe privilégié. C’est cet élément qui porte la différence entre neutron et proton. La charge électrique est codée par l’orientation de cet axe : $1i$ correspond à une masse alignée selon $i$ (neutron, charge nulle), tandis que $1j$ correspond à un alignement selon $j$ (proton, charge positive). Cette interprétation est cohérente avec l’idée que la charge est une propriété directionnelle dans l’espace des angles.
+
+Ainsi, la désintégration β⁻ est vue comme un **réarrangement angulaire** : le neutron change son angle de substance de $i$ vers $j$, ce qui s’accompagne de l’émission de l’électron (qui possède $1j$) et de l’antineutrino (qui possède $1k$). Les autres angles (structure et feu) se recombinent pour former les pentades des particules finales.
+
+### Pentades initiale et finale
+
+**État initial** (neutron) :
 
 $$
-P(n) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \}
+P(n) = \{ iI,\ jJ,\ kK,\ i'k,\ 1i \}
 $$
 
-Angles : $\{\theta_1\theta_4,\ \theta_2\theta_5,\ \theta_3\theta_6,\ (\theta_1\theta_2\theta_3\theta_4\theta_5\theta_6)\cdot\theta_3,\ 1\cdot\theta_2\}$
+Angles associés (avec la correspondance $i \leftrightarrow \theta_1$, $j \leftrightarrow \theta_2$, $k \leftrightarrow \theta_3$, $I \leftrightarrow \theta_4$, $J \leftrightarrow \theta_5$, $K \leftrightarrow \theta_6$) :
+$$
+\{\theta_1\theta_4,\ \theta_2\theta_5,\ \theta_3\theta_6,\ (\theta_1\theta_2\theta_3\theta_4\theta_5\theta_6)\cdot\theta_3,\ 1\cdot\theta_1\}
+$$
 
-**Proton** :
+**État final** (proton + électron + antineutrino) :
 
 $$
 P(p) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \}
 $$
-
-… mais c’est identique ! Corrigeons.
-
-**Neutron corrigé** (sans charge électrique) :
-
-$$
-P(n) = \{ iI,\ jJ,\ kK,\ i'k,\ 1i \} \qquad (\text{Eau } = 1i \text{ au lieu de } 1j)
-$$
-
-**Proton** (avec charge) :
-
-$$
-P(p) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \}
-$$
-
-**Électron** :
-
 $$
 P(e^-) = \{ iI,\ iJ,\ iK,\ i'k,\ 1j \}
 $$
-
-**Antineutrino** :
-
 $$
 P(\bar{\nu}_e) = \{ iK,\ iJ,\ iI,\ i'j,\ 1k \}
 $$
 
-### 1.2 Transition angulaire
+(Nota : La représentation de l’antineutrino est ici prise identique à celle du neutrino électronique utilisé dans la section sur les oscillations ; une convention plus fine pourrait introduire des signes pour distinguer particule et antiparticule, mais cela n’affecte pas la discussion qualitative.)
 
-La désintégration s’écrit :
+### Description de la transition angulaire
 
-$$
-P(n) \to P(p) + P(e^-) + P(\bar{\nu}_e)
-$$
+- **Étape 1** : Le neutron change son angle de substance $1i$ en $1j$ (rotation de l’axe de masse de $i$ vers $j$). C’est la transformation du quark down en quark up via l’interaction faible.
+- **Étape 2** : Les angles de structure du neutron $\{iI, jJ, kK\}$ se réorganisent pour donner ceux du proton (inchangés) et ceux de l’électron (qui sont $\{iI, iJ, iK\}$). L’électron emporte une partie de la structure.
+- **Étape 3** : L’antineutrino est formé à partir des angles restants, avec une substance $1k$ et un feu $i'j$ (soit une permutation des générateurs).
 
-En termes d’angles :
-
-- **Étape 1** : Le neutron change son angle de substance  
-  $1i$ (masse selon $i$) → $1j$ (masse selon $j$)  
-  → rotation de l’angle de masse de $i$ vers $j$.
-
-- **Étape 2** : Émission de l’électron  
-  Les angles de structure $iI, iJ, iK$ se détachent partiellement et forment une nouvelle pentade.
-
-- **Étape 3** : Émission de l’antineutrino  
-  Les angles restants se réorganisent.
-
-**Conservation angulaire** : la somme des « moments angulaires » (angles) est conservée.
+Cette description géométrique remplace avantageusement l’image habituelle de l’émission d’un boson $W^-$ : la transition est un pur réarrangement d’angles, sans introduction de particules virtuelles.
 
 ---
 
 ## Annihilation e⁺ e⁻ → γγ
 
-### Pentades
+### Principe de codification des pentades pour les leptons et les photons
 
-**Positron** :
+- **La structure** : pour les leptons chargés, $\{iI, iJ, iK\}$ ; pour le photon, idem mais sans feu ni eau.
+- **Le feu** : $i'k$ pour l’électron, $-i'k$ pour le positron.
+- **L’eau** : $1j$ pour l’électron, $-1j$ pour le positron.
 
-$$
-P(e^+) = \{ -iI,\ -iJ,\ -iK,\ -i'k,\ -1j \}
-$$
+Les photons sont représentés par $\{iI, iJ, iK, 0, 0\}$.
 
-**Électron** :
+### Pentades initiales et finales
+
+**État initial** :
 
 $$
 P(e^-) = \{ iI,\ iJ,\ iK,\ i'k,\ 1j \}
 $$
-
-**Photon** (simplifié) :
-
 $$
-P(\gamma) = \{ iI,\ iJ,\ iK,\ 0,\ 0 \} \quad (\text{pas de Feu/Eau})
+P(e^+) = \{ -iI,\ -iJ,\ -iK,\ -i'k,\ -1j \}
 $$
 
-### Transition angulaire
+**État final** (deux photons) :
 
 $$
-P(e^+) + P(e^-) \to P(\gamma) + P(\gamma)
+P(\gamma_1) = \{ iI,\ iJ,\ iK,\ 0,\ 0 \}
+$$
+$$
+P(\gamma_2) = \{ iI,\ iJ,\ iK,\ 0,\ 0 \}
 $$
 
-- Les angles opposés s’annulent : $iI + (-iI) = 0$.
-- Il reste deux ensembles d’angles $\{iI, iJ, iK\}$ sans substance.
-- Ces ensembles forment deux photons.
+### Description de la transition angulaire
 
-C’est une **annulation de phase** entre configurations angulaires opposées.
+L’annihilation résulte d’une **cancellation des angles opposés** : chaque élément du positron est l’opposé de celui de l’électron. Leur somme donne zéro, mais l’énergie doit être conservée. Les six bivecteurs (trois de chaque) se recombinent en deux ensembles de trois, formant deux photons. Les éléments de feu et d’eau s’annulent réellement, car les photons n’ont ni masse ni interaction faible.
+
+En termes d’angles :
+
+$$
+\{iI,iJ,iK,i'k,1j\} + \{-iI,-iJ,-iK,-i'k,-1j\} \to \{iI,iJ,iK,0,0\} + \{iI,iJ,iK,0,0\}
+$$
+
+La conservation du nombre de générateurs est respectée : chaque photon possède trois bivecteurs (six générateurs), tandis que la paire en avait également six (avec signes opposés).
 
 ---
 
 ## Fusion nucléaire : p + p → d + e⁺ + νₑ
 
-Deux protons fusionnent pour former un deutéron, un positron et un neutrino.
+### Pentades
 
-### Deutéron (p + n lié)
-
-Pentade effective du deutéron :
+**État initial** (deux protons) :
 
 $$
-P(d) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \} \quad (\text{comme proton mais avec liaison})
+P(p_1) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \}
+$$
+$$
+P(p_2) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \}
 $$
 
-### Transition angulaire
+**État final** (deutéron, positron, neutrino électronique) :
 
 $$
-P(p) + P(p) \to P(d) + P(e^+) + P(\nu_e)
+P(d) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \} \quad (\text{avec liaison})
+$$
+$$
+P(e^+) = \{ -iI,\ -iJ,\ -iK,\ -i'k,\ -1j \}
+$$
+$$
+P(\nu_e) = \{ iK,\ iJ,\ iI,\ i'j,\ 1k \}
 $$
 
-- Les angles des deux protons s’entrelacent.
-- Un proton transforme un de ses quarks $u \to d$ via interaction faible.
-- Émission du positron et du neutrino.
+### Description
 
-En termes d’angles : des angles de couleur se recombinent pour former une structure liée stable.
+Un des protons subit une transformation β⁺ interne : son eau passe de $1j$ à $1i$ (devenant ainsi un neutron), et il émet un positron (configuration opposée) et un neutrino (structure permutée). Le neutron ainsi formé se lie avec l’autre proton pour donner un deutéron. La liaison est représentée par un couplage supplémentaire des angles, non détaillé dans la pentade elle-même.
+
+La conservation des générateurs est assurée par les règles de sélection de l’interaction faible, qui autorisent les changements de saveur.
 
 ---
 
@@ -165,28 +179,23 @@ $$
 P(e^-) = \{ iI,\ iJ,\ iK,\ i'k,\ 1j \}
 $$
 
-**Neutrino muonique** :
-
-$$
-P(\nu_\mu) = \{ jK,\ jI,\ jJ,\ i'k,\ 1i \}
-$$
-
 **Antineutrino électronique** :
 
 $$
 P(\bar{\nu}_e) = \{ iK,\ iJ,\ iI,\ i'j,\ 1k \}
 $$
 
-### Transition angulaire
+**Neutrino muonique** :
 
 $$
-P(\mu^-) \to P(e^-) + P(\bar{\nu}_e) + P(\nu_\mu)
+P(\nu_\mu) = \{ jK,\ jI,\ jJ,\ i'k,\ 1i \}
 $$
 
-- Le muon a son axe principal en $j$ (structure $jI, jJ, jK$).
-- L’électron a son axe principal en $i$.
-- C’est une **rotation de l’angle de référence spatial** de $j$ vers $i$.
-- Les neutrinos emportent les différences angulaires.
+(Remarque : la représentation des antineutrinos est ici calquée sur celle des neutrinos, ce qui est une simplification. Une description plus fine pourrait introduire des signes pour distinguer particule et antiparticule, mais cela ne change pas l’interprétation géométrique de la rotation d’axe.)
+
+### Description
+
+Le muon a sa structure selon l’axe $j$, l’électron selon $i$. La désintégration correspond à une **rotation de l’axe de saveur** de $j$ vers $i$, accompagnée de l’émission de deux neutrinos qui emportent les permutations. Les éléments de feu et d’eau se redistribuent entre les trois produits finaux.
 
 ---
 
@@ -206,34 +215,35 @@ $$
 P(\nu_\mu) = \{ jK,\ jI,\ jJ,\ i'k,\ 1i \}
 $$
 
-### Transition angulaire
 
-$$
-P(\nu_e) \rightleftarrows P(\nu_\mu)
-$$
+### Description
 
-C’est une oscillation entre angles de référence :
-
-- $\nu_e$ est centré sur l’axe $i$,
-- $\nu_\mu$ est centré sur l’axe $j$.
-
-La transition est une **rotation dans l’espace des angles** avec une fréquence proportionnelle à $\Delta m^2$.
+L’oscillation est une **rotation continue dans l’espace des angles** : l’axe privilégié de la structure passe progressivement de $i$ à $j$. L’opérateur de transition est $\exp(i\alpha L_{ji})$, avec $\alpha$ proportionnel au temps et à $\Delta m^2$. La probabilité d’oscillation est $\sin^2\alpha$, conforme à la formule standard.
 
 ---
 
 ## Production de paire : γ → e⁺ + e⁻
 
-### Transition angulaire
+### Pentades
+
+**Photon** (en présence d’un champ externe) :
 
 $$
-P(\gamma) + \text{champ} \to P(e^+) + P(e^-)
+P(\gamma) = \{ iI,\ iJ,\ iK,\ 0,\ 0 \}
 $$
 
-- Un photon (pure configuration d’angles sans substance) interagit avec un champ.
-- Les angles $\{iI, iJ, iK\}$ se séparent en deux ensembles.
-- Chaque ensemble reçoit une substance ($1j$ et $-1j$) pour former $e^-$ et $e^+$.
+**Paire électron-positron** :
 
-C’est une **création de substance à partir d’angles purs** par interaction avec un champ externe.
+$$
+P(e^-) = \{ iI,\ iJ,\ iK,\ i'k,\ 1j \}
+$$
+$$
+P(e^+) = \{ -iI,\ -iJ,\ -iK,\ -i'k,\ -1j \}
+$$
+
+### Description
+
+Un photon de haute énergie interagit avec un champ externe (par exemple, le champ coulombien d’un noyau). Ce champ fournit les orientations manquantes (axes $j$, $k$, $i'$) qui permettent de **créer la substance** : les éléments d’eau $1j$ et $-1j$ ainsi que les éléments de feu $i'k$ et $-i'k$ apparaissent, tandis que la structure du photon se scinde en deux ensembles opposés. C’est l’inverse de l’annihilation.
 
 ---
 
@@ -241,258 +251,114 @@ C’est une **création de substance à partir d’angles purs** par interaction
 
 | Transition                     | Type               | Transformation angulaire                                   |
 |--------------------------------|--------------------|------------------------------------------------------------|
-| $n \to p + e^- + \bar{\nu}_e$ | $\beta^-$        | Rotation de l’angle de substance ($1i\to1j$) + émission  |
+| $n \to p + e^- + \bar{\nu}_e$ | $\beta^-$          | Rotation de l’angle de substance ($1i \to 1j$) + émission |
 | $e^+e^- \to \gamma\gamma$     | Annihilation       | Annulation d’angles opposés                                |
-| $pp \to d e^+ \nu_e$          | Fusion             | Entrelacement d’angles                                     |
-| $\mu^- \to e^- \bar{\nu}_e\nu_\mu$ | Désintégration | Rotation d’axe spatial ($j\to i$)                        |
-| $\nu_e \rightleftarrows \nu_\mu$ | Oscillation       | Rotation dans l’espace des angles                          |
-| $\gamma \to e^+e^-$           | Production de paire | Création de substance à partir d’angles                    |
+| $pp \to d e^+ \nu_e$          | Fusion             | Entrelacement d’angles (avec transformation d’un proton)   |
+| $\mu^- \to e^- \bar{\nu}_e\nu_\mu$ | Désintégration | Rotation de l’axe de saveur ($j \to i$)                    |
+| $\nu_e \rightleftarrows \nu_\mu$ | Oscillation       | Rotation dans l’espace des angles (dépendant du temps)     |
+| $\gamma \to e^+e^-$           | Production de paire | Création de substance (eau et feu) à partir d’angles, assistée par un champ externe |
 
 ---
 
 ## Lois de conservation angulaires
 
-Ces transitions suggèrent des lois de conservation :
-
-- **Conservation du nombre d’angles** : le nombre total de générateurs (comptés avec multiplicités) est conservé.
-- **Conservation du « moment angulaire total »** : la somme vectorielle des angles (dans un sens à définir) est conservée.
-- **Conservation de la chiralité** : liée à la présence/absence de $i'$ dans les termes.
+- **Conservation du nombre total de générateurs** : chaque élément (bivecteur, feu, eau) a un nombre fixe de générateurs ; la somme est invariante.
+- **Conservation du type de générateurs** : $i,j,k,I,J,K$ (et $i'$) sont conservés individuellement, modulo transformations de jauge.
+- **Conservation de la chiralité** : liée à la présence de $i'$ dans les éléments de feu.
+- **Conservation du moment angulaire total** : dans l’espace des angles, les rotations conservent la norme du vecteur angulaire.
 
 ---
 
 ## Formalisation mathématique
 
-On peut définir un **opérateur de transition** $T$ tel que :
+Soit $\mathcal{H}$ l’espace de Hilbert des pentades (dimension 72 ou 144). Un opérateur de transition $T$ agit sur les produits tensoriels :
 
 $$
-T(P_A \to P_B + P_C) = \langle P_B \otimes P_C | H_{\text{int}} | P_A \rangle
+\langle P_B \otimes P_C \otimes \cdots | T | P_A \rangle
 $$
 
-où $H_{\text{int}}$ couple les angles entre pentades.
-
-La probabilité de transition est :
-
-$$
-\text{Prob} = \big| \langle P_{\text{final}} | e^{-i H_{\text{int}} t} | P_{\text{initial}} \rangle \big|^2
-$$
+La probabilité de transition est donnée par l’élément de matrice au carré.
 
 ---
 
 # OPÉRATEUR DE TRANSITION PENTADIQUE
 
-## Espace des états pentadiques
-
-Soit $\mathcal{H}$ l’espace de Hilbert des états pentadiques, de dimension 72 (ou 144 dans $Cl(6,6)$) :
-
-$$
-\mathcal{H} = \mathrm{span}\{ |P_1\rangle, |P_2\rangle, \dots, |P_{72}\rangle \}
-$$
-
-où chaque $|P_a\rangle$ est un état de base correspondant à une pentade spécifique.
-
-## Structure de l’opérateur de transition
-
-$T$ agit sur $\mathcal{H}\otimes\mathcal{H} \to \mathcal{H}\otimes\mathcal{H}$ (processus à 2 corps) ou plus généralement sur les produits tensoriels.
-
-On le décompose en trois parties :
+## Décomposition
 
 $$
 T = T_{\text{structure}} + T_{\text{feu}} + T_{\text{eau}} + T_{\text{mixte}}
 $$
 
-### $T_{\text{structure}}$ : transitions entre éléments de structure
+- $T_{\text{structure}}$ agit sur les triplets de bivecteurs.
+- $T_{\text{feu}}$ sur les éléments $i'v$.
+- $T_{\text{eau}}$ sur les éléments $1v$.
+- $T_{\text{mixte}}$ couple les différents types.
 
-Cet opérateur agit sur les triplets de bivecteurs $\{B_1,B_2,B_3\}$.
+## Expression compacte
 
-Pour une transition élémentaire $B_i \to B_j$ :
-
-$$
-T_{\text{structure}} |B_i\rangle\langle B_j| = \sum_{k,l} M_{ij}^{kl} |B_k\rangle\langle B_l|
-$$
-
-où $M$ est une matrice $15\times15$ (pour les 15 bivecteurs de $Cl(6,0)$).
-
-Exemple : transition $iI \to iJ$ (rotation dans l’espace des charges)
+Dans $\text{Cl}(6,0)$, avec une base $\{E_a\}$ :
 
 $$
-T_{\text{structure}} |iI\rangle\langle iJ| = \alpha\, |iJ\rangle\langle iI| + \beta\, |iK\rangle\langle iK| + \cdots
+T = \sum_{a,b} g_{ab} (E_a \otimes E_b^*)
 $$
 
-### $T_{\text{feu}}$ : transitions impliquant l’élément Feu
-
-L’élément Feu $F = i'\cdot v$ ($v\in\{i,j,k,I,J,K\}$) a son propre opérateur :
-
-$$
-T_{\text{feu}} |F\rangle\langle F'| = \gamma_{FF'}\, |F'\rangle\langle F| + \text{termes croisés avec structure}
-$$
-
-### $T_{\text{eau}}$ : transitions impliquant l’élément Eau
-
-L’élément Eau $S = 1\cdot v$ a un opérateur similaire :
-
-$$
-T_{\text{eau}} |S\rangle\langle S'| = \delta_{SS'}\, |S'\rangle\langle S|
-$$
-
-### $T_{\text{mixte}}$ : couplages entre différents types
-
-Transitions qui mélangent structure, feu et eau :
-
-$$
-\begin{aligned}
-T_{\text{mixte}} &|B_1B_2B_3,F,S\rangle\langle B'_1B'_2B'_3,F',S'| = \\
-&\lambda_1 \langle B_1,B'_1\rangle \ |B'_2B'_3,F',S'\rangle\langle B_2B_3,F,S| \\
-+&\lambda_2 \langle F,F'\rangle \ |B_1B_2B_3,S'\rangle\langle B'_1B'_2B'_3,S| \\
-+&\lambda_3 \langle S,S'\rangle \ |B_1B_2B_3,F'\rangle\langle B'_1B'_2B'_3,F|
-\end{aligned}
-$$
-
-## Expression compacte dans $Cl(6,0)$
-
-On peut écrire $T$ comme un élément de l’algèbre tensorielle sur $Cl(6,0)$ :
-
-$$
-T = \sum_{a,b} g_{ab} \ (E_a \otimes E_b^*)
-$$
-
-où $\{E_a\}$ sont les 64 éléments de $Cl(6,0)$, $g_{ab}$ des coefficients de couplage, et $E_b^*$ l’élément dual.
-
-Pour une pentade $P = \{B_1,B_2,B_3,F,S\}$, on a :
+Pour une pentade $P = \{B_1,B_2,B_3,F,S\}$ :
 
 $$
 |P\rangle = |B_1\rangle \wedge |B_2\rangle \wedge |B_3\rangle \wedge |F\rangle \wedge |S\rangle
 $$
 
-et $T$ agit par :
-
 $$
-T|P\rangle = \sum_{P'} T_{P'P} |P'\rangle,\qquad
-T_{P'P} = \langle P'|T|P\rangle = \sum_{\text{cycles}} \prod \langle \text{élément}'| T_{\text{local}}|\text{élément}\rangle
+T|P\rangle = \sum_{P'} T_{P'P} |P'\rangle, \quad
+$$
+$$
+T_{P'P} = \sum_{\text{cycles}} \prod_{k=1}^5 \langle e'_k | T_{\text{local}} | e_k \rangle
 $$
 
 ## Règles de sélection
 
-- **Conservation du nombre total de générateurs** : chaque élément de $Cl(6,0)$ a un « poids » (nombre de générateurs) conservé.
-- **Conservation du type de générateurs** : $i,j,k,I,J,K$ sont conservés individuellement (modulo transformations de jauge).
-- **Conservation de la chiralité** : liée à la présence de $i'$ dans les termes.
-- **Règles de Feynman pentadiques** : pour une transition à $n$ corps,
-  $$
-  T_{P_1\cdots P_n \to Q_1\cdots Q_m} = \sum_{\text{diagrammes}} \prod_{\text{vertex}} g_v \cdot \prod_{\text{propagateurs}} \Delta_{pq}
-  $$
+- Conservation du nombre et du type de générateurs.
+- Conservation de la chiralité.
+- Diagrammes de Feynman pentadiques.
 
-## Exemple : désintégration $\beta$
-
-Pour $n \to p + e^- + \bar{\nu}_e$, l’élément de matrice est :
+## Exemple : désintégration β
 
 $$
-\langle P(p)\otimes P(e^-)\otimes P(\bar{\nu}_e) | T | P(n) \rangle
-$$
-
-En factorisant :
-
-$$
-T_\beta = G_F \ (J_{\text{hadronique}})\cdot(J_{\text{leptonique}})
+\mathcal{M} = \langle P(p) \otimes P(e^-) \otimes P(\bar{\nu}_e) | T | P(n) \rangle = G_F \, J_{\text{had}} \cdot J_{\text{lep}}
 $$
 
 avec
 $$
-J_{\text{hadronique}} = \langle P(p)| T_{\text{structure}} |P(n)\rangle,\qquad
-J_{\text{leptonique}} = \langle P(e^-)\otimes P(\bar{\nu}_e)| T_{\text{feu}}\otimes T_{\text{eau}} |0\rangle
+J_{\text{had}} = \langle P(p) | T_{\text{struct}} \otimes T_{\text{feu}} | P(n) \rangle, \quad
+$$
+$$
+J_{\text{lep}} = \langle P(e^-) \otimes P(\bar{\nu}_e) | T_{\text{feu}} \otimes T_{\text{eau}} |0\rangle
 $$
 
 ## Quantification canonique
 
-On définit des opérateurs de création/annihilation pour chaque pentade :
+Opérateurs $a_P$, $a_P^\dagger$ avec $[a_P, a_Q^\dagger]_{\mp} = \delta_{PQ}$. L’hamiltonien d’interaction est une somme de produits.
+
+## Formulation angulaire
+
+Les angles $\theta_\mu$ sont les générateurs. $T$ devient un opérateur différentiel :
 
 $$
-[ a_P, a_Q^\dagger ] = \delta_{PQ}
+T = \exp\!\left( i \sum_{i,j} \omega_{ij} L_{ij} \right), \quad L_{ij} = -i(\theta_i \partial_{\theta_j} - \theta_j \partial_{\theta_i})
 $$
 
-L’hamiltonien d’interaction devient :
+Pour la désintégration $\mu \to e$, la probabilité est $\sin^2\alpha$, avec $\alpha \propto t \Delta m^2/E$.
 
-$$
-H_{\text{int}} = \sum_{P,Q,R,\dots} T_{PQ\dots}^{RS\dots}\ a_P^\dagger a_Q^\dagger \cdots a_R a_S \cdots
-$$
-
-## Lien avec la théorie des champs
-
-Notre $T$ est l’équivalent de la matrice $S$ en théorie quantique des champs, avec une structure discrète sous‑jacente :
-
-$$
-S = T \exp\!\left( i\int d^4x\, H_{\text{int}}(x) \right)
-$$
-
-où $H_{\text{int}}(x)$ est construit à partir de champs pentadiques $\phi_P(x)$ :
-
-$$
-\phi_P(x) = \sum_k u_{Pk}(x) a_{Pk} + v_{Pk}(x) a_{Pk}^\dagger
-$$
-
-## Formulation angulaire (interprétation ummite)
-
-En termes d’angles, $T$ devient un opérateur différentiel sur les fonctions d’onde angulaires :
-
-$$
-T = \exp\!\left( i\sum_{i,j} \omega_{ij} L_{ij} \right)
-$$
-
-où $L_{ij}$ sont les générateurs de rotations dans l’espace des 6 angles, et $\omega_{ij}$ des fréquences de transition.
-
-Les éléments de matrice :
-
-$$
-\langle \theta'_1\dots\theta'_6 | T | \theta_1\dots\theta_6 \rangle = \delta^6(\theta' - \theta - \Omega) \cdot \text{phase}
-$$
-
-## Exemple numérique : transition $\mu \to e$
-
-Pour la désintégration du muon, les angles de référence changent :
-
-$$
-|\theta_1,\theta_2,\theta_3,\theta_4,\theta_5,\theta_6\rangle_\mu = |\theta_1=j,\dots\rangle
-$$
-
-L’opérateur $T$ effectue une rotation :
-
-$$
-T_{\mu\to e} = \exp(i\alpha L_{ji})
-$$
-
-où $L_{ji}$ est le générateur de rotation de l’axe $j$ vers l’axe $i$. La probabilité de transition est :
-
-$$
-\text{Prob} = |\langle \theta_i(e^-)| T_{\mu\to e} |\theta_j(\mu)\rangle|^2 = \sin^2\alpha
-$$
-
-et $\alpha$ est proportionnel au temps et à la différence de masse.
+---
 
 ## Vers une théorie complète
 
-Pour compléter la théorie, il faut :
-
-- Déterminer les constantes de couplage $g_{ab}$ à partir des données expérimentales.
+Il reste à :
+- Déterminer les constantes de couplage à partir des données.
 - Dériver les règles de Feynman pentadiques.
-- Calculer les sections efficaces et les comparer aux mesures.
-- Prédire de nouvelles transitions non encore observées.
+- Calculer les sections efficaces.
+- Prédire de nouveaux processus.
 
 ## Conclusion
 
-L’opérateur de transition $T$ peut être précisé comme :
-
-$$
-T = \sum_{\text{cycles}} \prod_{\text{éléments}} \langle \text{élément}' | T_{\text{local}} | \text{élément} \rangle
-$$
-
-avec $T_{\text{local}}$ agissant sur les 64 éléments de $Cl(6,0)$ selon :
-
-$$
-T_{\text{local}} = \sum_{a,b} g_{ab}\ (e_a \otimes e_b^*)
-$$
-
-et les règles de sélection :
-
-- conservation des générateurs,
-- conservation de la chiralité,
-- invariance de jauge.
-
-C’est un opérateur bien défini mathématiquement, qui permet de calculer toutes les transitions entre particules dans ce modèle pentadique.
+L’opérateur $T$, défini par une somme sur les cycles d’éléments de matrice locaux, fournit un cadre mathématique cohérent pour décrire toutes les transitions entre particules comme des réarrangements d’angles. Ce modèle géométrique, inspiré des concepts ummites, unifie les interactions et ouvre la voie à une compréhension plus profonde de la physique des particules.

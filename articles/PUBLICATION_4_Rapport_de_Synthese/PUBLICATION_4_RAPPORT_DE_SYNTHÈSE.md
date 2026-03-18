@@ -2,6 +2,11 @@
 title: "UNIFICATION COSMOLOGIQUE PAR LES SYSTÈMES PENTADIQUES ET L'ALGÈBRE DE CLIFFORD Cl(6,6)"
 author: "Bruno DE DOMINICIS"
 date: "Mars 2026"
+header-includes:
+  - \usepackage{amssymb}
+  - \usepackage{wasysym}
+  - \usepackage{pifont}
+  - \usepackage{textcomp}
 toc: true
 toc-depth: 2
 abstract_fr: | 
@@ -90,7 +95,7 @@ class Clifford6TorchComplete(nn.Module):
     """Architecture complète Cl(6,6)"""
     
     # Composants :
-    # - 20 trivecteurs Γ_ijk (matrices 32×32)
+    # - 20 trivecteurs $\Gamma$_ijk (matrices 32×32)
     # - Projection Merkabah W ∈ R^(8×20)
     # - Pentades P1, P2 ∈ R^(5×32)
     # - Contrainte nilpotente N
@@ -99,9 +104,9 @@ class Clifford6TorchComplete(nn.Module):
 
 **Résultats d'entraînement :**
 
-- Perte nilpotente finale : **0.000000** ✓
-- Ratio de préservation : **0.8977** ⚠
-- Orthogonalité P1/P2 : **0.0017** ✓
+- Perte nilpotente finale : **0.000000** $\checkmark$
+- Ratio de préservation : **0.8977** \ding{227}
+- Orthogonalité P1/P2 : **0.0017** $\checkmark$
 
 # LES 72 PENTADES : ARCHITECTURE FONDAMENTALE
 
@@ -209,12 +214,12 @@ $$
 
 > **SCORE FINAL : 3/6 (50%)**
 > 
-> - ✓ Nilpotence opérateur N : $N^2 = 0$
-> - ✓ Structure matrices Gamma : Traces = 0
-> - ✓ Orthogonalité pentades Torch : 0.0057 $<$ 0.1
-> - ✗ Orthogonalité pentades FFT : 1.04 (devrait être $>$ 10)
-> - ✗ Contrainte nilpotente Torch : 1.35 (trop élevé)
-> - ✗ Préservation norme Clifford : 0.246 (devrait être 1)
+> - $\checkmark$ Nilpotence opérateur N : $N^2 = 0$
+> - $\checkmark$ Structure matrices Gamma : Traces = 0
+> - $\checkmark$ Orthogonalité pentades Torch : 0.0057 $<$ 0.1
+> - $	imes$ Orthogonalité pentades FFT : 1.04 (devrait être $>$ 10)
+> - $	imes$ Contrainte nilpotente Torch : 1.35 (trop élevé)
+> - $	imes$ Préservation norme Clifford : 0.246 (devrait être 1)
 
 # MÉTAPHYSIQUE DE LIPNICK : OCTAVES DE 72 DIMENSIONS
 
@@ -247,11 +252,11 @@ La correspondance suivante est une interprétation personnelle non démontrée :
 **Progression dimensionnelle :**
 
 $$
-\begin{align*}
+\begin{aligned}
 \text{Octave 1} &: \text{Cl}(6,0) \rightarrow 72 \text{ pentades} \\
 \text{Octave 2} &: \text{Cl}(14,0) \rightarrow 72 \text{ pentades privilégiées} \\
 \text{Octave 3} &: \text{Cl}(22,0) \rightarrow 72 \text{ pentades privilégiées}
-\end{align*}
+\end{aligned}
 $$
 
 **Ponts inter-octaves :** Les multiples de 12 (12, 24, 36, 48, 60, 72) servent d'interfaces entre octaves – cette observation mathématique est robuste et a été vérifiée.
@@ -265,13 +270,13 @@ La **couche hybride W** est un élément central du modèle permettant de relier
 
 ### Rôle de la couche W
 
-- **Projection** : La couche W est une matrice apprenable de taille \(72 \times 10\) qui transforme un vecteur de l'espace Cl(6,6) (10D) en un vecteur de l'espace de Nebe (72D). Elle établit ainsi un **pont mathématique** entre ces deux constructions.
+- **Projection** : La couche W est une matrice apprenable de taille (72\ $\times$ 10\) qui transforme un vecteur de l'espace Cl(6,6) (10D) en un vecteur de l'espace de Nebe (72D). Elle établit ainsi un **pont mathématique** entre ces deux constructions.
 - **Validation structurelle** : En entraînant W à produire des vecteurs 72D qui satisfont aux propriétés du réseau de Nebe (normes, orthogonalité, etc.), on vérifie que la structure algébrique de Cl(6,6) est bien compatible avec la géométrie du réseau. Une corrélation élevée (0.8864) entre la sortie de W et une cible théorique montre que ce lien est effectif.
 - **Régularisation** : Pour garantir que la transformation préserve les qualités requises, plusieurs pénalités sont appliquées :
-  - **Orthogonalité** : \(W^T W \approx I_{10}\) pour que les directions restent indépendantes.
+  - **Orthogonalité** : \(W^T W $\approx$ I_{10}\) pour que les directions restent indépendantes.
   - **Norme** : $|W|_F \approx \sqrt{72}$ pour respecter l'échelle dimensionnelle.
   - **Rang** : maintenir un rang maximal (10/10) pour ne pas perdre d'information.
-  - **Conditionnement** : un faible conditionnement (\(\approx 1.01\)) assure la stabilité numérique.
+  - **Conditionnement** : un faible conditionnement (\($\approx$ 1.01\)) assure la stabilité numérique.
 
 Ainsi, la couche W joue le rôle de **traducteur universel** entre l'algèbre de Clifford et la géométrie discrète du réseau de Nebe, démontrant que les 72 pentades (issues de Cl(6,6)) peuvent être naturellement projetées sur les 72 dimensions du réseau, validant l'unification des deux formalismes.
 
@@ -294,11 +299,11 @@ $$
 \hline
 \textbf{Métrique} & \textbf{Initial} & \textbf{Final} & \textbf{Cible} & \textbf{Statut} \\
 \hline
-\text{Perte de prédiction} & 0.0937 & \textbf{0.0144} (-84.6\%) & \downarrow & ✓ \\
-\text{Rang} & 10 & \textbf{10} & 10 & ✓ \\
-\text{Conditionnement} & 1.36 & \textbf{1.01} & < 100 & ✓ \\
-\sigma_1/\sigma_2 & 1.00 & \textbf{1.00} & < 5 & ✓ \\
-\text{Corrélation } W_{\text{cible}} & - & \textbf{0.8864} & > 0.8 & ✓ \\
+\text{Perte de prédiction} & 0.0937 & \textbf{0.0144} (-84.6\%) & \downarrow & $\checkmark$ \\
+\text{Rang} & 10 & \textbf{10} & 10 & $\checkmark$ \\
+\text{Conditionnement} & 1.36 & \textbf{1.01} & < 100 & $\checkmark$ \\
+\sigma_1/\sigma_2 & 1.00 & \textbf{1.00} & < 5 & $\checkmark$ \\
+\text{Corrélation } W_{\text{cible}} & - & \textbf{0.8864} & > 0.8 & $\checkmark$ \\
 \hline
 \end{array}
 $$
@@ -603,7 +608,7 @@ $$
 **Évolution conceptuelle :**
 
 $$
-\begin{align*}
+\begin{aligned}
 \text{Cl}(6,0) &\text{ Rowlands (12 pentades)} \\
 \downarrow \\
 \text{Extension 72 pentades Cl}(6,0) \\
@@ -613,7 +618,7 @@ $$
 \text{Cl}(6,6,2) &\text{ avec E0/Ei} \\
 \downarrow \\
 \text{Théorie du Tout Compassionnelle}
-\end{align*}
+\end{aligned}
 $$
 
 **Applications potentielles :**
@@ -632,17 +637,17 @@ $$
 
 | Fichier | Description | Statut |
 |---------|-------------|--------|
-| `MODULE_1_72_pentades.py` | Construction des 72 pentades | ✓ Fonctionnel |
-| `MODULE_2_ACTION_DE_PSL27_SUR_LES_7_GÉNÉRATEURS.py` | Groupe $\text{PSL}_2(7)$ | ✓ Fonctionnel |
-| `MODULE_3_ACTION_DE_SL2_25_SUR_LES_24_PENTADES_YANG.py` | Groupe $\text{SL}_2(25)$ | ✓ Fonctionnel |
-| `MODULE_4_VÉRIFICATION_EXPLICITE_DU_PRODUIT_TENSORIEL.py` | Produit tensoriel Barnes ⊗ Leech | ✓ Fonctionnel |
-| `MODULE_5_CALCUL_DES_VECTEURS_MINIMAUX.py` | Estimation des $6.2\times10^9$ vecteurs minimaux | ✓ Fonctionnel |
-| `MODULE_6_APPLICATION_AUX_DONNÉES_EHT_RÉELLES.py` | Application aux données EHT (M87*, SgrA*, etc.) | ✓ Fonctionnel |
-| `MODULE_7_VISUALISATION_3D_DU_RÉSEAU_Γ.py` | Visualisation 3D du réseau de 72 pentades | ✓ Fonctionnel |
-| `MODULE_8_INTERFACE_UTILISATEUR_POUR_LE_SYSTÈME_PENTADIQUE.py` | Interface graphique utilisateur (Tkinter) | ✓ Fonctionnel |
-| `CLIFFORD6_TORCH_Architecture_rigoureuse_Cl66.py` | Architecture Torch de $\text{Cl}(6,6)$ | ✓ Fonctionnel |
-| `couche_hybride_W_DS.py` | Couche hybride $W : \mathbb{R}^{10} \to \mathbb{R}^{72}$ | ✓ Fonctionnel |
-| `VALIDATION_UNIFIÉE_CL66_SCRIPT_MAITRE.py` | **Script de validation globale** (fusionne tous les tests) | ✓ Résultats 2026-03-15 |
+| `MODULE_1_72_pentades.py` | Construction des 72 pentades | Fonctionnel |
+| `MODULE_2_ACTION_DE_PSL27_SUR_LES_7_GÉNÉRATEURS.py` | Groupe $\text{PSL}_2(7)$ | Fonctionnel |
+| `MODULE_3_ACTION_DE_SL2_25_SUR_LES_24_PENTADES_YANG.py` | Groupe $\text{SL}_2(25)$ | Fonctionnel |
+| `MODULE_4_VÉRIFICATION_EXPLICITE_DU_PRODUIT_TENSORIEL.py` | Produit tensoriel Barnes ⊗ Leech | Fonctionnel |
+| `MODULE_5_CALCUL_DES_VECTEURS_MINIMAUX.py` | Estimation des $6.2\times10^9$ vecteurs minimaux | Fonctionnel |
+| `MODULE_6_APPLICATION_AUX_DONNÉES_EHT_RÉELLES.py` | Application aux données EHT (M87*, SgrA*, etc.) | Fonctionnel |
+| `MODULE_7_VISUALISATION_3D_DU_RÉSEAU_Gamma.py` | Visualisation 3D du réseau de 72 pentades | Fonctionnel |
+| `MODULE_8_INTERFACE_UTILISATEUR_POUR_LE_SYSTÈME_PENTADIQUE.py` | Interface graphique utilisateur (Tkinter) | Fonctionnel |
+| `CLIFFORD6_TORCH_Architecture_rigoureuse_Cl66.py` | Architecture Torch pour $\text{Cl}(6,6)$ | Fonctionnel |
+| `couche_hybride_W_DS.py` | Couche hybride $W : \mathbb{R}^{10} \to \mathbb{R}^{72}$ | Fonctionnel |
+| `VALIDATION_UNIFIÉE_CL66_SCRIPT_MAITRE.py` | **Script de validation globale** (fusionne tous les tests) | Résultats 2026-03-15 |
 
 ## Fichier de Résultats
 
@@ -692,14 +697,14 @@ $$
 
 **Fin du Rapport**  
 *Mars 2026*  
-*Équipe Model_IA_Cl66*
+
 
 # LICENCE ET DISPONIBILITÉ
 
 - **Code source :** Disponible sur demande
 - **Licence :** MIT (ouverte)
 - **Reproductibilité :** Tous les scripts et paramètres documentés
-- **Contact :** `votre-email@domain.com`
+- **Contact :** `dod60@gmx.fr`
 
 > « Nous ne sommes pas des observateurs passifs dans un univers indifférent, mais les cellules sensorielles et créatrices d'un cosmos en train de prendre conscience de lui-même. »
 

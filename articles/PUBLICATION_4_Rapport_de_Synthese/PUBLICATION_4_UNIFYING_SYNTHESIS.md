@@ -92,7 +92,7 @@ class Clifford6TorchComplete(nn.Module):
     """Complete Cl(6,6) Architecture"""
 
     # Components:
-    # - 20 trivectors Γ_ijk (32×32 matrices)
+    # - 20 trivectors Gamma_ijk (32×32 matrices)
     # - Merkabah Projection W ∈ R^(8×20)
     # - Pentads P1, P2 ∈ R^(5×32)
     # - Nilpotent constraint N
@@ -101,9 +101,9 @@ class Clifford6TorchComplete(nn.Module):
 
 **Training results:**
 
-- Final nilpotent loss: **0.000000** ✓
-- Preservation ratio: **0.8977** ⚠
-- P1/P2 orthogonality: **0.0017** ✓
+- Final nilpotent loss: **0.000000** 
+- Preservation ratio: **0.8977** 
+- P1/P2 orthogonality: **0.0017** 
 
 # THE 72 PENTADS: FUNDAMENTAL ARCHITECTURE
 
@@ -209,12 +209,12 @@ $$
 
 > **FINAL SCORE: 3/6 (50%)**
 > 
-> - ✓ Nilpotence operator N: $N^2 = 0$
-> - ✓ Gamma matrices structure: Traces = 0
-> - ✓ Torch pentads orthogonality: 0.0057 $<$ 0.1
-> - ✗ FFT pentads orthogonality: 1.04 (should be $>$ 10)
-> - ✗ Torch nilpotent constraint: 1.35 (too high)
-> - ✗ Clifford norm preservation: 0.246 (should be 1)
+> -  Nilpotence operator N: $N^2 = 0$
+> -  Gamma matrices structure: Traces = 0
+> -  Torch pentads orthogonality: 0.0057 $<$ 0.1
+> -  FFT pentads orthogonality: 1.04 (should be $>$ 10)
+> -  Torch nilpotent constraint: 1.35 (too high)
+> -  Clifford norm preservation: 0.246 (should be 1)
 
 # LIPNICK'S METAPHYSICS: 72-DIMENSIONAL OCTAVES
 
@@ -247,11 +247,11 @@ The following correspondence is a personal, unproven interpretation:
 **Dimensional progression:**
 
 $$
-\begin{align*}
+\begin{aligned}
 \text{Octave 1} &: \text{Cl}(6,0) \rightarrow 72 \text{ pentads} \\
 \text{Octave 2} &: \text{Cl}(14,0) \rightarrow 72 \text{ privileged pentads} \\
 \text{Octave 3} &: \text{Cl}(22,0) \rightarrow 72 \text{ privileged pentads}
-\end{align*}
+\end{aligned}
 $$
 
 **Inter-octave bridges:** Multiples of 12 (12, 24, 36, 48, 60, 72) serve as interfaces between octaves – this mathematical observation is robust and has been verified.
@@ -265,13 +265,13 @@ The **hybrid W layer** is a central element of the model that connects two funda
 
 ### Role of layer W
 
-- **Projection**: The W layer is a trainable matrix of size \(72 \times 10\) that transforms a vector from the Cl(6,6) space (10D) into a vector from the Nebe space (72D). It thus establishes a **mathematical bridge** between these two constructions.
+- **Projection**: The W layer is a trainable matrix of size \(72 $\times$ 10\) that transforms a vector from the Cl(6,6) space (10D) into a vector from the Nebe space (72D). It thus establishes a **mathematical bridge** between these two constructions.
 - **Structural validation**: By training W to produce 72D vectors that satisfy the properties of the Nebe lattice (norms, orthogonality, etc.), we verify that the algebraic structure of Cl(6,6) is indeed compatible with the geometry of the lattice. A high correlation (0.8864) between W's output and a theoretical target demonstrates that this link is effective.
 - **Regularization**: To ensure that the transformation preserves the required properties, several penalties are applied:
-    - **Orthogonality**: \(W^T W \approx I_{10}\) so that the directions remain independent.
-    - **Norm**: $|W|_F \approx \sqrt{72}$ to respect the dimensional scale.
-    - **Rank**: maintain a maximum rank (10/10) to avoid losing information.
-    - **Condition number**: a low condition number (\(\approx 1.01\)) ensures numerical stability.
+- **Orthogonality**: $W^T W \approx I_{10}$ so that the directions remain independent.
+- **Norm**: $|W|_F \approx \sqrt{72}$ to respect the dimensional scale.
+- **Rank**: maintain a maximum rank (10/10) to avoid losing information.
+- **Condition number**: a low condition number (\($\approx$ 1.01\)) ensures numerical stability.
 
 Thus, the W layer acts as a **universal translator** between Clifford algebra and the discrete geometry of the Nebe lattice, demonstrating that the 72 pentads (derived from Cl(6,6)) can be naturally projected onto the 72 dimensions of the lattice, validating the unification of the two formalisms.
 
@@ -294,11 +294,11 @@ $$
 \hline
 \textbf{Metric} & \textbf{Initial} & \textbf{Final} & \textbf{Target} & \textbf{Status} \\
 \hline
-\text{Prediction loss} & 0.0937 & \textbf{0.0144} (-84.6\%) & \downarrow & ✓ \\
-\text{Rank} & 10 & \textbf{10} & 10 & ✓ \\
-\text{Conditioning} & 1.36 & \textbf{1.01} & < 100 & ✓ \\
-\sigma_1/\sigma_2 & 1.00 & \textbf{1.00} & < 5 & ✓ \\
-\text{Correlation } W_{\text{target}} & - & \textbf{0.8864} & > 0.8 & ✓ \\
+\text{Prediction loss} & 0.0937 & \textbf{0.0144} (-84.6\%) & \downarrow &  \\
+\text{Rank} & 10 & \textbf{10} & 10 &  \\
+\text{Conditioning} & 1.36 & \textbf{1.01} & < 100 &  \\
+\sigma_1/\sigma_2 & 1.00 & \textbf{1.00} & < 5 &  \\
+\text{Correlation } W_{\text{target}} & - & \textbf{0.8864} & > 0.8 &  \\
 \hline
 \end{array}
 $$
@@ -603,7 +603,7 @@ $$
 **Conceptual Development:**
 
 $$
-\begin{align*}
+\begin{aligned}
 \text{Cl}(6,0) &\text{ Rowlands (12 pentads)} \\
 \downarrow \\
 \text{Extension 72 pentads Cl}(6,0) \\
@@ -613,7 +613,7 @@ $$
 \text{Cl}(6,6,2) &\text{ with E0/Ei} \\
 \downarrow \\
 \text{Compassionate Theory of Everything}
-\end{align*}
+\end{aligned}
 $$
 
 **Potential Applications:**
@@ -630,19 +630,19 @@ $$
 
 ## Main Files
 
-| File | Description | Status |
-|------|-------------|--------|
-| `MODULE_1_72_pentades.py` | Construction of the 72 pentads | ✓ Functional |
-| `MODULE_2_ACTION_DE_PSL27_SUR_LES_7_GÉNÉRATEURS.py` | Group $\text{PSL}_2(7)$ | ✓ Functional |
-| `MODULE_3_ACTION_DE_SL2_25_SUR_LES_24_PENTADES_YANG.py` | Group $\text{SL}_2(25)$ | ✓ Functional |
-| `MODULE_4_VÉRIFICATION_EXPLICITE_DU_PRODUIT_TENSORIEL.py` | Tensor product Barnes ⊗ Leech | ✓ Functional |
-| `MODULE_5_CALCUL_DES_VECTEURS_MINIMAUX.py` | Estimation of $6.2\times10^9$ minimal vectors | ✓ Functional |
-| `MODULE_6_APPLICATION_AUX_DONNÉES_EHT_RÉELLES.py` | Application to EHT data (M87*, SgrA*, etc.) | ✓ Functional |
-| `MODULE_7_VISUALISATION_3D_DU_RÉSEAU_Γ.py` | 3D visualization of the 72 pentad network | ✓ Functional |
-| `MODULE_8_INTERFACE_UTILISATEUR_POUR_LE_SYSTÈME_PENTADIQUE.py` | Graphical user interface (Tkinter) | ✓ Functional |
-| `CLIFFORD6_TORCH_Architecture_rigoureuse_Cl66.py` | Torch architecture for $\text{Cl}(6,6)$ | ✓ Functional |
-| `couche_hybride_W_DS.py` | Hybrid layer $W : \mathbb{R}^{10} \to \mathbb{R}^{72}$ | ✓ Functional |
-| `VALIDATION_UNIFIÉE_CL66_SCRIPT_MAITRE.py` | **Global validation script** (merges all tests) | ✓ Results 2026-03-15 |
+**Fichiers principaux**
+
+* `MODULE_1_72_pentades.py` – Construction of the 72 pentads –  Functional
+* `MODULE_2_ACTION_DE_PSL27_SUR_LES_7_GÉNÉRATEURS.py` – Group $\text{PSL}_2(7)$ –  Functional
+* `MODULE_3_ACTION_DE_SL2_25_SUR_LES_24_PENTADES_YANG.py` – Group $\text{SL}_2(25)$ –  Functional
+* `MODULE_4_VÉRIFICATION_EXPLICITE_DU_PRODUIT_TENSORIEL.py` – Tensor product Barnes ⊗ Leech –  Functional
+* `MODULE_5_CALCUL_DES_VECTEURS_MINIMAUX.py` – Estimation of $6.2\times10^9$ minimal vectors –  Functional
+* `MODULE_6_APPLICATION_AUX_DONNÉES_EHT_RÉELLES.py` – Application to EHT data (M87*, SgrA*, etc.) –  Functional
+* `MODULE_7_VISUALISATION_3D_DU_RÉSEAU_Gamma.py` – 3D visualization of the 72 pentad network –  Functional
+* `MODULE_8_INTERFACE_UTILISATEUR_POUR_LE_SYSTÈME_PENTADIQUE.py` – Graphical user interface (Tkinter) –  Functional
+* `CLIFFORD6_TORCH_Architecture_rigoureuse_Cl66.py` – Torch architecture for $\text{Cl}(6,6)$ –  Functional
+* `couche_hybride_W_DS.py` – Hybrid layer $W : \mathbb{R}^{10} \to \mathbb{R}^{72}$ –  Functional
+* `VALIDATION_UNIFIÉE_CL66_SCRIPT_MAITRE.py` – **Global validation script** (merges all tests) – Results 2026-03-15
 
 ## Results File
 

@@ -3,6 +3,8 @@ title: "ANGULAR TRANSITIONS BETWEEN PARTICLES"
 subtitle: "A geometric reinterpretation of fundamental reactions within the framework of Cl(6,6) pentads"
 author: "Bruno DE DOMINICIS"
 date: "March 2026"
+toc: true
+toc-depth: 3
 abstract_fr: |
   Nous présentons une reformulation des transitions entre particules élémentaires (désintégration $\beta$, annihilation $e^+e^-$, fusion nucléaire $pp$, désintégration du muon, oscillations de neutrinos, production de paires) comme des réarrangements d'angles dans le réseau d'Ibozoo Uû, où chaque particule est décrite par une pentade de l'algèbre de Clifford $\text{Cl}(6,6)$. Les générateurs $i,j,k,I,J,K$ sont interprétés comme des angles. Nous définissons un opérateur de transition $T$ agissant sur l'espace de Hilbert des pentades, décomposé en parties structure, feu, eau et mixte, et nous établissons des règles de sélection (conservation des générateurs, chiralité). Une formulation angulaire relie $T$ à des rotations dans l'espace à 6 dimensions. L'exemple de la désintégration $\beta$ est traité en détail. Ce formalisme offre une vision géométrique unifiée des interactions, en accord avec les concepts ummites.
 abstract_en: |
@@ -13,436 +15,349 @@ abstract_en: |
 
 ## General principle
 
-A transition $A \to B + C + \dots$ becomes a **rearrangement of angles** in the Ibozoo Uû lattice. The angles (generators $i,j,k,I,J,K$) recombine to form new pentads.
+A transition $A \to B + C + \dots$ becomes a **rearrangement of angles** within the Ibozoo Uû network. The angles (generators $i,j,k,I,J,K$) recombine to form new pentads.
+
+### Note on the Concept of Ibozoo Uû (I.U.)
+
+Before addressing transitions between particles, it is essential to define the framework in which they occur: the **Ibozoo Uû** network.
+
+This term, borrowed from Ummite cosmology, designates the fundamental substrate of reality, an underlying fabric beneath what we perceive as space-time and matter. It is not a particle endowed with mass or energy, but rather a pre-geometric concept. A common analogy is to see it as a kind of "matrix" or "bundle of oriented axes" whose arrangement and mutual relationships encode all the physical information of the universe.
+
+A crucial point is that an isolated Ibozoo Uû has no physical significance. It is the **angular relationship** between two I.U.s, the way their axes are oriented relative to each other, that carries meaning. From these "elementary angles," our senses and instruments derive familiar quantities such as length, time, or mass.
+
+**Link to our pentad model:**
+In this work, we use this concept to build a geometric representation of particles. A particle is not an entity immersed in this network; it *is* a local and stable configuration of this network.
+
+Our formalism in $\text{Cl}(6,6)$ and our **pentads** are a mathematical modeling of this idea:
+1.  The six **generators** $i,j,k,I,J,K$ represent the fundamental "axes" of an Ibozoo Uû in our cosmos.
+2.  The **angles** mentioned throughout the text (for example, $\theta_1\theta_4$) are the mathematical translation of the angular relations between these axes within an I.U. or between neighboring I.U.s.
+3.  A **pentad**, this set of five elements (three structure bivectors, one fire, one water), is the complete angular signature that defines the quantum state and nature of a particle (its mass, charge, flavor) as a specific and coherent pattern of these angular relations within the network.
+
+Thus, when we describe a transition $A \to B + C$ as a **"rearrangement of angles within the Ibozoo Uû network,"** we mean that the configuration of angular relations that defined particle A dissolves and reconfigures to form new stable configurations, those of particles B and C. Particle physics thus becomes a **dynamic geometry of angles**.
 
 ---
 
-## β decay: n → p + e⁻ + ν̄ₑ
+## β Decay: n → p + e⁻ + ν̄ₑ
 
-### Initial and final pentads
+### Principle of Pentad Codification
 
-**Neutron** (our proposal):
+In our model, each elementary particle is represented by a **pentad**, i.e., an ordered set of five elements from the Clifford algebra $\text{Cl}(6,6)$. These elements are interpreted as **angles** in a six-dimensional space (generators $i,j,k,I,J,K$). They are divided into three roles:
 
-$$P(n) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \}$$
+- **Structure**: three bivectors (products of two generators) that establish the deep identity of the particle. For nucleons, we choose $\{iI, jJ, kK\}$. This choice reflects the symmetry between the three spatial dimensions ($i,j,k$) and the three charge dimensions ($I,J,K$). It is common to the neutron and proton because they share the same valence quark composition (two up quarks and one down quark for the proton; one up and two down for the neutron) but with different charges.
+- **Fire**: an element of the form $i'v$, where $i'$ is an additional generator (often associated with chirality or the weak interaction) and $v$ is one of the six generators. For nucleons, we have $i'k$, which represents the weak component. This element is identical for the neutron and proton because the weak interaction acts analogously on both (they can transform into each other).
+- **Water**: an element of the form $1v$, where $1$ is a scalar element (or a neutral generator) and $v$ a generator, representing **mass** or **substance** along a privileged axis. It is this element that carries the difference between the neutron and proton. Electric charge is encoded by the orientation of this axis: $1i$ corresponds to a mass aligned along $i$ (neutron, zero charge), while $1j$ corresponds to an alignment along $j$ (proton, positive charge). This interpretation is consistent with the idea that charge is a directional property in angle space.
 
-Angles: $\{\theta_1\theta_4,\ \theta_2\theta_5,\ \theta_3\theta_6,\ (\theta_1\theta_2\theta_3\theta_4\theta_5\theta_6)\cdot\theta_3,\ 1\cdot\theta_2\}$
+Thus, β⁻ decay is seen as an **angular rearrangement**: the neutron changes its substance angle from $i$ to $j$, accompanied by the emission of the electron (which possesses $1j$) and the antineutrino (which possesses $1k$). The other angles (structure and fire) recombine to form the pentads of the final particles.
 
-**Proton**:
+### Initial and Final Pentads
 
-$$P(p) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \}$$
+**Initial state** (neutron):
 
-… but it's identical! Let's correct it.
+$$
+P(n) = \{ iI,\ jJ,\ kK,\ i'k,\ 1i \}
+$$
 
-**Corrected neutron** (without electric charge):
+Associated angles (with the correspondence $i \leftrightarrow \theta_1$, $j \leftrightarrow \theta_2$, $k \leftrightarrow \theta_3$, $I \leftrightarrow \theta_4$, $J \leftrightarrow \theta_5$, $K \leftrightarrow \theta_6$):
+$$
+\{\theta_1\theta_4,\ \theta_2\theta_5,\ \theta_3\theta_6,\ (\theta_1\theta_2\theta_3\theta_4\theta_5\theta_6)\cdot\theta_3,\ 1\cdot\theta_1\}
+$$
 
-$$P(n) = \{ iI,\ jJ,\ kK,\ i'k,\ 1i \} \qquad (\text{Water } = 1i \text{ instead of } 1j)$$
+**Final state** (proton + electron + antineutrino):
 
-**Proton** (with charge):
+$$
+P(p) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \}
+$$
+$$
+P(e^-) = \{ iI,\ iJ,\ iK,\ i'k,\ 1j \}
+$$
+$$
+P(\bar{\nu}_e) = \{ iK,\ iJ,\ iI,\ i'j,\ 1k \}
+$$
 
-$$P(p) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \}$$
+(Note: The representation of the antineutrino here is taken to be identical to that of the electron neutrino used in the oscillations section; a more refined convention could introduce signs to distinguish particle and antiparticle, but this does not affect the qualitative discussion.)
 
-**Electron**:
+### Description of the Angular Transition
 
-$$P(e^-) = \{ iI,\ iJ,\ iK,\ i'k,\ 1j \}$$
+- **Step 1**: The neutron changes its substance angle $1i$ to $1j$ (rotation of the mass axis from $i$ to $j$). This is the transformation of a down quark into an up quark via the weak interaction.
+- **Step 2**: The structure angles of the neutron $\{iI, jJ, kK\}$ reorganize to give those of the proton (unchanged) and those of the electron (which are $\{iI, iJ, iK\}$). The electron carries away part of the structure.
+- **Step 3**: The antineutrino is formed from the remaining angles, with a substance $1k$ and a fire $i'j$ (a permutation of generators).
 
-**Antineutrino**:
-
-$$P(\bar{\nu}_e) = \{ iK,\ iJ,\ iI,\ i'j,\ 1k \}$$
-
-### Angular transition
-
-The decay is written as:
-
-$$P(n) \to P(p) + P(e^-) + P(\bar{\nu}_e)$$
-
-In terms of angles:
-
-- **Step 1**: The neutron changes its substance angle
-  $1i$ (mass along $i$) → $1j$ (mass along $j$)
-  → rotation of the mass angle from $i$ to $j$.
-
-- **Step 2**: Emission of the electron
-  The structure angles $iI, iJ, iK$ partially detach and form a new pentad.
-
-- **Step 3**: Emission of the antineutrino
-  The remaining angles reorganize.
-
-**Angular momentum conservation**: the sum of the "angular momenta" (angles) is conserved.
+This geometric description advantageously replaces the usual picture of $W^-$ boson emission: the transition is a pure rearrangement of angles, without the introduction of virtual particles.
 
 ---
 
 ## Annihilation e⁺ e⁻ → γγ
 
+### Principle of Pentad Codification for Leptons and Photons
+
+- **Structure**: for charged leptons, $\{iI, iJ, iK\}$; for the photon, same but without fire or water.
+- **Fire**: $i'k$ for the electron, $-i'k$ for the positron.
+- **Water**: $1j$ for the electron, $-1j$ for the positron.
+
+Photons are represented by $\{iI, iJ, iK, 0, 0\}$.
+
+### Initial and Final Pentads
+
+**Initial state**:
+
+$$
+P(e^-) = \{ iI,\ iJ,\ iK,\ i'k,\ 1j \}
+$$
+$$
+P(e^+) = \{ -iI,\ -iJ,\ -iK,\ -i'k,\ -1j \}
+$$
+
+**Final state** (two photons):
+
+$$
+P(\gamma_1) = \{ iI,\ iJ,\ iK,\ 0,\ 0 \}
+$$
+$$
+P(\gamma_2) = \{ iI,\ iJ,\ iK,\ 0,\ 0 \}
+$$
+
+### Description of the Angular Transition
+
+Annihilation results from a **cancellation of opposite angles**: each element of the positron is the opposite (negative sign) of that of the electron. Their sum gives zero, but energy must be conserved. The six bivectors (three from each) recombine into two sets of three, forming two photons. The fire and water elements cancel completely, as photons have neither mass nor weak interaction.
+
+In terms of angles:
+
+$$
+\{iI,iJ,iK,i'k,1j\} + \{-iI,-iJ,-iK,-i'k,-1j\} \to \{iI,iJ,iK,0,0\} + \{iI,iJ,iK,0,0\}
+$$
+
+Conservation of the number of generators is respected: each photon possesses three bivectors (six generators), while the pair also had six (with opposite signs).
+
+---
+
+## Nuclear Fusion: p + p → d + e⁺ + νₑ
+
 ### Pentads
 
-**Positron**:
+**Initial state** (two protons):
 
-$$P(e^+) = \{ -iI,\ -iJ,\ -iK,\ -i'k,\ -1j \}$$
+$$
+P(p_1) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \}
+$$
+$$
+P(p_2) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \}
+$$
 
-**Electron**:
+**Final state** (deuteron, positron, electron neutrino):
 
-$$P(e^-) = \{ iI,\ iJ,\ iK,\ i'k,\ 1j \}$$
+$$
+P(d) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \} \quad (\text{with binding})
+$$
+$$
+P(e^+) = \{ -iI,\ -iJ,\ -iK,\ -i'k,\ -1j \}
+$$
+$$
+P(\nu_e) = \{ iK,\ iJ,\ iI,\ i'j,\ 1k \}
+$$
 
-**Photon** (simplified):
+### Description
 
-$$P(\gamma) = \{ iI,\ iJ,\ iK,\ 0,\ 0 \} \quad (\text{no Fire/Water})$$
+One of the protons undergoes an internal β⁺ transformation: its water changes from $1j$ to $1i$ (thus becoming a neutron), and it emits a positron (opposite configuration) and a neutrino (permuted structure). The neutron thus formed binds with the other proton to give a deuteron. The binding is represented by an additional coupling of angles, not detailed in the pentad itself.
 
-### Angular transition
-
-$$P(e^+) + P(e^-) \to P(\gamma) + P(\gamma)$$
-
-- Opposite angles cancel: $iI + (-iI) = 0$.
-- Two sets of angles $\{iI, iJ, iK\}$ remain, without substance.
-- These sets form two photons.
-
-This is a **phase cancellation** between opposite angular configurations.
-
----
-
-## Nuclear fusion: p + p → d + e⁺ + νₑ
-
-Two protons fuse to form a deuteron, a positron and a neutrino.
-
-### Deuteron (bound p + n)
-
-Effective pentad of the deuteron:
-
-$$P(d) = \{ iI,\ jJ,\ kK,\ i'k,\ 1j \} \quad (\text{like proton but with bond})$$
-
-### Angular transition
-
-$$P(p) + P(p) \to P(d) + P(e^+) + P(\nu_e)$$
-
-- The angles of the two protons interlace.
-- A proton transforms one of its quarks $u \to d$ via weak interaction.
-- Emission of the positron and the neutrino.
-
-In terms of angles: color angles recombine to form a stable bound structure.
+The conservation of generators is ensured by the selection rules of the weak interaction, which allow flavor changes.
 
 ---
 
-## Muon decay: μ⁻ → e⁻ + ν̄ₑ + νμ
+## Muon Decay: μ⁻ → e⁻ + ν̄ₑ + νμ
 
 ### Pentads
 
 **Muon**:
 
-$$P(\mu^-) = \{ jI,\ jJ,\ jK,\ i'i,\ 1k \}$$
+$$
+P(\mu^-) = \{ jI,\ jJ,\ jK,\ i'i,\ 1k \}
+$$
 
 **Electron**:
 
-$$P(e^-) = \{ iI,\ iJ,\ iK,\ i'k,\ 1j \}$$
-
-**Muon neutrino**:
-
-$$P(\nu_\mu) = \{ jK,\ jI,\ jJ,\ i'k,\ 1i \}$$
+$$
+P(e^-) = \{ iI,\ iJ,\ iK,\ i'k,\ 1j \}
+$$
 
 **Electron antineutrino**:
 
-$$P(\bar{\nu}_e) = \{ iK,\ iJ,\ iI,\ i'j,\ 1k \}$$
+$$
+P(\bar{\nu}_e) = \{ iK,\ iJ,\ iI,\ i'j,\ 1k \}
+$$
 
-### Angular transition
+**Muon neutrino**:
 
-$$P(\mu^-) \to P(e^-) + P(\bar{\nu}_e) + P(\nu_\mu)$$
+$$
+P(\nu_\mu) = \{ jK,\ jI,\ jJ,\ i'k,\ 1i \}
+$$
 
-- The muon has its principal axis along $j$ (structure $jI, jJ, jK$).
-- The electron has its principal axis along $i$.
-- This is a **rotation of the spatial reference angle** from $j$ to $i$.
-- The neutrinos carry the angular differences.
+(Remark: the representation of antineutrinos here is modeled on that of neutrinos, which is a simplification. A finer description could introduce signs to distinguish particle and antiparticle, but this does not change the geometric interpretation of the axis rotation.)
+
+### Description
+
+The muon has its structure along the $j$ axis, the electron along $i$. The decay corresponds to a **rotation of the flavor axis** from $j$ to $i$, accompanied by the emission of two neutrinos that carry away the permutations. The fire and water elements are redistributed among the three final products.
 
 ---
 
-## Neutrino oscillation: νₑ → νμ
+## Neutrino Oscillation: νₑ → νμ
 
 ### Pentads
 
 **Electron neutrino**:
 
-$$P(\nu_e) = \{ iK,\ iJ,\ iI,\ i'j,\ 1k \}$$
+$$
+P(\nu_e) = \{ iK,\ iJ,\ iI,\ i'j,\ 1k \}
+$$
 
 **Muon neutrino**:
 
-$$P(\nu_\mu) = \{ jK,\ jI,\ jJ,\ i'k,\ 1i \}$$
+$$
+P(\nu_\mu) = \{ jK,\ jI,\ jJ,\ i'k,\ 1i \}
+$$
 
-### Angular transition
+### Description
 
-$$P(\nu_e) \rightleftarrows P(\nu_\mu)$$
-
-This is an oscillation between reference angles:
-
-- $\nu_e$ is centered on the axis $i$,
-- $\nu_\mu$ is centered on the axis $j$.
-
-The transition is a **rotation in angle space** with a frequency proportional to $\Delta m^2$.
+Oscillation is a **continuous rotation in angle space**: the privileged axis of the structure gradually passes from $i$ to $j$. The transition operator is $\exp(i\alpha L_{ji})$, with $\alpha$ proportional to time and $\Delta m^2$. The oscillation probability is $\sin^2\alpha$, consistent with the standard formula.
 
 ---
 
-## Pair production: γ → e⁺ + e⁻
+## Pair Production: γ → e⁺ + e⁻
 
-### Angular transition
+### Pentads
 
-$$P(\gamma) + \text{field} \to P(e^+) + P(e^-)$$
+**Photon** (in the presence of an external field):
 
-- A photon (pure configuration of angles without substance) interacts with a field.
-- The angles $\{iI, iJ, iK\}$ split into two sets.
-- Each set receives a substance ($1j$ and $-1j$) to form $e^-$ and $e^+$.
+$$
+P(\gamma) = \{ iI,\ iJ,\ iK,\ 0,\ 0 \}
+$$
 
-This is the **creation of substance from pure angles** through interaction with an external field.
+**Electron-positron pair**:
 
----
+$$
+P(e^-) = \{ iI,\ iJ,\ iK,\ i'k,\ 1j \}
+$$
+$$
+P(e^+) = \{ -iI,\ -iJ,\ -iK,\ -i'k,\ -1j \}
+$$
 
-## Summary table of transitions
+### Description
 
-| Transition | Type | Angular transformation |
-|------------|------|------------------------|
-| $n \to p + e^- + \bar{\nu}_e$ | $\beta^-$ | Rotation of substance angle ($1i\to1j$) + emission |
-| $e^+e^- \to \gamma\gamma$ | Annihilation | Cancellation of opposite angles |
-| $pp \to d e^+ \nu_e$ | Fusion | Interlacing of angles |
-| $\mu^- \to e^- \bar{\nu}_e\nu_\mu$ | Decay | Rotation of spatial axis ($j\to i$) |
-| $\nu_e \rightleftarrows \nu_\mu$ | Oscillation | Rotation in angle space |
-| $\gamma \to e^+e^-$ | Pair production | Creation of substance from angles |
+A high-energy photon interacts with an external field (e.g., the Coulomb field of a nucleus). This field provides the missing orientations (axes $j$, $k$, $i'$) which allow the **creation of substance**: the water elements $1j$ and $-1j$ as well as the fire elements $i'k$ and $-i'k$ appear, while the photon's structure splits into two opposite sets. This is the inverse of annihilation.
 
 ---
 
-## Angular conservation laws
+## Summary Table of Transitions
 
-These transitions suggest conservation laws:
-
-- **Conservation of the number of angles**: the total number of generators (counted with multiplicities) is conserved.
-- **Conservation of "total angular momentum"**: the vector sum of the angles (in a sense to be defined) is conserved.
-- **Conservation of chirality**: linked to the presence/absence of $i'$ in the terms.
+| Transition                     | Type               | Angular Transformation                                   |
+|--------------------------------|--------------------|------------------------------------------------------------|
+| $n \to p + e^- + \bar{\nu}_e$ | $\beta^-$          | Rotation of the substance angle ($1i \to 1j$) + emission |
+| $e^+e^- \to \gamma\gamma$     | Annihilation       | Cancellation of opposite angles                                |
+| $pp \to d e^+ \nu_e$          | Fusion             | Interlacing of angles (with transformation of one proton)   |
+| $\mu^- \to e^- \bar{\nu}_e\nu_\mu$ | Decay        | Rotation of the flavor axis ($j \to i$)                    |
+| $\nu_e \rightleftarrows \nu_\mu$ | Oscillation       | Rotation in angle space (time-dependent)     |
+| $\gamma \to e^+e^-$           | Pair production | Creation of substance (water and fire) from angles, assisted by an external field |
 
 ---
 
-## Mathematical formalization
+## Angular Conservation Laws
 
-We can define a **transition operator** $T$ such that:
+- **Conservation of the total number of generators**: each element (bivector, fire, water) has a fixed number of generators; the sum is invariant.
+- **Conservation of generator type**: $i,j,k,I,J,K$ (and $i'$) are conserved individually, modulo gauge transformations.
+- **Conservation of chirality**: linked to the presence of $i'$ in fire elements.
+- **Conservation of total angular momentum**: in angle space, rotations conserve the norm of the angular vector.
 
-$$T(P_A \to P_B + P_C) = \langle P_B \otimes P_C | H_{\text{int}} | P_A \rangle$$
+---
 
-where $H_{\text{int}}$ couples the angles between pentads.
+## Mathematical Formalization
 
-The transition probability is:
+Let $\mathcal{H}$ be the Hilbert space of pentads (dimension 72 or 144). A transition operator $T$ acts on tensor products:
 
-$$\text{Prob} = \big| \langle P_{\text{final}} | e^{-i H_{\text{int}} t} | P_{\text{initial}} \rangle \big|^2$$
+$$
+\langle P_B \otimes P_C \otimes \cdots | T | P_A \rangle
+$$
+
+The transition probability is given by the square of the matrix element.
 
 ---
 
 # PENTADIC TRANSITION OPERATOR
 
-## Space of pentadic states
-
-Let $\mathcal{H}$ be the Hilbert space of pentadic states, of dimension 72 (or 144 in $Cl(6,6)$):
-
-$$
-\mathcal{H} = \mathrm{span}\{ |P_1\rangle, |P_2\rangle, \dots, |P_{72}\rangle \}
-$$
-
-where each $|P_a\rangle$ is a basis state corresponding to a specific pentad.
-
-## Structure of the transition operator
-
-$T$ acts on $\mathcal{H}\otimes\mathcal{H} \to \mathcal{H}\otimes\mathcal{H}$ (two-body process) or more generally on tensor products.
-
-It is decomposed into three parts:
+## Decomposition
 
 $$
 T = T_{\text{structure}} + T_{\text{fire}} + T_{\text{water}} + T_{\text{mixed}}
 $$
 
-### $T_{\text{structure}}$: transitions between structural elements
+- $T_{\text{structure}}$ acts on triplets of bivectors.
+- $T_{\text{fire}}$ on $i'v$ elements.
+- $T_{\text{water}}$ on $1v$ elements.
+- $T_{\text{mixed}}$ couples the different types.
 
-This operator acts on triples of bivectors $\{B_1,B_2,B_3\}$.
+## Compact Expression
 
-For an elementary transition $B_i \to B_j$:
-
-$$
-T_{\text{structure}} |B_i\rangle\langle B_j| = \sum_{k,l} M_{ij}^{kl} |B_k\rangle\langle B_l|
-$$
-
-where $M$ is a $15\times15$ matrix (for the 15 bivectors of $Cl(6,0)$).
-
-Example: transition $iI \to iJ$ (rotation in charge space)
+In $\text{Cl}(6,0)$, with a basis $\{E_a\}$:
 
 $$
-T_{\text{structure}} |iI\rangle\langle iJ| = \alpha\, |iJ\rangle\langle iI| + \beta\, |iK\rangle\langle iK| + \cdots
+T = \sum_{a,b} g_{ab} (E_a \otimes E_b^*)
 $$
 
-### $T_{\text{fire}}$: transitions involving the Fire element
-
-The Fire element $F = i'\cdot v$ ($v\in\{i,j,k,I,J,K\}$) has its own operator:
-
-$$
-T_{\text{fire}} |F\rangle\langle F'| = \gamma_{FF'}\, |F'\rangle\langle F| + \text{cross terms with structure}
-$$
-
-### $T_{\text{water}}$: transitions involving the Water element
-
-The Water element $S = 1\cdot v$ has a similar operator:
-
-$$
-T_{\text{water}} |S\rangle\langle S'| = \delta_{SS'}\, |S'\rangle\langle S|
-$$
-
-### $T_{\text{mixed}}$: couplings between different types
-
-Transitions that mix structure, fire and water:
-
-$$
-\begin{aligned}
-T_{\text{mixed}} &|B_1B_2B_3,F,S\rangle\langle B'_1B'_2B'_3,F',S'| = \\
-&\lambda_1 \langle B_1,B'_1\rangle \ |B'_2B'_3,F',S'\rangle\langle B_2B_3,F,S| \\
-+&\lambda_2 \langle F,F'\rangle \ |B_1B_2B_3,S'\rangle\langle B'_1B'_2B'_3,S| \\
-+&\lambda_3 \langle S,S'\rangle \ |B_1B_2B_3,F'\rangle\langle B'_1B'_2B'_3,F|
-\end{aligned}
-$$
-
-## Compact expression in $Cl(6,0)$
-
-We can write $T$ as an element of the tensor algebra over $Cl(6,0)$:
-
-$$
-T = \sum_{a,b} g_{ab} \ (E_a \otimes E_b^*)
-$$
-
-where $\{E_a\}$ are the 64 elements of $Cl(6,0)$, $g_{ab}$ are coupling coefficients, and $E_b^*$ is the dual element.
-
-For a pentad $P = \{B_1,B_2,B_3,F,S\}$, we have:
+For a pentad $P = \{B_1,B_2,B_3,F,S\}$:
 
 $$
 |P\rangle = |B_1\rangle \wedge |B_2\rangle \wedge |B_3\rangle \wedge |F\rangle \wedge |S\rangle
 $$
 
-and $T$ acts via:
-
 $$
-T|P\rangle = \sum_{P'} T_{P'P} |P'\rangle,\qquad
-T_{P'P} = \langle P'|T|P\rangle = \sum_{\text{cycles}} \prod \langle \text{element}'| T_{\text{local}}|\text{element}\rangle
+T|P\rangle = \sum_{P'} T_{P'P} |P'\rangle, \quad
 $$
-
-## Selection rules
-
-- **Conservation of the total number of generators**: each element of $Cl(6,0)$ has a conserved "weight" (number of generators).
-- **Conservation of generator type**: $i,j,k,I,J,K$ are conserved individually (modulo gauge transformations).
-- **Conservation of chirality**: linked to the presence of $i'$ in the terms.
-- **Pentadic Feynman rules**: for a transition to an $n$-body system,
-  $$
-  T_{P_1\cdots P_n \to Q_1\cdots Q_m} = \sum_{\text{diagrams}} \prod_{\text{vertices}} g_v \cdot \prod_{\text{propagators}} \Delta_{pq}
-  $$
-
-## Example: $\beta$ decay
-
-For $n \to p + e^- + \bar{\nu}_e$, the matrix element is:
-
 $$
-\langle P(p)\otimes P(e^-)\otimes P(\bar{\nu}_e) | T | P(n) \rangle
+T_{P'P} = \sum_{\text{cycles}} \prod_{k=1}^5 \langle e'_k | T_{\text{local}} | e_k \rangle
 $$
 
-Factoring out:
+## Selection Rules
+
+- Conservation of the number and type of generators.
+- Conservation of chirality.
+- Pentadic Feynman diagrams.
+
+## Example: β Decay
 
 $$
-T_\beta = G_F \ (J_{\text{hadronic}})\cdot(J_{\text{leptonic}})
+\mathcal{M} = \langle P(p) \otimes P(e^-) \otimes P(\bar{\nu}_e) | T | P(n) \rangle = G_F \, J_{\text{had}} \cdot J_{\text{lep}}
 $$
 
 with
 $$
-J_{\text{hadronic}} = \langle P(p)| T_{\text{structure}} |P(n)\rangle,\qquad
-J_{\text{leptonic}} = \langle P(e^-)\otimes P(\bar{\nu}_e)| T_{\text{fire}}\otimes T_{\text{water}} |0\rangle
+J_{\text{had}} = \langle P(p) | T_{\text{struct}} \otimes T_{\text{fire}} | P(n) \rangle, \quad
+$$
+$$
+J_{\text{lep}} = \langle P(e^-) \otimes P(\bar{\nu}_e) | T_{\text{fire}} \otimes T_{\text{water}} |0\rangle
 $$
 
-## Canonical quantization
+## Canonical Quantization
 
-We define creation/annihilation operators for each pentad:
+Operators $a_P$, $a_P^\dagger$ with $[a_P, a_Q^\dagger]_{\mp} = \delta_{PQ}$. The interaction Hamiltonian is a sum of products.
 
-$$
-[ a_P, a_Q^\dagger ] = \delta_{PQ}
-$$
+## Angular Formulation
 
-The interaction Hamiltonian becomes:
+The angles $\theta_\mu$ are the generators. $T$ becomes a differential operator:
 
 $$
-H_{\text{int}} = \sum_{P,Q,R,\dots} T_{PQ\dots}^{RS\dots}\ a_P^\dagger a_Q^\dagger \cdots a_R a_S \cdots
+T = \exp\!\left( i \sum_{i,j} \omega_{ij} L_{ij} \right), \quad L_{ij} = -i(\theta_i \partial_{\theta_j} - \theta_j \partial_{\theta_i})
 $$
 
-## Connection to field theory
+For $\mu \to e$ decay, the probability is $\sin^2\alpha$, with $\alpha \propto t \Delta m^2/E$.
 
-Our $T$ is equivalent to the $S$ matrix in quantum field theory, with an underlying discrete structure:
+---
 
-$$
-S = T \exp\!\left( i\int d^4x\, H_{\text{int}}(x) \right)
-$$
+## Towards a Complete Theory
 
-where $H_{\text{int}}(x)$ is constructed from pentadic fields $\phi_P(x)$:
-
-$$
-\phi_P(x) = \sum_k u_{Pk}(x) a_{Pk} + v_{Pk}(x) a_{Pk}^\dagger
-$$
-
-## Angular formulation (Ummite interpretation)
-
-In terms of angles, $T$ becomes a differential operator on angular wave functions:
-
-$$
-T = \exp\!\left( i\sum_{i,j} \omega_{ij} L_{ij} \right)
-$$
-
-where $L_{ij}$ are the rotation generators in the 6-angle space, and $\omega_{ij}$ are transition frequencies.
-
-The matrix elements:
-
-$$
-\langle \theta'_1\dots\theta'_6 | T | \theta_1\dots\theta_6 \rangle = \delta^6(\theta' - \theta - \Omega) \cdot \text{phase}
-$$
-
-## Numerical example: $\mu \to e$ transition
-
-For muon decay, the reference angles change:
-
-$$
-|\theta_1,\theta_2,\theta_3,\theta_4,\theta_5,\theta_6\rangle_\mu = |\theta_1=j,\dots\rangle
-$$
-
-The operator $T$ performs a rotation:
-
-$$
-T_{\mu\to e} = \exp(i\alpha L_{ji})
-$$
-
-where $L_{ji}$ is the rotation generator from axis $j$ to axis $i$. The transition probability is:
-
-$$
-\text{Prob} = |\langle \theta_i(e^-)| T_{\mu\to e} |\theta_j(\mu)\rangle|^2 = \sin^2\alpha
-$$
-
-and $\alpha$ is proportional to time and the mass difference.
-
-## Toward a Complete Theory
-
-To complete the theory, we must:
-
-- Determine the coupling constants $g_{ab}$ from experimental data.
-- Derive the pentadic Feynman rules.
-- Calculate the cross sections and compare them to measurements.
-- Predict new transitions not yet observed.
+Remaining tasks:
+- Determine coupling constants from data.
+- Derive pentadic Feynman rules.
+- Calculate cross-sections.
+- Predict new processes.
 
 ## Conclusion
 
-The transition operator $T$ can be specified as:
-
-$$
-T = \sum_{\text{cycles}} \prod_{\text{elements}} \langle \text{element}' | T_{\text{local}} | \text{element} \rangle
-$$
-
-with $T_{\text{local}}$ acting on the 64 elements of $Cl(6,0)$ according to:
-
-$$
-T_{\text{local}} = \sum_{a,b} g_{ab}\ (e_a \otimes e_b^*)
-$$
-
-and the selection rules:
-
-- conservation of generators,
-- conservation of chirality,
-- gauge invariance.
-
-This is a mathematically well-defined operator that allows us to calculate all particle transitions in this pentadic model.
+The operator $T$, defined by a sum over cycles of local matrix elements, provides a coherent mathematical framework to describe all particle transitions as rearrangements of angles. This geometric model, inspired by Ummite concepts, unifies interactions and opens the way to a deeper understanding of particle physics.
