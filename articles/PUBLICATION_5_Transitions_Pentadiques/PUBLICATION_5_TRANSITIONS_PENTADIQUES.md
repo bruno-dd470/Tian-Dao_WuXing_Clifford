@@ -215,7 +215,6 @@ $$
 P(\nu_\mu) = \{ jK,\ jI,\ jJ,\ i'k,\ 1i \}
 $$
 
-
 ### Description
 
 L’oscillation est une **rotation continue dans l’espace des angles** : l’axe privilégié de la structure passe progressivement de $i$ à $j$. L’opérateur de transition est $\exp(i\alpha L_{ji})$, avec $\alpha$ proportionnel au temps et à $\Delta m^2$. La probabilité d’oscillation est $\sin^2\alpha$, conforme à la formule standard.
@@ -309,8 +308,9 @@ $$
 $$
 
 $$
-T|P\rangle = \sum_{P'} T_{P'P} |P'\rangle, \quad
+T|P\rangle = \sum_{P'} T_{P'P} |P'\rangle,
 $$
+
 $$
 T_{P'P} = \sum_{\text{cycles}} \prod_{k=1}^5 \langle e'_k | T_{\text{local}} | e_k \rangle
 $$
@@ -328,11 +328,13 @@ $$
 $$
 
 avec
+
 $$
-J_{\text{had}} = \langle P(p) | T_{\text{struct}} \otimes T_{\text{feu}} | P(n) \rangle, \quad
+J_{\text{had}} = \langle P(p) | T_{\text{struct}} \otimes T_{\text{feu}} | P(n) \rangle,
 $$
+
 $$
-J_{\text{lep}} = \langle P(e^-) \otimes P(\bar{\nu}_e) | T_{\text{feu}} \otimes T_{\text{eau}} |0\rangle
+J_{\text{lep}} = \langle P(e^-) \otimes P(\bar{\nu}_e) | T_{\text{feu}} \otimes T_{\text{eau}} |0\rangle.
 $$
 
 ## Quantification canonique
