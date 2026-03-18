@@ -339,7 +339,7 @@ $$
 
 ## Quantification canonique
 
-Opérateurs $a_P$, $a_P^\dagger$ avec $[a_P, a_Q^\dagger]_{\mp} = \delta_{PQ}$. L’hamiltonien d’interaction est une somme de produits.
+Opérateurs \(a_P\), \(a_P^\dagger\) avec \([a_P, a_Q^\dagger]_{\mp} = \delta_{PQ}\). L’hamiltonien d’interaction est une somme de produits.
 
 ## Formulation angulaire
 
