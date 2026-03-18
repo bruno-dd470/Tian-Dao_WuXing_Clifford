@@ -107,7 +107,7 @@ Cette découverte constitue :
 
 %![Les hiérarchies spirituelles selon Y. Lipnick](figures/lipnick_hierarchies_spirituelles_235Ko.pdf){ width=100% }
 
-<img src="../figures/Pentadic/lipnick_hierarchies_spirituelles_235Ko.jpg" alt="Les hiérarchies spirituelles selon Y. Lipnick" width="100%">
+<img src="https://github.com/bruno-dd470/Tian-Dao_WuXing_Clifford/raw/6293ea8e69353c1832f968b018488946f4f5c99f/figures/Pentadic/lipnick_hierarchies_spirituelles_235Ko.jpg" alt="Hiérarchies spirituelles selon Yann Lipnick" width="100%">
 
 # Remerciements
 

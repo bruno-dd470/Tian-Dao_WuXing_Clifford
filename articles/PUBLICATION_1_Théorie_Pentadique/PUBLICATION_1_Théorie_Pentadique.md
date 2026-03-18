@@ -173,7 +173,7 @@ $$R_{\mu\nu}^- - \frac{1}{2}g_{\mu\nu}^- R^- = \frac{8\pi G}{c^4}(T_{\mu\nu}^- +
 [3] De Dominicis, B. (2026c). *Découverte d'une Résonance Gamma à 200 MeV dans le Magnetar 1E 1048.1-5937*. Publication 3.
 [4] De Dominicis, B. (2026d). *Synthèse des travaux sur le modèle pentadique Cl(6,6) et la dimension 72*. Publication 4.
 
-<img src="../figures/Pentadic/lipnick_hierarchies_spirituelles_235Ko.jpg" alt="Hiérarchies spirituelles selon Yann Lipnick" width="100%">
+<img src="https://github.com/bruno-dd470/Tian-Dao_WuXing_Clifford/raw/6293ea8e69353c1832f968b018488946f4f5c99f/figures/Pentadic/lipnick_hierarchies_spirituelles_235Ko.jpg" alt="Hiérarchies spirituelles selon Yann Lipnick" width="100%">
 
 # Remerciements
 

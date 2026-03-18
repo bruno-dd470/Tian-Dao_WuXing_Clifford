@@ -176,7 +176,7 @@ $$R_{\mu\nu}^- - \frac{1}{2}g_{\mu\nu}^- R^- = \frac{8\pi G}{c^4}(T_{\mu\nu}^- +
 [3] De Dominicis, B. (2026c). *Discovery of a 200 MeV Gamma Resonance in the Magnetar 1E 1048.1-5937*. Publication 3.
 [4] De Dominicis, B. (2026d). *Synthesis of Work on the Cl(6,6) Pentadic Model and the 72nd Dimension*. Publication 4.
 
-<img src="../figures/Pentadic/lipnick_hierarchies_spirituelles_235Ko.jpg" alt="Spiritual Hierarchies according to Yann Lipnick" width="100%">
+<img src="https://github.com/bruno-dd470/Tian-Dao_WuXing_Clifford/raw/6293ea8e69353c1832f968b018488946f4f5c99f/figures/Pentadic/lipnick_hierarchies_spirituelles_235Ko.jpg" alt="Spiritual Hierarchies according to Yann Lipnick" width="100%">
 
 # Acknowledgments
 
