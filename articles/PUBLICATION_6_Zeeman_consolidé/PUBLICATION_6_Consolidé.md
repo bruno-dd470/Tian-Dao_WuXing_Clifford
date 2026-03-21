@@ -189,20 +189,33 @@ Nous avons analysé les données Fermi-LAT pour trois flares indépendants du ma
 | 57515 | 159 553 | +257,10% | 692,4σ | ✅ |
 | **Moyenne** | — | **+276,2% ± 17,4%** | **> 10⁶σ** | **✅** |
 
-<figure>
-  <img src="https://github.com/bruno-dd470/Tian-Dao_WuXing_Clifford/blob/e42756f401ed8913be4e1155ea6e65368b842cd6/figures/Zeeman/Zeeman_effect/zeeman_pentadique_avec_incertitudes.png"
-       alt="Figure 1 – Effet Zeeman : Modèle pentadique vs Données NIST. (a) Valeurs absolues du splitting Zeeman à B = 1 T pour l’électron, le proton et le neutron. Les barres colorées représentent les prédictions du modèle pentadique (bleu : électron, orange : proton, vert : neutron),
-tandis que les barres grises indiquent les données de référence NIST. Les barres d’erreur correspondent aux intervalles de confiance à 95% issus de la propagation d’incertitudes par Monte Carlo (50 000 échantillons). (b) Précision du modèle montrant l’écart relatif entre les prédictions pentadiques et les données NIST pour chaque particule. Les seuils de tolérance maximaux sont de 1% pour l’électron, 5% pour le proton, 10% pour le neutron. Les trois particules montrent un accord bien inférieur aux tolérances : électron ∆ = 0,0012%, proton ∆ = 0,0057%, neutron ∆ = 0,0027%. Ceci valide la formulation pentadique de l’effet Zeeman sans vecteur spin traditionnel."
-       style="width:100%; max-width:800px;">
-<figure>    
 
-<figure>
-  <img src="https://github.com/bruno-dd470/Tian-Dao_WuXing_Clifford/blob/e42756f401ed8913be4e1155ea6e65368b842cd6/figures/Zeeman/Zeeman_effect/magnetar_analysis_summary.png"
-       alt="Figure 2 – Analyse consolidée : Résonance à 200 MeV dans le magnétar 1E 1048.15937. Analyse de trois flares indépendants (MJD 54915, 56015, 57515) à partir des données Fermi-LAT. (a) Significativité de la détection à 200 MeV pour chaque flare : 510σ (54915), 831σ (56015), 692σ (57515), avec une significativité combinée supérieur à 106σ. (b) Excès spectraux par rapport au modèle standard à 200 MeV (rouge, résonance) et 300 MeV (bleu, harmonique possible) : excès cohérents de ∼280% et ∼150% respectivement sur l’ensemble des flares. (c) Spectre moyen consolidé montrant un pic à 200 MeV (ligne rouge continue) comparé à l’attente du modèle standard (ligne grise pointillée). La ligne verticale pointillée indique la position de résonance prédite par l’octave 6 de la périodicité de Bott. La zone ombrée représente l’incertitude de ±5%. (d) Cohérence inter-flares à 200 MeV montrant un excès moyen de 281,2%±17,5% (écart-type relatif de 6,2%), démontrant une cohérence remarquable entre événements indépendants. Cette cohérence exclut l’hypothèse d’un artefact statistique avec p < 10−600 000."
-       style="width:100%; max-width:800px;">
-<figure>    
+<figure style="text-align:center; margin:2em 0;">
+  <img src="https://raw.githubusercontent.com/bruno-dd470/Tian-Dao_WuXing_Clifford/e42756f401ed8913be4e1155ea6e65368b842cd6/figures/Zeeman/Zeeman_effect/zeeman_pentadique_avec_incertitudes.png"
+       alt="Effet Zeeman : Modèle pentadique vs Données NIST"
+       style="width:100%; max-width:800px; border:1px solid #ddd; border-radius:4px;">
+  <figcaption style="margin-top:0.5em; font-style:italic; color:#555; font-size:0.95em;">
+    <strong>Figure 1</strong> – Effet Zeeman : Modèle pentadique vs Données NIST. 
+    (a) Valeurs absolues du splitting Zeeman à B = 1 T pour l'électron, le proton et le neutron. 
+    Les barres colorées représentent les prédictions du modèle pentadique (bleu : électron, orange : proton, vert : neutron), 
+    tandis que les barres grises indiquent les données de référence NIST. Les barres d'erreur correspondent aux intervalles de confiance à 95% issus de la propagation d'incertitudes par Monte Carlo (50 000 échantillons). 
+    (b) Précision du modèle montrant l'écart relatif entre les prédictions pentadiques et les données NIST pour chaque particule. Les seuils de tolérance maximaux sont de 1% pour l'électron, 5% pour le proton, 10% pour le neutron. Les trois particules montrent un accord bien inférieur aux tolérances : électron Δ = 0,0012%, proton Δ = 0,0057%, neutron Δ = 0,0027%. Ceci valide la formulation pentadique de l'effet Zeeman sans vecteur spin traditionnel.
+  </figcaption>
+</figure>
 
-
+<figure style="text-align:center; margin:2em 0;">
+  <img src="https://raw.githubusercontent.com/bruno-dd470/Tian-Dao_WuXing_Clifford/e42756f401ed8913be4e1155ea6e65368b842cd6/figures/Zeeman/Zeeman_effect/magnetar_analysis_summary.png"
+       alt="Analyse consolidée : Résonance à 200 MeV dans le magnétar 1E 1048.1-5937"
+       style="width:100%; max-width:800px; border:1px solid #ddd; border-radius:4px;">
+  <figcaption style="margin-top:0.5em; font-style:italic; color:#555; font-size:0.95em;">
+    <strong>Figure 2</strong> – Analyse consolidée : Résonance à 200 MeV dans le magnétar 1E 1048.1‑5937. 
+    Analyse de trois flares indépendants (MJD 54915, 56015, 57515) à partir des données Fermi-LAT. 
+    (a) Significativité de la détection à 200 MeV pour chaque flare : 510σ (54915), 831σ (56015), 692σ (57515), avec une significativité combinée > 10⁶σ. 
+    (b) Excès spectraux par rapport au modèle standard à 200 MeV (rouge, résonance) et 300 MeV (bleu, harmonique possible) : excès cohérents de ∼280% et ∼150% respectivement sur l'ensemble des flares. 
+    (c) Spectre moyen consolidé montrant un pic à 200 MeV (ligne rouge continue) comparé à l'attente du modèle standard (ligne grise pointillée). La ligne verticale pointillée indique la position de résonance prédite par l'octave 6 de la périodicité de Bott. La zone ombrée représente l'incertitude de ±5%. 
+    (d) Cohérence inter-flares à 200 MeV montrant un excès moyen de 281,2% ± 17,5% (écart-type relatif de 6,2%), démontrant une cohérence remarquable entre événements indépendants. Cette cohérence exclut l'hypothèse d'un artefact statistique avec p < 10⁻⁶⁰⁰₀₀₀.
+  </figcaption>
+</figure>
 
 **Significativité combinée :**
 

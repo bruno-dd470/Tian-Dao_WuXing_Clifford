@@ -197,25 +197,43 @@ excess = (data_flux - model_flux) / model_flux * 100  # %
 | 57515 | 159,553 | +257.10% | 692.4σ | ✅ |
 | **Weighted mean** | — | **+276.2% ± 17.4%** | **> 10⁶σ** | **Consolidated** |
 
-<figure>
-  <img src="https://github.com/bruno-dd470/Tian-Dao_WuXing_Clifford/blob/e42756f401ed8913be4e1155ea6e65368b842cd6/figures/Zeeman/Zeeman_effect/zeeman_pentadique_avec_incertitudes_en.png"
-       alt="Figure 1: Zeeman Effect: Pentadic Model vs NIST Data. (a) Absolute values of Zeeman splitting at B = 1 T for electron, proton, and neutron. Colored bars represent pentadic
-model predictions (blue: electron, orange: proton, green: neutron), while gray bars show NIST reference data. Error bars indicate 95% confidence intervals from Monte Carlo uncertainty
-propagation (50,000 samples). (b) Model precision showing relative deviation between pentadic predictions and NIST data for each particle. Maximum tolerance thresholds are 1% for electron,
-5% for proton, 10% for neutron. All three particles show agreement well within tolerances: electron ∆ = 0.0012%, proton ∆ = 0.0057%, neutron ∆ = 0.0027%. This validates the pentadic
-formulation of the Zeeman effect without traditional spin vector."
-       style="width:100%; max-width:800px;">
-<figure>
+<figure style="text-align:center; margin:2em 0;">
+  <img src="https://raw.githubusercontent.com/bruno-dd470/Tian-Dao_WuXing_Clifford/main/figures/zeeman_pentadique_avec_incertitudes_en.png"
+       alt="Zeeman Effect: Pentadic Model vs NIST Data"
+       style="width:100%; max-width:800px; border:1px solid #ddd; border-radius:4px;">
+  <figcaption style="margin-top:0.5em; font-style:italic; color:#555; font-size:0.95em;">
+    <strong>Figure 1</strong> – Zeeman Effect: Pentadic Model vs NIST Data. 
+    (a) Absolute values of Zeeman splitting at B = 1 T for electron, proton, and neutron. 
+    Colored bars represent pentadic model predictions (blue: electron, orange: proton, green: neutron), 
+    while gray bars show NIST reference data. Error bars indicate 95% confidence intervals from 
+    Monte Carlo uncertainty propagation (50,000 samples). 
+    (b) Model precision showing relative deviation between pentadic predictions and NIST data for each 
+    particle. Maximum tolerance thresholds are 1% for electron, 5% for proton, 10% for neutron. 
+    All three particles show agreement well within tolerances: 
+    electron Δ = 0.0012%, proton Δ = 0.0057%, neutron Δ = 0.0027%. 
+    This validates the pentadic formulation of the Zeeman effect without traditional spin vector.
+  </figcaption>
+</figure>
 
-<figure>
-  <img src="https://github.com/bruno-dd470/Tian-Dao_WuXing_Clifford/blob/e42756f401ed8913be4e1155ea6e65368b842cd6/figures/Zeeman/Zeeman_effect/magnetar_analysis_summary_en.png"
-       alt="Figure 1: Zeeman Effect: Pentadic Model vs NIST Data. (a) Absolute values of Zeeman splitting at B = 1 T for electron, proton, and neutron. Colored bars represent pentadic
-model predictions (blue: electron, orange: proton, green: neutron), while gray bars show NIST reference data. Error bars indicate 95% confidence intervals from Monte Carlo uncertainty
-propagation (50,000 samples). (b) Model precision showing relative deviation between pentadic predictions and NIST data for each particle. Maximum tolerance thresholds are 1% for electron,
-5% for proton, 10% for neutron. All three particles show agreement well within tolerances: electron ∆ = 0.0012%, proton ∆ = 0.0057%, neutron ∆ = 0.0027%. This validates the pentadic
-formulation of the Zeeman effect without traditional spin vector."
-       style="width:100%; max-width:800px;">
-<figure>
+<figure style="text-align:center; margin:2em 0;">
+  <img src="https://raw.githubusercontent.com/bruno-dd470/Tian-Dao_WuXing_Clifford/main/figures/magnetar_analysis_summary_en.png"
+       alt="Consolidated Analysis: 200 MeV Resonance in Magnetar 1E 1048.1-5937"
+       style="width:100%; max-width:800px; border:1px solid #ddd; border-radius:4px;">
+  <figcaption style="margin-top:0.5em; font-style:italic; color:#555; font-size:0.95em;">
+    <strong>Figure 2</strong> – Consolidated Analysis: 200 MeV Resonance in Magnetar 1E 1048.1‑5937. 
+    Analysis of three independent flares (MJD 54915, 56015, 57515) from Fermi-LAT data. 
+    (a) Significance of detection at 200 MeV for each flare: 510σ (54915), 831σ (56015), 692σ (57515), 
+    with combined significance &gt; 10⁶σ. 
+    (b) Spectral excesses relative to standard model at 200 MeV (red, resonance) and 300 MeV (blue, 
+    possible harmonic): consistent excesses of ~280% and ~150% respectively across all flares. 
+    (c) Consolidated mean spectrum showing peak at 200 MeV (solid red line) compared to standard model 
+    expectation (dashed gray line). The vertical dotted line indicates predicted resonance position 
+    from 6th octave of Bott periodicity. Shaded region represents ±5% uncertainty. 
+    (d) Inter-flare coherence at 200 MeV showing mean excess of 281.2% ± 17.5% (6.2% relative 
+    standard deviation), demonstrating remarkable consistency across independent events. 
+    This coherence excludes statistical artifact hypothesis with p &lt; 10⁻⁶⁰⁰₀₀₀.
+  </figcaption>
+</figure>
 
 ## 4.3 Interpretation within the Pentadic Framework
 
