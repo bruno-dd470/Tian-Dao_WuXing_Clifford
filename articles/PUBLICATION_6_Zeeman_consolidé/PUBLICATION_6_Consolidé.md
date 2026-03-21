@@ -191,7 +191,7 @@ Nous avons analysé les données Fermi-LAT pour trois flares indépendants du ma
 
 
 <figure style="text-align:center; margin:2em 0;">
-  <img src="https://raw.githubusercontent.com/bruno-dd470/Tian-Dao_WuXing_Clifford/e42756f401ed8913be4e1155ea6e65368b842cd6/figures/Zeeman/Zeeman_effect/zeeman_pentadique_avec_incertitudes.png"
+  <img src="https://github.com/bruno-dd470/Tian-Dao_WuXing_Clifford/blob/e42756f401ed8913be4e1155ea6e65368b842cd6/figures/Zeeman/Zeeman_effect/zeeman_pentadique_avec_incertitudes.png"
        alt="Effet Zeeman : Modèle pentadique vs Données NIST"
        style="width:100%; max-width:800px; border:1px solid #ddd; border-radius:4px;">
   <figcaption style="margin-top:0.5em; font-style:italic; color:#555; font-size:0.95em;">
@@ -204,7 +204,7 @@ Nous avons analysé les données Fermi-LAT pour trois flares indépendants du ma
 </figure>
 
 <figure style="text-align:center; margin:2em 0;">
-  <img src="https://raw.githubusercontent.com/bruno-dd470/Tian-Dao_WuXing_Clifford/e42756f401ed8913be4e1155ea6e65368b842cd6/figures/Zeeman/Zeeman_effect/magnetar_analysis_summary.png"
+  <img src="https://github.com/bruno-dd470/Tian-Dao_WuXing_Clifford/blob/e42756f401ed8913be4e1155ea6e65368b842cd6/figures/Zeeman/Zeeman_effect/magnetar_analysis_summary.png  "
        alt="Analyse consolidée : Résonance à 200 MeV dans le magnétar 1E 1048.1-5937"
        style="width:100%; max-width:800px; border:1px solid #ddd; border-radius:4px;">
   <figcaption style="margin-top:0.5em; font-style:italic; color:#555; font-size:0.95em;">

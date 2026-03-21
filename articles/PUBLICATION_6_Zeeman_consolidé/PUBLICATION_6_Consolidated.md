@@ -198,7 +198,7 @@ excess = (data_flux - model_flux) / model_flux * 100  # %
 | **Weighted mean** | — | **+276.2% ± 17.4%** | **> 10⁶σ** | **Consolidated** |
 
 <figure style="text-align:center; margin:2em 0;">
-  <img src="https://raw.githubusercontent.com/bruno-dd470/Tian-Dao_WuXing_Clifford/main/figures/zeeman_pentadique_avec_incertitudes_en.png"
+   <img src="https://github.com/bruno-dd470/Tian-Dao_WuXing_Clifford/blob/e42756f401ed8913be4e1155ea6e65368b842cd6/figures/Zeeman/Zeeman_effect/zeeman_pentadique_avec_incertitudes_en.png"
        alt="Zeeman Effect: Pentadic Model vs NIST Data"
        style="width:100%; max-width:800px; border:1px solid #ddd; border-radius:4px;">
   <figcaption style="margin-top:0.5em; font-style:italic; color:#555; font-size:0.95em;">
@@ -216,7 +216,7 @@ excess = (data_flux - model_flux) / model_flux * 100  # %
 </figure>
 
 <figure style="text-align:center; margin:2em 0;">
-  <img src="https://raw.githubusercontent.com/bruno-dd470/Tian-Dao_WuXing_Clifford/main/figures/magnetar_analysis_summary_en.png"
+  <img src="https://github.com/bruno-dd470/Tian-Dao_WuXing_Clifford/blob/e42756f401ed8913be4e1155ea6e65368b842cd6/figures/Zeeman/Zeeman_effect/magnetar_analysis_summary_en.png"
        alt="Consolidated Analysis: 200 MeV Resonance in Magnetar 1E 1048.1-5937"
        style="width:100%; max-width:800px; border:1px solid #ddd; border-radius:4px;">
   <figcaption style="margin-top:0.5em; font-style:italic; color:#555; font-size:0.95em;">
