@@ -21,6 +21,7 @@
 | **3. Discovery of a 200 MeV Gamma Resonance in the Magnetar 1E 1048.1‑5937** | [`PUBLICATION_3_Magnetars_en.md`](articles/PUBLICATION_3_Magnetars/PUBLICATION_3_Magnetars_en.md) |
 | **4. Cosmological Unification through Pentadic Systems and Clifford Algebra Cl(6,6)** | [`PUBLICATION_4_UNIFYING_SYNTHESIS.md`](articles/PUBLICATION_4_Rapport_de_Synthese/PUBLICATION_4_UNIFYING_SYNTHESIS.md) |
 | **5. Angular Transitions between Particles – A Geometric Reinterpretation** | [`PUBLICATION_5_PENTADIC_TRANSITIONS.md`](articles/PUBLICATION_5_Transitions_Pentadiques/PUBLICATION_5_PENTADIC_TRANSITIONS.md) |
+| **6. Pentadic Cl(6,6) Model Predictions for the Zeeman Effect and Astrophysical Signatures** | [`PUBLICATION_6_Consolidated.md`](articles/PUBLICATION_6_Zeeman_consolidé/PUBLICATION_6_Consolidated.pdf) |
 
 PDF 和 Markdown 文件均位于相应文件夹中。每篇文章均可使用 Pandoc 和提供的 LaTeX 模板编译为 PDF（参见[编译文章](#编译文章)）。
 
