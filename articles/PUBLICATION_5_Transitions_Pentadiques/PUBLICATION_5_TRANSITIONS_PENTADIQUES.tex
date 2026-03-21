@@ -1,10 +1,10 @@
 \documentclass[11pt]{article}
 % commande d'exécution simple :
-% pandoc RAPPORT.md --template=template_jpp8.tex -o RAPPORT.pdf --pdf-engine=xelatex
-% pandoc RAPPORT.md --template=template_jpp9.tex  --listings -o RAPPORT.pdf --pdf-engine=xelatex
-% pandoc Rapport.md --template=template_jpp10.tex --listings --citeproc  -o rapport.pdf --pdf-engine=xelatex
-
-
+% pandoc RAPPORT.md --template=template_jpp12.tex -o RAPPORT.pdf --pdf-engine=xelatex
+% pandoc RAPPORT.md --template=template_jpp12.tex --listings -o RAPPORT.pdf --pdf-engine=xelatex
+% pandoc Rapport.md --template=template_jpp12.tex --listings --citeproc -o rapport.pdf --pdf-engine=xelatex
+% pour avoir les emojis facilement, utiliser lualatex
+% pandoc RAPPORT.md --template=template_jpp12.tex --listings -o RAPPORT.pdf --pdf-engine=lualatex
 % ==================== ENCODAGE ET LANGUE ====================
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -12,12 +12,13 @@
 \usepackage{fontspec}
 \usepackage{xeCJK}
 \frenchbsetup{StandardLists=true}
-
 % ==================== POLICES PRINCIPALES ====================
 \setmainfont{Libertinus Serif}
 \setmonofont{Libertinus Mono}
 \setCJKmainfont{Noto Serif CJK SC}
-
+% ==================== EMOJIS COULEUR ====================
+%\usepackage[unicode]{emoji}   % Active la saisie directe des emojis (✅, 👍, …)
+%\setemojifont{Noto Color Emoji} % Police recommandée (présente sur Linux, Windows, macOS)
 % ==================== MATHÉMATIQUES ====================
 \usepackage{amsmath}
 \usepackage{mathtools}
@@ -25,7 +26,6 @@
 \usepackage{unicode-math}
 \setmathfont{Libertinus Math}
 \usepackage{dsfont}
-
 % ==================== COMMANDES PERSONNALISÉES ====================
 \usepackage{pifont}
 \newcommand{\bra}[1]{\langle #1|}
@@ -35,7 +35,6 @@
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
-
 % Symboles de validation
 \providecommand{\cmark}{\ding{51}}
 \providecommand{\xmark}{\ding{55}}
@@ -43,25 +42,20 @@
 \newcommand{\symSucces}{\textcolor{success}{\cmark}}
 \newcommand{\symEchec}{\textcolor{failure}{\xmark}}
 \newcommand{\symAttention}{\textcolor{warning}{\wmark}}
-
 % ==================== TABLE DES MATIÈRES ====================
 \usepackage{tocloft}
-
 \setlength{\cftbeforesecskip}{2pt}
 \setlength{\cftsecindent}{0pt}
 \setlength{\cftsubsecindent}{10pt}
 \setlength{\cftsubsubsecindent}{20pt}
-
-\setcounter{tocdepth}{2}   % profondeur de la table des matières
-
+\setcounter{tocdepth}{3}   % profondeur de la table des matières
 % ==================== GÉOMÉTRIE ET MISE EN PAGE ====================
 \usepackage{geometry}
 \geometry{
-    margin=2.5cm,
-    headsep=4mm,
-    footskip=12pt
+margin=2.5cm,
+headsep=4mm,
+footskip=12pt
 }
-
 % Interlignes et espacements
 \setlength{\baselineskip}{14pt}
 \setlength{\parskip}{6pt}
@@ -73,7 +67,6 @@
 \setlength{\belowdisplayskip}{8pt}
 \setlength{\abovedisplayshortskip}{4pt}
 \setlength{\belowdisplayshortskip}{4pt}
-
 % ==================== TABLEAUX AMÉLIORÉS ====================
 \usepackage{array}
 \usepackage{booktabs}
@@ -86,18 +79,15 @@
 \setlength{\LTpost}{6pt}
 \setlength{\extrarowheight}{2pt}
 \renewcommand{\arraystretch}{1.2}
-
 % ==================== LISTES ====================
 \usepackage{enumitem}
 \setlist{nosep, left=0pt}
-
 % ==================== COULEURS ====================
 \usepackage{xcolor}
 \definecolor{success}{RGB}{0,150,0}
 \definecolor{failure}{RGB}{200,0,0}
 \definecolor{warning}{RGB}{255,140,0}
 \definecolor{codebg}{RGB}{245,245,245}
-
 % ==================== CODE ET LISTINGS ====================
 \usepackage{listings}
 \usepackage{framed}
@@ -105,52 +95,83 @@
 \definecolor{shadecolor}{rgb}{0.9,0.9,0.9}
 % Les environnements Shaded et Highlighting seront définis par pandoc via 
 \lstset{
-    basicstyle=\ttfamily\small,
-    breaklines=true,
-    frame=single,
-    backgroundcolor=\color{codebg},
-    numbers=left,
-    numberstyle=\tiny\color{gray},
-    keywordstyle=\color{blue},
-    commentstyle=\color{green!50!black},
-    stringstyle=\color{red},
-    showstringspaces=false,
-    tabsize=4,
-    language=Python
+basicstyle=\ttfamily\small,
+breaklines=true,
+frame=single,
+backgroundcolor=\color{codebg},
+numbers=left,
+numberstyle=\tiny\color{gray},
+keywordstyle=\color{blue},
+commentstyle=\color{green!50!black},
+stringstyle=\color{red},
+showstringspaces=false,
+tabsize=4,
+language=Python
 }
 % ==================== BOÎTES ET ENCADRÉS ====================
 \usepackage{tikz}
 \usepackage[framemethod=tikz]{mdframed}
 \usepackage{tcolorbox}
 \tcbuselibrary{most}
-
 \newtcolorbox{validationbox}[2][]{
-    colback=green!5!white,
-    colframe=green!75!black,
-    fonttitle=\bfseries,
-    title=#2,
-    #1
+colback=green!5!white,
+colframe=green!75!black,
+fonttitle=\bfseries,
+title=#2,
+#1
 }
-
 \newtcolorbox{errorbox}[2][]{
-    colback=red!5!white,
-    colframe=red!75!black,
-    fonttitle=\bfseries,
-    title=#2,
-    #1
+colback=red!5!white,
+colframe=red!75!black,
+fonttitle=\bfseries,
+title=#2,
+#1
 }
-
 \newtcolorbox{warningbox}[2][]{
-    colback=orange!5!white,
-    colframe=orange!75!black,
-    fonttitle=\bfseries,
-    title=#2,
-    #1
+colback=orange!5!white,
+colframe=orange!75!black,
+fonttitle=\bfseries,
+title=#2,
+#1
+}
+% ==================== FIGURES ET IMAGES ====================
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{capt-of}
+\usepackage{pdflscape}
+
+% Paramètres par défaut
+\setkeys{Gin}{keepaspectratio=true}
+
+% Commande figure auto-cadrée
+\newcommand{\autofigure}[3][]{
+\begin{figure}[htbp]
+    \centering
+    \adjustbox{max width=\textwidth, max height=0.6\textheight, keepaspectratio, center}{
+        \includegraphics{#2}
+    }
+    \captionof{figure}{#3}
+    \label{fig:#2}
+\end{figure}
 }
 
+% Commande figure paysage
+\newcommand{\autolandscapefigure}[3][]{
+\afterpage{
+\begin{landscape}
+\begin{figure}[p]
+    \centering
+    \adjustbox{max width=0.9\textwidth, max height=0.7\textheight, keepaspectratio, center}{
+        \includegraphics{#2}
+    }
+    \captionof{figure}{#3}
+    \label{fig:#2}
+\end{figure}
+\end{landscape}
+}
+}
 % ==================== EN-TÊTE ET PIED DE PAGE ====================
 \usepackage{fancyhdr}
-
 % Style normal
 \pagestyle{fancy}
 \fancyhf{}
@@ -158,131 +179,67 @@
 \fancyfoot[C]{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0pt}
-
 % Style "plain" = même numérotation que fancy
 \fancypagestyle{plain}{
-  \fancyhf{}
-  \fancyhead[C]{\textsc{Modèle Cl(6,6) — Rapport de Synthèse}}
-  \fancyfoot[C]{\thepage}
-  \renewcommand{\headrulewidth}{0.4pt}
-  \renewcommand{\footrulewidth}{0pt}
+\fancyhf{}
+\fancyhead[C]{\textsc{Modèle Cl(6,6) — Rapport de Synthèse}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
 }
-
 % Première page sans numéro
 \fancypagestyle{firstpage}{
-  \fancyhf{}
-  \fancyhead[C]{\textsc{Modèle Cl(6,6)}}
-  \fancyfoot[C]{}
-  \renewcommand{\headrulewidth}{0.4pt}
-  \renewcommand{\footrulewidth}{0pt}
+\fancyhf{}
+\fancyhead[C]{\textsc{Modèle Cl(6,6)}}
+\fancyfoot[C]{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
 }
-
 % ==================== HYPERLIENS ====================
 \usepackage{hyperref}
 \hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    urlcolor=blue,
-    citecolor=blue
+colorlinks=true,
+linkcolor=blue,
+urlcolor=blue,
+citecolor=blue
 }
-
 % ==================== PROTECTION LIGNES ORPHELINES ====================
 \clubpenalty=10000
 \widowpenalty=10000
 \displaywidowpenalty=10000
-
 % ==================== DÉFINITIONS POUR PANDOC ====================
 \providecommand{\tightlist}{%
-  \setlength{\itemsep}{2pt}\setlength{\parskip}{6pt}
+\setlength{\itemsep}{2pt}\setlength{\parskip}{6pt}
 }
 \newcommand{\passthrough}[1]{#1}
-
-
-
 % ==================== VARIABLES PANDOC ====================
 \title{TRANSITIONS ANGULAIRES ENTRE PARTICULES}
 \author{Bruno DE DOMINICIS}
 \date{Mars 2026}
-
 % ==================== REDÉFINITION DE \maketitle ====================
 \makeatletter
 \renewcommand{\maketitle}{
-  \begin{center}
-    \vspace*{1cm}
-    {\fontsize{18}{24}\selectfont \textbf{\@title} \par}
-    \vspace{1cm}
-    {\Large
-      \begin{tabular}[t]{c}
-        \@author
-      \end{tabular}\par}
-    \vspace{1cm}
-    {\Large \@date \par}
-  \end{center}
-  \vspace{1cm}
+\begin{center}
+\vspace*{1cm}
+{\fontsize{18}{24}\selectfont \textbf{\@title} \par}
+\vspace{1cm}
+{\Large
+\begin{tabular}[t]{c}
+\@author
+\end{tabular}\par}
+\vspace{1cm}
+{\Large \@date \par}
+\end{center}
+\vspace{1cm}
 }
 \makeatother
-
 % ==================== CORPS DU DOCUMENT ====================
 \begin{document}
-
 \maketitle
 \thispagestyle{firstpage}
-
 % --- Mesure de la hauteur totale des abstracts ---
 \newlength{\abstractheight}
 \setbox0=\vbox{
-    \begin{center}
-  \begin{minipage}{0.85\textwidth}
-  \noindent \textbf{Résumé :} Nous présentons une reformulation des
-transitions entre particules élémentaires (désintégration \(\beta\),
-annihilation \(e^+e^-\), fusion nucléaire \(pp\), désintégration du
-muon, oscillations de neutrinos, production de paires) comme des
-réarrangements d'angles dans le réseau d'Ibozoo Uû, où chaque particule
-est décrite par une pentade de l'algèbre de Clifford \(\text{Cl}(6,6)\).
-Les générateurs \(i,j,k,I,J,K\) sont interprétés comme des angles. Nous
-définissons un opérateur de transition \(T\) agissant sur l'espace de
-Hilbert des pentades, décomposé en parties structure, feu, eau et mixte,
-et nous établissons des règles de sélection (conservation des
-générateurs, chiralité). Une formulation angulaire relie \(T\) à des
-rotations dans l'espace à 6 dimensions. L'exemple de la désintégration
-\(\beta\) est traité en détail. Ce formalisme offre une vision
-géométrique unifiée des interactions, en accord avec les concepts
-ummites.
-  \end{minipage}
-  \end{center}
-  \vspace{0.5cm}
-      \begin{center}
-  \begin{minipage}{0.85\textwidth}
-  \noindent \textbf{Abstract:} We present a reformulation of transitions
-between elementary particles (\(\beta\) decay, \(e^+e^-\) annihilation,
-\(pp\) nuclear fusion, muon decay, neutrino oscillations, pair
-production) as angular rearrangements within the Ibozoo Uû network,
-where each particle is described by a pentad of the Clifford algebra
-\(\text{Cl}(6,6)\). The generators \(i,j,k,I,J,K\) are interpreted as
-angles. We define a transition operator \(T\) acting on the Hilbert
-space of pentads, decomposed into structure, fire, water and mixed
-parts, and we establish selection rules (conservation of generators,
-chirality). An angular formulation relates \(T\) to rotations in
-6‑dimensional space. The example of \(\beta\) decay is treated in
-detail. This formalism provides a unified geometric view of
-interactions, in agreement with Ummite concepts.
-  \end{minipage}
-  \end{center}
-  \vspace{1cm}
-  }
-\abstractheight=\ht0
-\advance\abstractheight by \dp0
-
-% Calcul de l'espace restant sur la page après le titre
-\newlength{\remaining}
-\remaining=\dimexpr\textheight - \pagetotal\relax
-
-% Si la hauteur des abstracts dépasse l'espace restant, on agrandit la page
-\ifdim\abstractheight > \remaining
-  \enlargethispage{\dimexpr\abstractheight - \remaining\relax}
-\fi
-
-% --- Affichage effectif des abstracts ---
 \begin{center}
 \begin{minipage}{0.85\textwidth}
 \noindent \textbf{Résumé :} Nous présentons une reformulation des
@@ -303,7 +260,6 @@ ummites.
 \end{minipage}
 \end{center}
 \vspace{0.5cm}
-
 \begin{center}
 \begin{minipage}{0.85\textwidth}
 \noindent \textbf{Abstract:} We present a reformulation of transitions
@@ -322,78 +278,136 @@ interactions, in agreement with Ummite concepts.
 \end{minipage}
 \end{center}
 \vspace{1cm}
-
+}
+\abstractheight=\ht0
+\advance\abstractheight by \dp0
+% Calcul de l'espace restant sur la page après le titre
+\newlength{\remaining}
+\remaining=\dimexpr\textheight - \pagetotal\relax
+% Si la hauteur des abstracts dépasse l'espace restant, on agrandit la page
+\ifdim\abstractheight > \remaining
+\enlargethispage{\dimexpr\abstractheight - \remaining\relax}
+\fi
+\begin{center}
+\begin{minipage}{0.85\textwidth}
+\noindent \textbf{Résumé :} Nous présentons une reformulation des
+transitions entre particules élémentaires (désintégration \(\beta\),
+annihilation \(e^+e^-\), fusion nucléaire \(pp\), désintégration du
+muon, oscillations de neutrinos, production de paires) comme des
+réarrangements d'angles dans le réseau d'Ibozoo Uû, où chaque particule
+est décrite par une pentade de l'algèbre de Clifford \(\text{Cl}(6,6)\).
+Les générateurs \(i,j,k,I,J,K\) sont interprétés comme des angles. Nous
+définissons un opérateur de transition \(T\) agissant sur l'espace de
+Hilbert des pentades, décomposé en parties structure, feu, eau et mixte,
+et nous établissons des règles de sélection (conservation des
+générateurs, chiralité). Une formulation angulaire relie \(T\) à des
+rotations dans l'espace à 6 dimensions. L'exemple de la désintégration
+\(\beta\) est traité en détail. Ce formalisme offre une vision
+géométrique unifiée des interactions, en accord avec les concepts
+ummites.
+\end{minipage}
+\end{center}
+\vspace{0.5cm}
+\begin{center}
+\begin{minipage}{0.85\textwidth}
+\noindent \textbf{Abstract:} We present a reformulation of transitions
+between elementary particles (\(\beta\) decay, \(e^+e^-\) annihilation,
+\(pp\) nuclear fusion, muon decay, neutrino oscillations, pair
+production) as angular rearrangements within the Ibozoo Uû network,
+where each particle is described by a pentad of the Clifford algebra
+\(\text{Cl}(6,6)\). The generators \(i,j,k,I,J,K\) are interpreted as
+angles. We define a transition operator \(T\) acting on the Hilbert
+space of pentads, decomposed into structure, fire, water and mixed
+parts, and we establish selection rules (conservation of generators,
+chirality). An angular formulation relates \(T\) to rotations in
+6‑dimensional space. The example of \(\beta\) decay is treated in
+detail. This formalism provides a unified geometric view of
+interactions, in agreement with Ummite concepts.
+\end{minipage}
+\end{center}
+\vspace{1cm}
+% === AJOUT DE LA TABLE DES MATIÈRES ===
+\tableofcontents
+\newpage
+% ======================================
 \clearpage
 \pagestyle{fancy}
-
 \hypertarget{transitions-angulaires-entre-particules}{%
 \section{TRANSITIONS ANGULAIRES ENTRE
 PARTICULES}\label{transitions-angulaires-entre-particules}}
 
-\hypertarget{principe-guxe9nuxe9ral}{%
-\subsection{Principe général}\label{principe-guxe9nuxe9ral}}
-
-Une transition \(A \to B + C + \dots\) devient un \textbf{réarrangement
-des angles} dans le réseau d'Ibozoo Uû. Les angles (générateurs
-\(i,j,k,I,J,K\)) se recombinent pour former de nouvelles pentades.
-
-\hypertarget{note-sur-le-concept-dibozoo-uuxfb-i.u.}{%
-\subsubsection{Note sur le concept d'Ibozoo Uû
-(I.U.)}\label{note-sur-le-concept-dibozoo-uuxfb-i.u.}}
+\hypertarget{remarque-sur-le-cadre-pruxe9-guxe9omuxe9trique}{%
+\subsection{Remarque sur le cadre
+pré-géométrique}\label{remarque-sur-le-cadre-pruxe9-guxe9omuxe9trique}}
 
 Avant d'aborder les transitions entre particules, il est essentiel de
-définir le cadre dans lequel elles s'inscrivent : le réseau
-d'\textbf{Ibozoo Uû}.
+définir le cadre dans lequel elles se produisent. À l'instar des
+approches qui recherchent des fondements algébriques ou géométriques
+pour la physique fondamentale {[}1--4{]}, nous adoptons comme hypothèse
+de travail l'idée que les particules élémentaires peuvent être décrites
+comme des configurations stables au sein d'un substrat algébrique
+pré-géométrique.
 
-Ce terme, emprunté à la cosmologie ummite, désigne le substrat
-fondamental de la réalité, une trame sous-jacente à ce que nous
-percevons comme l'espace-temps et la matière . Il ne s'agit pas d'une
-particule dotée de masse ou d'énergie, mais plutôt d'un concept
-pré-géométrique . Une analogie courante consiste à les voir comme une
-sorte de ``matrice'' ou de ``faisceau d'axes orientés'' dont
-l'agencement et les relations mutuelles codent toute l'information
-physique de l'univers .
+Dans cette approche, les degrés de liberté fondamentaux ne sont pas des
+champs quantiques se propageant sur un fond spatio-temporel fixe, mais
+plutôt des relations angulaires entre les générateurs d'une algèbre de
+Clifford. Une analogie utile consiste à considérer le substrat comme un
+\textbf{``faisceau d'axes orientés''} dont les orientations mutuelles
+codent des informations physiques.
 
-Un point crucial est qu'un Ibozoo Uû isolé n'a aucune signification
-physique. C'est la \textbf{relation angulaire} entre deux I.U., la
-manière dont leurs axes sont orientés l'un par rapport à l'autre, qui
-est porteuse de sens . C'est de ces ``angles élémentaires'' que nos sens
-et nos instruments déduisent les grandeurs familières comme la longueur,
-le temps ou la masse .
+Il est essentiel de noter qu'un générateur isolé n'a aucune
+signification physique directe ; c'est la structure relationnelle ---
+\textbf{la configuration des angles entre les générateurs} --- qui
+définit les grandeurs observables telles que la charge, la masse ou la
+saveur.
 
-\textbf{Lien avec notre modèle de pentades :} Dans ce travail, nous
+Cette perspective est motivée par plusieurs considérations :
+
+\begin{itemize}
+\tightlist
+\item
+  Les algèbres de Clifford codent naturellement le spin, la chiralité et
+  les structures de jauge {[}1, 2{]} ;
+\item
+  Les approches pré-géométriques suggèrent que l'espace-temps lui-même
+  pourrait émerger de relations combinatoires ou algébriques plus
+  fondamentales {[}3, 4{]} ;
+\item
+  Représenter les particules comme des ``motifs'' algébriques offre une
+  voie pour unifier les interactions par des réarrangements géométriques
+  plutôt que par des échanges de forces.
+\end{itemize}
+
+\textbf{Lien vers notre modèle des pentades} : Dans ce travail, nous
 utilisons ce concept pour construire une représentation géométrique des
-particules. Une particule n'est pas une entité plongée dans ce réseau,
-elle \emph{est} une configuration locale et stable de ce réseau .
+particules. Une particule n'est pas une entité immergée dans ce réseau ;
+c'est une configuration locale et stable de ce réseau.
 
-Notre formalisme en \(\text{Cl}(6,6)\) et nos \textbf{pentades} sont une
+Notre formalisme dans Cl(6,6) et nos \textbf{pentades} constituent une
 modélisation mathématique de cette idée : 1. Les six
-\textbf{générateurs} \(i,j,k,I,J,K\) représentent les ``axes''
-fondamentaux d'un Ibozoo Uû dans notre cosmos . 2. Les \textbf{angles}
-mentionnés tout au long du texte (par exemple, \(\theta_1\theta_4\))
-sont la traduction mathématique des relations angulaires entre ces axes
-au sein d'un I.U. ou entre I.U. voisins . 3. Une \textbf{pentade}, cet
-ensemble de cinq éléments (trois bivecteurs de structure, un feu, une
-eau), est la signature angulaire complète qui définit l'état quantique
-et la nature d'une particule (sa masse, sa charge, sa saveur) comme un
-motif spécifique et cohérent de ces relations angulaires au sein du
-réseau.
+\textbf{générateurs} \(i,j,k,I,J,K\) représentent les « axes »
+fondamentaux de ce substrat algébrique dans notre cosmos. 2. Les
+\textbf{angles} mentionnés tout au long du texte (par exemple,
+\(\theta_1\theta_4\)) sont la traduction mathématique des relations
+angulaires entre ces axes au sein du substrat. 3. Une \textbf{pentade},
+cet ensemble de cinq éléments (trois bivecteurs de structure, un élément
+axial « feu », un élément polaire « eau »), est la signature angulaire
+complète qui définit l'état quantique et la nature d'une particule (sa
+masse, sa charge, sa saveur) comme un motif spécifique et cohérent de
+ces relations angulaires au sein du réseau.
 
-Ainsi, lorsque nous décrivons une transition \(A \to B + C\) comme un
-\textbf{``réarrangement d'angles dans le réseau d'Ibozoo Uû''} , nous
-signifions que la configuration des relations angulaires qui définissait
-la particule A se dissout et se recompose pour former de nouvelles
-configurations stables, celles des particules B et C. La physique des
-particules devient alors une \textbf{géométrie dynamique des angles}.
+Ainsi, lorsque nous décrivons une transition \(A \to B + C + \dots\)
+comme un \textbf{``réarrangement des angles} au sein du \textbf{Réseau
+angulaire fondamental''}, nous voulons dire que la configuration des
+relations angulaires qui définissait la particule \(A\) se dissout et se
+reconfigure pour former de nouvelles configurations stables, celles des
+particules \(B\) et \(C\). La physique des particules devient ainsi une
+\textbf{géométrie dynamique des angles}.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{duxe9sintuxe9gration-ux3b2-n-p-e-ux3bdux2091}{%
-\subsection{Désintégration β : n → p + e⁻ +
-ν̄ₑ}\label{duxe9sintuxe9gration-ux3b2-n-p-e-ux3bdux2091}}
-
 \hypertarget{principe-de-codification-des-pentades}{%
-\subsubsection{Principe de codification des
+\subsection{Principe de codification des
 pentades}\label{principe-de-codification-des-pentades}}
 
 Dans notre modèle, chaque particule élémentaire est représentée par une
@@ -433,6 +447,10 @@ comme des \textbf{angles} dans un espace à six dimensions (générateurs
   l'idée que la charge est une propriété directionnelle dans l'espace
   des angles.
 \end{itemize}
+
+\hypertarget{duxe9sintuxe9gration-ux3b2-n-p-e-ux3bdux2091}{%
+\subsection{Désintégration β : n → p + e⁻ +
+ν̄ₑ}\label{duxe9sintuxe9gration-ux3b2-n-p-e-ux3bdux2091}}
 
 Ainsi, la désintégration β⁻ est vue comme un \textbf{réarrangement
 angulaire} : le neutron change son angle de substance de \(i\) vers
@@ -910,5 +928,4 @@ toutes les transitions entre particules comme des réarrangements
 d'angles. Ce modèle géométrique, inspiré des concepts ummites, unifie
 les interactions et ouvre la voie à une compréhension plus profonde de
 la physique des particules.
-
 \end{document}
