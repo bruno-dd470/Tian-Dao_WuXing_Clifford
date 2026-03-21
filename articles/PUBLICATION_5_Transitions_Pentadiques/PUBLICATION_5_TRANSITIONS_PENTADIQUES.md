@@ -13,39 +13,41 @@ abstract_en: |
 
 # TRANSITIONS ANGULAIRES ENTRE PARTICULES
 
-## Principe général
+## Remarque sur le cadre pré-géométrique
 
-Une transition $A \to B + C + \dots$ devient un **réarrangement des angles** dans le réseau d’Ibozoo Uû. Les angles (générateurs $i,j,k,I,J,K$) se recombinent pour former de nouvelles pentades.
+Avant d'aborder les transitions entre particules, il est essentiel de définir le cadre dans lequel elles se produisent.
+À l'instar des approches qui recherchent des fondements algébriques ou géométriques pour la physique fondamentale [1–4], nous adoptons comme hypothèse de travail l'idée que les particules élémentaires peuvent être décrites comme des configurations stables au sein d'un substrat algébrique pré-géométrique.
+ 
+Dans cette approche, les degrés de liberté fondamentaux ne sont pas des champs quantiques se propageant sur un fond spatio-temporel fixe, mais plutôt des relations angulaires entre les générateurs d’une algèbre de Clifford. Une analogie utile consiste à considérer le substrat comme un **"faisceau d’axes orientés"** dont les orientations mutuelles codent des informations physiques.
+ 
+Il est essentiel de noter qu’un générateur isolé n’a aucune signification physique directe ; c’est la structure relationnelle — **la configuration des angles entre les générateurs** — qui définit les grandeurs observables telles que la charge, la masse ou la saveur.
 
-### Note sur le concept d’Ibozoo Uû (I.U.)
+Cette perspective est motivée par plusieurs considérations : 
 
-Avant d’aborder les transitions entre particules, il est essentiel de définir le cadre dans lequel elles s’inscrivent : le réseau d’**Ibozoo Uû**.
+* Les algèbres de Clifford codent naturellement le spin, la chiralité et les structures de jauge [1, 2] ; 
+* Les approches pré-géométriques suggèrent que l'espace-temps lui-même pourrait émerger de relations combinatoires ou algébriques plus fondamentales [3, 4] ;
+* Représenter les particules comme des "motifs" algébriques offre une voie pour unifier les interactions par des réarrangements géométriques plutôt que par des échanges de forces.
 
-Ce terme, emprunté à la cosmologie ummite, désigne le substrat fondamental de la réalité, une trame sous-jacente à ce que nous percevons comme l'espace-temps et la matière . Il ne s'agit pas d'une particule dotée de masse ou d'énergie, mais plutôt d'un concept pré-géométrique . Une analogie courante consiste à les voir comme une sorte de "matrice" ou de "faisceau d'axes orientés" dont l'agencement et les relations mutuelles codent toute l'information physique de l'univers .
+**Lien vers notre modèle des pentades** : Dans ce travail, nous utilisons ce concept pour construire une représentation géométrique des particules. Une particule n’est pas une entité immergée dans ce réseau ; c’est une configuration locale et stable de ce réseau. 
 
-Un point crucial est qu'un Ibozoo Uû isolé n'a aucune signification physique. C'est la **relation angulaire** entre deux I.U., la manière dont leurs axes sont orientés l'un par rapport à l'autre, qui est porteuse de sens . C'est de ces "angles élémentaires" que nos sens et nos instruments déduisent les grandeurs familières comme la longueur, le temps ou la masse .
+Notre formalisme dans Cl(6,6) et nos **pentades** constituent une modélisation mathématique de cette idée :
+1. Les six **générateurs** $i,j,k,I,J,K$ représentent les « axes » fondamentaux de ce substrat algébrique dans notre cosmos.
+2. Les **angles** mentionnés tout au long du texte (par exemple, $\theta_1\theta_4$) sont la traduction mathématique des relations angulaires entre ces axes au sein du substrat.
+ 3. Une **pentade**, cet ensemble de cinq éléments (trois bivecteurs de structure, un élément axial « feu », un élément polaire « eau »), est la signature angulaire complète qui définit l'état quantique et la nature d'une particule (sa masse, sa charge, sa saveur) comme un motif spécifique et cohérent de ces relations angulaires au sein du réseau. 
 
-**Lien avec notre modèle de pentades :**
-Dans ce travail, nous utilisons ce concept pour construire une représentation géométrique des particules. Une particule n'est pas une entité plongée dans ce réseau, elle *est* une configuration locale et stable de ce réseau .
-
-Notre formalisme en $\text{Cl}(6,6)$ et nos **pentades** sont une modélisation mathématique de cette idée :
-1.  Les six **générateurs** $i,j,k,I,J,K$ représentent les "axes" fondamentaux d'un Ibozoo Uû dans notre cosmos .
-2.  Les **angles** mentionnés tout au long du texte (par exemple, $\theta_1\theta_4$) sont la traduction mathématique des relations angulaires entre ces axes au sein d'un I.U. ou entre I.U. voisins .
-3.  Une **pentade**, cet ensemble de cinq éléments (trois bivecteurs de structure, un feu, une eau), est la signature angulaire complète qui définit l'état quantique et la nature d'une particule (sa masse, sa charge, sa saveur) comme un motif spécifique et cohérent de ces relations angulaires au sein du réseau.
-
-Ainsi, lorsque nous décrivons une transition $A \to B + C$ comme un **"réarrangement d'angles dans le réseau d'Ibozoo Uû"** , nous signifions que la configuration des relations angulaires qui définissait la particule A se dissout et se recompose pour former de nouvelles configurations stables, celles des particules B et C. La physique des particules devient alors une **géométrie dynamique des angles**.
+Ainsi, lorsque nous décrivons une transition $A \to B + C + \dots$ comme un **"réarrangement des angles** au sein du **Réseau angulaire fondamental"**, nous voulons dire que la configuration des relations angulaires qui définissait la particule $A$ se dissout et se reconfigure pour former de nouvelles configurations stables, celles des particules $B$ et $C$. La physique des particules devient ainsi une **géométrie dynamique des angles**.
 
 ---
 
-## Désintégration β : n → p + e⁻ + ν̄ₑ
-
-### Principe de codification des pentades
+## Principe de codification des pentades
 
 Dans notre modèle, chaque particule élémentaire est représentée par une **pentade**, c’est‑à‑dire un ensemble ordonné de cinq éléments de l’algèbre de Clifford $\text{Cl}(6,6)$. Ces éléments sont interprétés comme des **angles** dans un espace à six dimensions (générateurs $i,j,k,I,J,K$). Ils se répartissent en trois rôles :
 
 - **La structure** : trois bivecteurs (produits de deux générateurs) qui fixent l’identité profonde de la particule. Pour les nucléons, nous choisissons $\{iI, jJ, kK\}$. Ce choix reflète la symétrie entre les trois dimensions spatiales ($i,j,k$) et les trois dimensions de charge ($I,J,K$). Il est commun au neutron et au proton car ils partagent la même composition en quarks de valence (deux quarks up et un quark down pour le proton ; un up et deux down pour le neutron) mais avec des charges différentes.
 - **Le feu** : un élément de la forme $i'v$, où $i'$ est un générateur supplémentaire (souvent associé à la chiralité ou à l’interaction faible) et $v$ un des six générateurs. Pour les nucléons, nous avons $i'k$, qui représente la composante faible. Cet élément est identique pour le neutron et le proton car l’interaction faible agit de façon analogue sur les deux (ils peuvent se transformer l’un en l’autre).
 - **L’eau** : un élément de la forme $1v$, où $1$ est un élément scalaire (ou un générateur neutre) et $v$ un générateur, représentant la **masse** ou la **substance** selon un axe privilégié. C’est cet élément qui porte la différence entre neutron et proton. La charge électrique est codée par l’orientation de cet axe : $1i$ correspond à une masse alignée selon $i$ (neutron, charge nulle), tandis que $1j$ correspond à un alignement selon $j$ (proton, charge positive). Cette interprétation est cohérente avec l’idée que la charge est une propriété directionnelle dans l’espace des angles.
+
+## Désintégration β : n → p + e⁻ + ν̄ₑ
 
 Ainsi, la désintégration β⁻ est vue comme un **réarrangement angulaire** : le neutron change son angle de substance de $i$ vers $j$, ce qui s’accompagne de l’émission de l’électron (qui possède $1j$) et de l’antineutrino (qui possède $1k$). Les autres angles (structure et feu) se recombinent pour former les pentades des particules finales.
 
