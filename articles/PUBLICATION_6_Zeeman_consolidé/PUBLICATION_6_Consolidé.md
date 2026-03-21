@@ -191,7 +191,7 @@ Nous avons analysé les données Fermi-LAT pour trois flares indépendants du ma
 
 <div align="center">
 
-![Effet Zeeman](figures/zeeman_pentadique_avec_incertitudes.png)
+![Effet Zeeman](figures/Zeeman/Zeeman_effect/zeeman_pentadique_avec_incertitudes.png)
 
 *Figure 1 – Effet Zeeman : Modèle pentadique vs Données NIST. (a) Valeurs absolues
 du splitting Zeeman à B = 1 T pour l’électron, le proton et le neutron. Les barres colorées représentent les prédictions du modèle pentadique (bleu : électron, orange : proton, vert : neutron),
@@ -206,7 +206,7 @@ un accord bien inférieur aux tolérances : électron ∆ = 0,0012%, proton ∆ 
 
 <div align="center">
 
-![Analyse consolidée : Résonance à 200 MeV dans le magnétar 1E 1048.1-5937](figures/magnetar_analysis_summary.png)
+![Analyse consolidée : Résonance à 200 MeV dans le magnétar 1E 1048.1-5937](figures/Zeeman/Zeeman_effect/magnetar_analysis_summary.png)
 
 *Figure 2 – Analyse consolidée : Résonance à 200 MeV dans le magnétar
 1E 1048.15937. Analyse de trois flares indépendants (MJD 54915, 56015, 57515) à partir

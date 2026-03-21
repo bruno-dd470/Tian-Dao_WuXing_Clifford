@@ -199,7 +199,7 @@ excess = (data_flux - model_flux) / model_flux * 100  # %
 
 <div align="center">
 
-![Zeeman Effect](figures/zeeman_pentadique_avec_incertitudes_en.png)
+![Zeeman Effect](figures/Zeeman/Zeeman_effect/zeeman_pentadique_avec_incertitudes_en.png)
 
 *Figure 1: Zeeman Effect: Pentadic Model vs NIST Data. (a) Absolute values of Zeeman splitting at B = 1 T for electron, proton, and neutron. Colored bars represent pentadic
 model predictions (blue: electron, orange: proton, green: neutron), while gray bars show NIST
@@ -214,7 +214,7 @@ formulation of the Zeeman effect without traditional spin vector.*
 
 <div align="center">
 
-![Consolidated Analysis : 200 MeV Resonance in magnétar 1E 1048.1-5937](figures/magnetar_analysis_summary_en.png)
+![Consolidated Analysis : 200 MeV Resonance in magnétar 1E 1048.1-5937](figures/Zeeman/Zeeman_effect/magnetar_analysis_summary_en.png)
 
 *Figure 2: Consolidated Analysis: 200 MeV Resonance in Magnetar 1E 1048.1-5937.
 Analysis of three independent flares (MJD 54915, 56015, 57515) from Fermi-LAT data. (a)
