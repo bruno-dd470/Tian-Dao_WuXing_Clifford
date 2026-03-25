@@ -1,4 +1,4 @@
-# Fichiers temporaires LaTeX
+# === Fichiers temporaires LaTeX ===
 *.aux
 *.log
 *.out
@@ -10,23 +10,42 @@
 *.fls
 *.md.bak
 
-# Fichiers Python
+# === Fichiers Python ===
 __pycache__/
 *.pyc
-**/script_old/
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.npy
+*.npz
 
-# Fichiers système
+# === Fichiers système ===
 .DS_Store
 Thumbs.db
+*~
 
-# Fichiers de données volumineux
+# === Dossiers de données (volumineux ou générés) ===
 data/raw/
 data/processed/
-
-*.fits
-*.npy
 data/Zeeman/Raw/
 data/Zeeman/Processed/
+*.fits
+*.gz
+*.zip
+
+# === Dossiers de travail et brouillons ===
 drafts/
 **/Trash/
-echo "**/Trash/" >> .gitignore
+**/script_old/
+
+# === Fichiers de sauvegarde et copies ===
+*.bak
+*.backup
+*_backup.*
+*_old.*
+*copie*
+*(copie)*
