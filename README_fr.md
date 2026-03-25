@@ -22,6 +22,7 @@ Le projet comprend cinq articles principaux, chacun disponible en anglais et en 
 | **4. Unification cosmologique par les systèmes pentadiques et l'algèbre de Clifford Cl(6,6)** | [`PUBLICATION_4_RAPPORT_DE_SYNTHÈSE.md`](articles/PUBLICATION_4_Rapport_de_Synthese/PUBLICATION_4_RAPPORT_DE_SYNTHÈSE.md) |
 | **5. Transitions angulaires entre particules – Une réinterprétation géométrique** | [`PUBLICATION_5_TRANSITIONS_PENTADIQUES.md`](articles/PUBLICATION_5_Transitions_Pentadiques/PUBLICATION_5_TRANSITIONS_PENTADIQUES.md) |
 | **6. Prédictions du Modèle Pentadique Cl(6,6) : Validation Numérique et Signatures Astrophysiques** | [`PUBLICATION_6_Consolidé.md`](articles/PUBLICATION_6_Zeeman_consolidé/PUBLICATION_6_Consolidé.md) |
+| **7. La Couche Hybride W : Pont Mathématique entre Cl(6,6) et le Réseau 72D de Nebe** | [`PUBLICATION_7_Couche_Hybryde_W.md`](articles/PUBLICATION_7_Couche_hybride_W/PUBLICATION_7_Couche_Hybryde_W.md) |
 
 Les PDF et les fichiers Markdown se trouvent dans les mêmes dossiers. Chaque article peut être compilé en PDF à l'aide de Pandoc avec le modèle LaTeX fourni (voir [Compilation des articles](#compilation-des-articles)).
 

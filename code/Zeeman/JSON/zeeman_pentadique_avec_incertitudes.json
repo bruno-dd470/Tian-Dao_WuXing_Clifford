@@ -1,0 +1,50 @@
+{
+  "electron": {
+    "prediction": {
+      "valeur": 0.00011590188621564423,
+      "incertitude": 6.7100967806865856e-15,
+      "unite": "",
+      "niveau_confiance": 0.95,
+      "n_echantillons": 50000
+    },
+    "comparaison": {
+      "prediction_eV": 0.00011590188621564423,
+      "standard_eV": 0.0001159019,
+      "ecart_relatif_pct": 1.1893123205080049e-05,
+      "tolerance_pct": 1.0,
+      "compatible": true
+    }
+  },
+  "proton": {
+    "prediction": {
+      "valeur": 1.7608630237863232e-07,
+      "incertitude": 6.328837050644002e-18,
+      "unite": "",
+      "niveau_confiance": 0.95,
+      "n_echantillons": 50000
+    },
+    "comparaison": {
+      "prediction_eV": 1.7608630237863232e-07,
+      "standard_eV": 1.760863e-07,
+      "ecart_relatif_pct": 1.3508332623754662e-06,
+      "tolerance_pct": 5.0,
+      "compatible": true
+    }
+  },
+  "neutron": {
+    "prediction": {
+      "valeur": 1.2044944897113845e-07,
+      "incertitude": 7.623819129958894e-18,
+      "unite": "",
+      "niveau_confiance": 0.95,
+      "n_echantillons": 50000
+    },
+    "comparaison": {
+      "prediction_eV": 1.2044944897113845e-07,
+      "standard_eV": 1.204494e-07,
+      "ecart_relatif_pct": 4.065702150156978e-05,
+      "tolerance_pct": 10.0,
+      "compatible": true
+    }
+  }
+}

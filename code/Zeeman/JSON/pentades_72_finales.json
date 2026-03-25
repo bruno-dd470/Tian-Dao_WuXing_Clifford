@@ -1,0 +1,1946 @@
+[
+  {
+    "famille": "FI",
+    "signe": 1,
+    "structure": [
+      "iI",
+      "iJ",
+      "iK"
+    ],
+    "feu": "i'k",
+    "eau": "1j",
+    "elements": [
+      "iI",
+      "iJ",
+      "iK",
+      "i'k",
+      "1j"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FI",
+    "signe": -1,
+    "structure": [
+      "iI",
+      "iJ",
+      "iK"
+    ],
+    "feu": "i'k",
+    "eau": "1j",
+    "elements": [
+      "-iI",
+      "-iJ",
+      "-iK",
+      "-i'k",
+      "-1j"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FI",
+    "signe": 1,
+    "structure": [
+      "iI",
+      "iK",
+      "iJ"
+    ],
+    "feu": "i'k",
+    "eau": "1j",
+    "elements": [
+      "iI",
+      "iK",
+      "iJ",
+      "i'k",
+      "1j"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FI",
+    "signe": -1,
+    "structure": [
+      "iI",
+      "iK",
+      "iJ"
+    ],
+    "feu": "i'k",
+    "eau": "1j",
+    "elements": [
+      "-iI",
+      "-iK",
+      "-iJ",
+      "-i'k",
+      "-1j"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FI",
+    "signe": 1,
+    "structure": [
+      "jI",
+      "jJ",
+      "jK"
+    ],
+    "feu": "i'i",
+    "eau": "1k",
+    "elements": [
+      "jI",
+      "jJ",
+      "jK",
+      "i'i",
+      "1k"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FI",
+    "signe": -1,
+    "structure": [
+      "jI",
+      "jJ",
+      "jK"
+    ],
+    "feu": "i'i",
+    "eau": "1k",
+    "elements": [
+      "-jI",
+      "-jJ",
+      "-jK",
+      "-i'i",
+      "-1k"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FI",
+    "signe": 1,
+    "structure": [
+      "jI",
+      "jK",
+      "jJ"
+    ],
+    "feu": "i'i",
+    "eau": "1k",
+    "elements": [
+      "jI",
+      "jK",
+      "jJ",
+      "i'i",
+      "1k"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FI",
+    "signe": -1,
+    "structure": [
+      "jI",
+      "jK",
+      "jJ"
+    ],
+    "feu": "i'i",
+    "eau": "1k",
+    "elements": [
+      "-jI",
+      "-jK",
+      "-jJ",
+      "-i'i",
+      "-1k"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FI",
+    "signe": 1,
+    "structure": [
+      "kI",
+      "kJ",
+      "kK"
+    ],
+    "feu": "i'j",
+    "eau": "1i",
+    "elements": [
+      "kI",
+      "kJ",
+      "kK",
+      "i'j",
+      "1i"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FI",
+    "signe": -1,
+    "structure": [
+      "kI",
+      "kJ",
+      "kK"
+    ],
+    "feu": "i'j",
+    "eau": "1i",
+    "elements": [
+      "-kI",
+      "-kJ",
+      "-kK",
+      "-i'j",
+      "-1i"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FI",
+    "signe": 1,
+    "structure": [
+      "kI",
+      "kK",
+      "kJ"
+    ],
+    "feu": "i'j",
+    "eau": "1i",
+    "elements": [
+      "kI",
+      "kK",
+      "kJ",
+      "i'j",
+      "1i"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FI",
+    "signe": -1,
+    "structure": [
+      "kI",
+      "kK",
+      "kJ"
+    ],
+    "feu": "i'j",
+    "eau": "1i",
+    "elements": [
+      "-kI",
+      "-kK",
+      "-kJ",
+      "-i'j",
+      "-1i"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FII",
+    "signe": 1,
+    "structure": [
+      "iI",
+      "iJ",
+      "iK"
+    ],
+    "feu": "i'j",
+    "eau": "1k",
+    "elements": [
+      "iI",
+      "iJ",
+      "iK",
+      "i'j",
+      "1k"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FII",
+    "signe": -1,
+    "structure": [
+      "iI",
+      "iJ",
+      "iK"
+    ],
+    "feu": "i'j",
+    "eau": "1k",
+    "elements": [
+      "-iI",
+      "-iJ",
+      "-iK",
+      "-i'j",
+      "-1k"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FII",
+    "signe": 1,
+    "structure": [
+      "iI",
+      "iK",
+      "iJ"
+    ],
+    "feu": "i'j",
+    "eau": "1k",
+    "elements": [
+      "iI",
+      "iK",
+      "iJ",
+      "i'j",
+      "1k"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FII",
+    "signe": -1,
+    "structure": [
+      "iI",
+      "iK",
+      "iJ"
+    ],
+    "feu": "i'j",
+    "eau": "1k",
+    "elements": [
+      "-iI",
+      "-iK",
+      "-iJ",
+      "-i'j",
+      "-1k"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FII",
+    "signe": 1,
+    "structure": [
+      "jI",
+      "jJ",
+      "jK"
+    ],
+    "feu": "i'k",
+    "eau": "1i",
+    "elements": [
+      "jI",
+      "jJ",
+      "jK",
+      "i'k",
+      "1i"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FII",
+    "signe": -1,
+    "structure": [
+      "jI",
+      "jJ",
+      "jK"
+    ],
+    "feu": "i'k",
+    "eau": "1i",
+    "elements": [
+      "-jI",
+      "-jJ",
+      "-jK",
+      "-i'k",
+      "-1i"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FII",
+    "signe": 1,
+    "structure": [
+      "jI",
+      "jK",
+      "jJ"
+    ],
+    "feu": "i'k",
+    "eau": "1i",
+    "elements": [
+      "jI",
+      "jK",
+      "jJ",
+      "i'k",
+      "1i"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FII",
+    "signe": -1,
+    "structure": [
+      "jI",
+      "jK",
+      "jJ"
+    ],
+    "feu": "i'k",
+    "eau": "1i",
+    "elements": [
+      "-jI",
+      "-jK",
+      "-jJ",
+      "-i'k",
+      "-1i"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FII",
+    "signe": 1,
+    "structure": [
+      "kI",
+      "kJ",
+      "kK"
+    ],
+    "feu": "i'i",
+    "eau": "1j",
+    "elements": [
+      "kI",
+      "kJ",
+      "kK",
+      "i'i",
+      "1j"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FII",
+    "signe": -1,
+    "structure": [
+      "kI",
+      "kJ",
+      "kK"
+    ],
+    "feu": "i'i",
+    "eau": "1j",
+    "elements": [
+      "-kI",
+      "-kJ",
+      "-kK",
+      "-i'i",
+      "-1j"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FII",
+    "signe": 1,
+    "structure": [
+      "kI",
+      "kK",
+      "kJ"
+    ],
+    "feu": "i'i",
+    "eau": "1j",
+    "elements": [
+      "kI",
+      "kK",
+      "kJ",
+      "i'i",
+      "1j"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FII",
+    "signe": -1,
+    "structure": [
+      "kI",
+      "kK",
+      "kJ"
+    ],
+    "feu": "i'i",
+    "eau": "1j",
+    "elements": [
+      "-kI",
+      "-kK",
+      "-kJ",
+      "-i'i",
+      "-1j"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIII",
+    "signe": 1,
+    "structure": [
+      "Ii",
+      "Ij",
+      "Ik"
+    ],
+    "feu": "i'K",
+    "eau": "1J",
+    "elements": [
+      "Ii",
+      "Ij",
+      "Ik",
+      "i'K",
+      "1J"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIII",
+    "signe": -1,
+    "structure": [
+      "Ii",
+      "Ij",
+      "Ik"
+    ],
+    "feu": "i'K",
+    "eau": "1J",
+    "elements": [
+      "-Ii",
+      "-Ij",
+      "-Ik",
+      "-i'K",
+      "-1J"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIII",
+    "signe": 1,
+    "structure": [
+      "Ii",
+      "Ik",
+      "Ij"
+    ],
+    "feu": "i'K",
+    "eau": "1J",
+    "elements": [
+      "Ii",
+      "Ik",
+      "Ij",
+      "i'K",
+      "1J"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIII",
+    "signe": -1,
+    "structure": [
+      "Ii",
+      "Ik",
+      "Ij"
+    ],
+    "feu": "i'K",
+    "eau": "1J",
+    "elements": [
+      "-Ii",
+      "-Ik",
+      "-Ij",
+      "-i'K",
+      "-1J"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIII",
+    "signe": 1,
+    "structure": [
+      "Ji",
+      "Jj",
+      "Jk"
+    ],
+    "feu": "i'I",
+    "eau": "1K",
+    "elements": [
+      "Ji",
+      "Jj",
+      "Jk",
+      "i'I",
+      "1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIII",
+    "signe": -1,
+    "structure": [
+      "Ji",
+      "Jj",
+      "Jk"
+    ],
+    "feu": "i'I",
+    "eau": "1K",
+    "elements": [
+      "-Ji",
+      "-Jj",
+      "-Jk",
+      "-i'I",
+      "-1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIII",
+    "signe": 1,
+    "structure": [
+      "Ji",
+      "Jk",
+      "Jj"
+    ],
+    "feu": "i'I",
+    "eau": "1K",
+    "elements": [
+      "Ji",
+      "Jk",
+      "Jj",
+      "i'I",
+      "1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIII",
+    "signe": -1,
+    "structure": [
+      "Ji",
+      "Jk",
+      "Jj"
+    ],
+    "feu": "i'I",
+    "eau": "1K",
+    "elements": [
+      "-Ji",
+      "-Jk",
+      "-Jj",
+      "-i'I",
+      "-1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIII",
+    "signe": 1,
+    "structure": [
+      "Ki",
+      "Kj",
+      "Kk"
+    ],
+    "feu": "i'J",
+    "eau": "1I",
+    "elements": [
+      "Ki",
+      "Kj",
+      "Kk",
+      "i'J",
+      "1I"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIII",
+    "signe": -1,
+    "structure": [
+      "Ki",
+      "Kj",
+      "Kk"
+    ],
+    "feu": "i'J",
+    "eau": "1I",
+    "elements": [
+      "-Ki",
+      "-Kj",
+      "-Kk",
+      "-i'J",
+      "-1I"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIII",
+    "signe": 1,
+    "structure": [
+      "Ki",
+      "Kk",
+      "Kj"
+    ],
+    "feu": "i'J",
+    "eau": "1I",
+    "elements": [
+      "Ki",
+      "Kk",
+      "Kj",
+      "i'J",
+      "1I"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIII",
+    "signe": -1,
+    "structure": [
+      "Ki",
+      "Kk",
+      "Kj"
+    ],
+    "feu": "i'J",
+    "eau": "1I",
+    "elements": [
+      "-Ki",
+      "-Kk",
+      "-Kj",
+      "-i'J",
+      "-1I"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIV",
+    "signe": 1,
+    "structure": [
+      "Ii",
+      "Ij",
+      "Ik"
+    ],
+    "feu": "1J",
+    "eau": "i'K",
+    "elements": [
+      "Ii",
+      "Ij",
+      "Ik",
+      "1J",
+      "i'K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIV",
+    "signe": -1,
+    "structure": [
+      "Ii",
+      "Ij",
+      "Ik"
+    ],
+    "feu": "1J",
+    "eau": "i'K",
+    "elements": [
+      "-Ii",
+      "-Ij",
+      "-Ik",
+      "-1J",
+      "-i'K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIV",
+    "signe": 1,
+    "structure": [
+      "Ii",
+      "Ik",
+      "Ij"
+    ],
+    "feu": "1J",
+    "eau": "i'K",
+    "elements": [
+      "Ii",
+      "Ik",
+      "Ij",
+      "1J",
+      "i'K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIV",
+    "signe": -1,
+    "structure": [
+      "Ii",
+      "Ik",
+      "Ij"
+    ],
+    "feu": "1J",
+    "eau": "i'K",
+    "elements": [
+      "-Ii",
+      "-Ik",
+      "-Ij",
+      "-1J",
+      "-i'K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIV",
+    "signe": 1,
+    "structure": [
+      "Ji",
+      "Jj",
+      "Jk"
+    ],
+    "feu": "1K",
+    "eau": "i'I",
+    "elements": [
+      "Ji",
+      "Jj",
+      "Jk",
+      "1K",
+      "i'I"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIV",
+    "signe": -1,
+    "structure": [
+      "Ji",
+      "Jj",
+      "Jk"
+    ],
+    "feu": "1K",
+    "eau": "i'I",
+    "elements": [
+      "-Ji",
+      "-Jj",
+      "-Jk",
+      "-1K",
+      "-i'I"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIV",
+    "signe": 1,
+    "structure": [
+      "Ji",
+      "Jk",
+      "Jj"
+    ],
+    "feu": "1K",
+    "eau": "i'I",
+    "elements": [
+      "Ji",
+      "Jk",
+      "Jj",
+      "1K",
+      "i'I"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIV",
+    "signe": -1,
+    "structure": [
+      "Ji",
+      "Jk",
+      "Jj"
+    ],
+    "feu": "1K",
+    "eau": "i'I",
+    "elements": [
+      "-Ji",
+      "-Jk",
+      "-Jj",
+      "-1K",
+      "-i'I"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIV",
+    "signe": 1,
+    "structure": [
+      "Ki",
+      "Kj",
+      "Kk"
+    ],
+    "feu": "1I",
+    "eau": "i'J",
+    "elements": [
+      "Ki",
+      "Kj",
+      "Kk",
+      "1I",
+      "i'J"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIV",
+    "signe": -1,
+    "structure": [
+      "Ki",
+      "Kj",
+      "Kk"
+    ],
+    "feu": "1I",
+    "eau": "i'J",
+    "elements": [
+      "-Ki",
+      "-Kj",
+      "-Kk",
+      "-1I",
+      "-i'J"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIV",
+    "signe": 1,
+    "structure": [
+      "Ki",
+      "Kk",
+      "Kj"
+    ],
+    "feu": "1I",
+    "eau": "i'J",
+    "elements": [
+      "Ki",
+      "Kk",
+      "Kj",
+      "1I",
+      "i'J"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FIV",
+    "signe": -1,
+    "structure": [
+      "Ki",
+      "Kk",
+      "Kj"
+    ],
+    "feu": "1I",
+    "eau": "i'J",
+    "elements": [
+      "-Ki",
+      "-Kk",
+      "-Kj",
+      "-1I",
+      "-i'J"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_pur"
+  },
+  {
+    "famille": "FV",
+    "signe": 1,
+    "structure": [
+      "iI",
+      "jJ",
+      "ij"
+    ],
+    "feu": "i'k",
+    "eau": "1K",
+    "elements": [
+      "iI",
+      "jJ",
+      "ij",
+      "i'k",
+      "1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FV",
+    "signe": -1,
+    "structure": [
+      "iI",
+      "jJ",
+      "ij"
+    ],
+    "feu": "i'k",
+    "eau": "1K",
+    "elements": [
+      "-iI",
+      "-jJ",
+      "-ij",
+      "-i'k",
+      "-1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FV",
+    "signe": 1,
+    "structure": [
+      "iJ",
+      "jI",
+      "ij"
+    ],
+    "feu": "i'k",
+    "eau": "1K",
+    "elements": [
+      "iJ",
+      "jI",
+      "ij",
+      "i'k",
+      "1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FV",
+    "signe": -1,
+    "structure": [
+      "iJ",
+      "jI",
+      "ij"
+    ],
+    "feu": "i'k",
+    "eau": "1K",
+    "elements": [
+      "-iJ",
+      "-jI",
+      "-ij",
+      "-i'k",
+      "-1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FV",
+    "signe": 1,
+    "structure": [
+      "iI",
+      "kJ",
+      "ik"
+    ],
+    "feu": "i'j",
+    "eau": "1K",
+    "elements": [
+      "iI",
+      "kJ",
+      "ik",
+      "i'j",
+      "1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FV",
+    "signe": -1,
+    "structure": [
+      "iI",
+      "kJ",
+      "ik"
+    ],
+    "feu": "i'j",
+    "eau": "1K",
+    "elements": [
+      "-iI",
+      "-kJ",
+      "-ik",
+      "-i'j",
+      "-1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FV",
+    "signe": 1,
+    "structure": [
+      "iJ",
+      "kI",
+      "ik"
+    ],
+    "feu": "i'j",
+    "eau": "1K",
+    "elements": [
+      "iJ",
+      "kI",
+      "ik",
+      "i'j",
+      "1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FV",
+    "signe": -1,
+    "structure": [
+      "iJ",
+      "kI",
+      "ik"
+    ],
+    "feu": "i'j",
+    "eau": "1K",
+    "elements": [
+      "-iJ",
+      "-kI",
+      "-ik",
+      "-i'j",
+      "-1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FV",
+    "signe": 1,
+    "structure": [
+      "jI",
+      "kJ",
+      "jk"
+    ],
+    "feu": "i'i",
+    "eau": "1K",
+    "elements": [
+      "jI",
+      "kJ",
+      "jk",
+      "i'i",
+      "1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FV",
+    "signe": -1,
+    "structure": [
+      "jI",
+      "kJ",
+      "jk"
+    ],
+    "feu": "i'i",
+    "eau": "1K",
+    "elements": [
+      "-jI",
+      "-kJ",
+      "-jk",
+      "-i'i",
+      "-1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FV",
+    "signe": 1,
+    "structure": [
+      "jJ",
+      "kI",
+      "jk"
+    ],
+    "feu": "i'i",
+    "eau": "1K",
+    "elements": [
+      "jJ",
+      "kI",
+      "jk",
+      "i'i",
+      "1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FV",
+    "signe": -1,
+    "structure": [
+      "jJ",
+      "kI",
+      "jk"
+    ],
+    "feu": "i'i",
+    "eau": "1K",
+    "elements": [
+      "-jJ",
+      "-kI",
+      "-jk",
+      "-i'i",
+      "-1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FVI",
+    "signe": 1,
+    "structure": [
+      "iI",
+      "jJ",
+      "IJ"
+    ],
+    "feu": "i'k",
+    "eau": "1K",
+    "elements": [
+      "iI",
+      "jJ",
+      "IJ",
+      "i'k",
+      "1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FVI",
+    "signe": -1,
+    "structure": [
+      "iI",
+      "jJ",
+      "IJ"
+    ],
+    "feu": "i'k",
+    "eau": "1K",
+    "elements": [
+      "-iI",
+      "-jJ",
+      "-IJ",
+      "-i'k",
+      "-1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FVI",
+    "signe": 1,
+    "structure": [
+      "iJ",
+      "jI",
+      "IJ"
+    ],
+    "feu": "i'k",
+    "eau": "1K",
+    "elements": [
+      "iJ",
+      "jI",
+      "IJ",
+      "i'k",
+      "1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FVI",
+    "signe": -1,
+    "structure": [
+      "iJ",
+      "jI",
+      "IJ"
+    ],
+    "feu": "i'k",
+    "eau": "1K",
+    "elements": [
+      "-iJ",
+      "-jI",
+      "-IJ",
+      "-i'k",
+      "-1K"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FVI",
+    "signe": 1,
+    "structure": [
+      "iI",
+      "kJ",
+      "IK"
+    ],
+    "feu": "i'j",
+    "eau": "1J",
+    "elements": [
+      "iI",
+      "kJ",
+      "IK",
+      "i'j",
+      "1J"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FVI",
+    "signe": -1,
+    "structure": [
+      "iI",
+      "kJ",
+      "IK"
+    ],
+    "feu": "i'j",
+    "eau": "1J",
+    "elements": [
+      "-iI",
+      "-kJ",
+      "-IK",
+      "-i'j",
+      "-1J"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FVI",
+    "signe": 1,
+    "structure": [
+      "iK",
+      "jI",
+      "IK"
+    ],
+    "feu": "i'k",
+    "eau": "1J",
+    "elements": [
+      "iK",
+      "jI",
+      "IK",
+      "i'k",
+      "1J"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FVI",
+    "signe": -1,
+    "structure": [
+      "iK",
+      "jI",
+      "IK"
+    ],
+    "feu": "i'k",
+    "eau": "1J",
+    "elements": [
+      "-iK",
+      "-jI",
+      "-IK",
+      "-i'k",
+      "-1J"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FVI",
+    "signe": 1,
+    "structure": [
+      "jI",
+      "kJ",
+      "JK"
+    ],
+    "feu": "i'i",
+    "eau": "1J",
+    "elements": [
+      "jI",
+      "kJ",
+      "JK",
+      "i'i",
+      "1J"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FVI",
+    "signe": -1,
+    "structure": [
+      "jI",
+      "kJ",
+      "JK"
+    ],
+    "feu": "i'i",
+    "eau": "1J",
+    "elements": [
+      "-jI",
+      "-kJ",
+      "-JK",
+      "-i'i",
+      "-1J"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FVI",
+    "signe": 1,
+    "structure": [
+      "jK",
+      "kI",
+      "JK"
+    ],
+    "feu": "i'i",
+    "eau": "1J",
+    "elements": [
+      "jK",
+      "kI",
+      "JK",
+      "i'i",
+      "1J"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  },
+  {
+    "famille": "FVI",
+    "signe": -1,
+    "structure": [
+      "jK",
+      "kI",
+      "JK"
+    ],
+    "feu": "i'i",
+    "eau": "1J",
+    "elements": [
+      "-jK",
+      "-kI",
+      "-JK",
+      "-i'i",
+      "-1J"
+    ],
+    "generateurs": [
+      "I",
+      "J",
+      "K",
+      "i",
+      "j",
+      "k"
+    ],
+    "type": "rowlands_etendu"
+  }
+]

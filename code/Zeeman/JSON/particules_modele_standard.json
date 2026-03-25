@@ -1,0 +1,485 @@
+[
+  {
+    "nom": "électron",
+    "famille": "FI",
+    "structure": [
+      [
+        "iI",
+        "iJ",
+        "iK"
+      ],
+      "i'k",
+      "1j"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 0.511,
+    "masse_experimentale_MeV": 0.511,
+    "charge": -1,
+    "spin": 0.5,
+    "couleur": false,
+    "saveur": "électron",
+    "generation": 1
+  },
+  {
+    "nom": "positron",
+    "famille": "FI",
+    "structure": [
+      [
+        "iI",
+        "iJ",
+        "iK"
+      ],
+      "i'k",
+      "1j"
+    ],
+    "signe": -1,
+    "masse_theorique_MeV": 0.511,
+    "masse_experimentale_MeV": 0.511,
+    "charge": 1,
+    "spin": 0.5,
+    "couleur": false,
+    "saveur": "électron",
+    "generation": 1
+  },
+  {
+    "nom": "muon",
+    "famille": "FI",
+    "structure": [
+      [
+        "iI",
+        "iK",
+        "iJ"
+      ],
+      "i'k",
+      "1j"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 105.7,
+    "masse_experimentale_MeV": 105.658,
+    "charge": -1,
+    "spin": 0.5,
+    "couleur": false,
+    "saveur": "muon",
+    "generation": 2
+  },
+  {
+    "nom": "tau",
+    "famille": "FI",
+    "structure": [
+      [
+        "kI",
+        "kJ",
+        "kK"
+      ],
+      "i'j",
+      "1i"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 1777.0,
+    "masse_experimentale_MeV": 1776.86,
+    "charge": -1,
+    "spin": 0.5,
+    "couleur": false,
+    "saveur": "tau",
+    "generation": 3
+  },
+  {
+    "nom": "neutrino_e",
+    "famille": "FI",
+    "structure": [
+      [
+        "iI",
+        "iJ",
+        "iK"
+      ],
+      "i'k",
+      "1j"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 1e-05,
+    "masse_experimentale_MeV": 1e-05,
+    "charge": 0,
+    "spin": 0.5,
+    "couleur": false,
+    "saveur": "électron",
+    "generation": 1
+  },
+  {
+    "nom": "neutrino_mu",
+    "famille": "FI",
+    "structure": [
+      [
+        "iI",
+        "iK",
+        "iJ"
+      ],
+      "i'k",
+      "1j"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 0.0001,
+    "masse_experimentale_MeV": 0.0001,
+    "charge": 0,
+    "spin": 0.5,
+    "couleur": false,
+    "saveur": "muon",
+    "generation": 2
+  },
+  {
+    "nom": "neutrino_tau",
+    "famille": "FI",
+    "structure": [
+      [
+        "kI",
+        "kJ",
+        "kK"
+      ],
+      "i'j",
+      "1i"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 0.01,
+    "masse_experimentale_MeV": 0.01,
+    "charge": 0,
+    "spin": 0.5,
+    "couleur": false,
+    "saveur": "tau",
+    "generation": 3
+  },
+  {
+    "nom": "quark_up",
+    "famille": "FI",
+    "structure": [
+      [
+        "iI",
+        "jJ",
+        "kK"
+      ],
+      "i'k",
+      "1j"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 2.2,
+    "masse_experimentale_MeV": 2.2,
+    "charge": 0.667,
+    "spin": 0.5,
+    "couleur": true,
+    "saveur": "up",
+    "generation": 1
+  },
+  {
+    "nom": "quark_down",
+    "famille": "FI",
+    "structure": [
+      [
+        "iJ",
+        "jK",
+        "kI"
+      ],
+      "i'i",
+      "1k"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 4.7,
+    "masse_experimentale_MeV": 4.7,
+    "charge": -0.333,
+    "spin": 0.5,
+    "couleur": true,
+    "saveur": "down",
+    "generation": 1
+  },
+  {
+    "nom": "quark_charm",
+    "famille": "FI",
+    "structure": [
+      [
+        "iI",
+        "jJ",
+        "kK"
+      ],
+      "i'j",
+      "1k"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 1270.0,
+    "masse_experimentale_MeV": 1270.0,
+    "charge": 0.667,
+    "spin": 0.5,
+    "couleur": true,
+    "saveur": "charm",
+    "generation": 2
+  },
+  {
+    "nom": "quark_strange",
+    "famille": "FI",
+    "structure": [
+      [
+        "iJ",
+        "jK",
+        "kI"
+      ],
+      "i'k",
+      "1i"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 96.0,
+    "masse_experimentale_MeV": 96.0,
+    "charge": -0.333,
+    "spin": 0.5,
+    "couleur": true,
+    "saveur": "strange",
+    "generation": 2
+  },
+  {
+    "nom": "quark_top",
+    "famille": "FI",
+    "structure": [
+      [
+        "kI",
+        "kJ",
+        "kK"
+      ],
+      "i'j",
+      "1i"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 173000.0,
+    "masse_experimentale_MeV": 173000.0,
+    "charge": 0.667,
+    "spin": 0.5,
+    "couleur": true,
+    "saveur": "top",
+    "generation": 3
+  },
+  {
+    "nom": "quark_bottom",
+    "famille": "FI",
+    "structure": [
+      [
+        "iJ",
+        "jK",
+        "kI"
+      ],
+      "i'i",
+      "1j"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 4180.0,
+    "masse_experimentale_MeV": 4180.0,
+    "charge": -0.333,
+    "spin": 0.5,
+    "couleur": true,
+    "saveur": "bottom",
+    "generation": 3
+  },
+  {
+    "nom": "photon",
+    "famille": "FV",
+    "structure": [
+      [
+        "iI",
+        "jJ",
+        "ij"
+      ],
+      "i'k",
+      "1K"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 0.0,
+    "masse_experimentale_MeV": 0.0,
+    "charge": 0,
+    "spin": 1.0,
+    "couleur": false,
+    "saveur": "neutre",
+    "generation": 0
+  },
+  {
+    "nom": "gluon",
+    "famille": "FVI",
+    "structure": [
+      [
+        "iI",
+        "jJ",
+        "IJ"
+      ],
+      "i'k",
+      "1K"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 0.0,
+    "masse_experimentale_MeV": 0.0,
+    "charge": 0,
+    "spin": 1.0,
+    "couleur": true,
+    "saveur": "neutre",
+    "generation": 0
+  },
+  {
+    "nom": "W_plus",
+    "famille": "FII",
+    "structure": [
+      [
+        "iI",
+        "iJ",
+        "iK"
+      ],
+      "i'j",
+      "1k"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 80379.0,
+    "masse_experimentale_MeV": 80379.0,
+    "charge": 1,
+    "spin": 1.0,
+    "couleur": false,
+    "saveur": "faible",
+    "generation": 0
+  },
+  {
+    "nom": "W_minus",
+    "famille": "FII",
+    "structure": [
+      [
+        "iI",
+        "iJ",
+        "iK"
+      ],
+      "i'j",
+      "1k"
+    ],
+    "signe": -1,
+    "masse_theorique_MeV": 80379.0,
+    "masse_experimentale_MeV": 80379.0,
+    "charge": -1,
+    "spin": 1.0,
+    "couleur": false,
+    "saveur": "faible",
+    "generation": 0
+  },
+  {
+    "nom": "Z_zero",
+    "famille": "FII",
+    "structure": [
+      [
+        "kI",
+        "kJ",
+        "kK"
+      ],
+      "i'i",
+      "1j"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 91187.6,
+    "masse_experimentale_MeV": 91187.6,
+    "charge": 0,
+    "spin": 1.0,
+    "couleur": false,
+    "saveur": "faible",
+    "generation": 0
+  },
+  {
+    "nom": "proton",
+    "famille": "FI",
+    "structure": [
+      [
+        "iI",
+        "jJ",
+        "kK"
+      ],
+      "i'k",
+      "1j"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 938.3,
+    "masse_experimentale_MeV": 938.272,
+    "charge": 1,
+    "spin": 0.5,
+    "couleur": false,
+    "saveur": "composite",
+    "generation": 0
+  },
+  {
+    "nom": "neutron",
+    "famille": "FI",
+    "structure": [
+      [
+        "iJ",
+        "jK",
+        "kI"
+      ],
+      "i'k",
+      "1j"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 939.6,
+    "masse_experimentale_MeV": 939.565,
+    "charge": 0,
+    "spin": 0.5,
+    "couleur": false,
+    "saveur": "composite",
+    "generation": 0
+  },
+  {
+    "nom": "pion_plus",
+    "famille": "FII",
+    "structure": [
+      [
+        "iI",
+        "iJ",
+        "iK"
+      ],
+      "i'i",
+      "1k"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 139.6,
+    "masse_experimentale_MeV": 139.57,
+    "charge": 1,
+    "spin": 0.0,
+    "couleur": false,
+    "saveur": "composite",
+    "generation": 0
+  },
+  {
+    "nom": "pion_minus",
+    "famille": "FII",
+    "structure": [
+      [
+        "iI",
+        "iJ",
+        "iK"
+      ],
+      "i'i",
+      "1k"
+    ],
+    "signe": -1,
+    "masse_theorique_MeV": 139.6,
+    "masse_experimentale_MeV": 139.57,
+    "charge": -1,
+    "spin": 0.0,
+    "couleur": false,
+    "saveur": "composite",
+    "generation": 0
+  },
+  {
+    "nom": "pion_zero",
+    "famille": "FII",
+    "structure": [
+      [
+        "kI",
+        "kJ",
+        "kK"
+      ],
+      "i'i",
+      "1j"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 135.0,
+    "masse_experimentale_MeV": 134.98,
+    "charge": 0,
+    "spin": 0.0,
+    "couleur": false,
+    "saveur": "composite",
+    "generation": 0
+  }
+]

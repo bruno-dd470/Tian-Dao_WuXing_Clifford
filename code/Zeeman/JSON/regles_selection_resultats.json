@@ -1,0 +1,108 @@
+{
+  "exemple": {
+    "permise": true,
+    "type": "E1",
+    "intensite_relative": 1.0,
+    "regles_viol\u00e9es": [
+      "generateurs"
+    ]
+  },
+  "zeeman": [
+    {
+      "initial_ml": -1,
+      "final_ml": 0,
+      "polarisation": "\u03c3\u207b",
+      "energie_photon_eV": 10.199942116181939,
+      "intensite_relative": 0.08333191459884694,
+      "intensite_pct": 8.333191459884693
+    },
+    {
+      "initial_ml": -1,
+      "final_ml": 0,
+      "polarisation": "\u03c3\u207b",
+      "energie_photon_eV": 10.199826214295628,
+      "intensite_relative": 0.08332907393086036,
+      "intensite_pct": 8.332907393086037
+    },
+    {
+      "initial_ml": -1,
+      "final_ml": 0,
+      "polarisation": "\u03c3\u207b",
+      "energie_photon_eV": 10.200058018068251,
+      "intensite_relative": 0.08333475533139129,
+      "intensite_pct": 8.33347553313913
+    },
+    {
+      "initial_ml": -1,
+      "final_ml": 0,
+      "polarisation": "\u03c3\u207b",
+      "energie_photon_eV": 10.19994211618194,
+      "intensite_relative": 0.08333191459884698,
+      "intensite_pct": 8.333191459884699
+    },
+    {
+      "initial_ml": 0,
+      "final_ml": 0,
+      "polarisation": "\u03c0",
+      "energie_photon_eV": 10.2,
+      "intensite_relative": 0.08333333331182641,
+      "intensite_pct": 8.33333333118264
+    },
+    {
+      "initial_ml": 0,
+      "final_ml": 0,
+      "polarisation": "\u03c0",
+      "energie_photon_eV": 10.199884098113689,
+      "intensite_relative": 0.08333049261159846,
+      "intensite_pct": 8.333049261159847
+    },
+    {
+      "initial_ml": 0,
+      "final_ml": 0,
+      "polarisation": "\u03c0",
+      "energie_photon_eV": 10.20011590188631,
+      "intensite_relative": 0.08333617407661245,
+      "intensite_pct": 8.333617407661245
+    },
+    {
+      "initial_ml": 0,
+      "final_ml": 0,
+      "polarisation": "\u03c0",
+      "energie_photon_eV": 10.2,
+      "intensite_relative": 0.08333333331182641,
+      "intensite_pct": 8.33333333118264
+    },
+    {
+      "initial_ml": 1,
+      "final_ml": 0,
+      "polarisation": "\u03c3\u207a",
+      "energie_photon_eV": 10.20005788381806,
+      "intensite_relative": 0.08333475204090801,
+      "intensite_pct": 8.333475204090801
+    },
+    {
+      "initial_ml": 1,
+      "final_ml": 0,
+      "polarisation": "\u03c3\u207a",
+      "energie_photon_eV": 10.19994198193175,
+      "intensite_relative": 0.0833319113084385,
+      "intensite_pct": 8.33319113084385
+    },
+    {
+      "initial_ml": 1,
+      "final_ml": 0,
+      "polarisation": "\u03c3\u207a",
+      "energie_photon_eV": 10.20017378570437,
+      "intensite_relative": 0.083337592837936,
+      "intensite_pct": 8.3337592837936
+    },
+    {
+      "initial_ml": 1,
+      "final_ml": 0,
+      "polarisation": "\u03c3\u207a",
+      "energie_photon_eV": 10.20005788381806,
+      "intensite_relative": 0.08333475204090801,
+      "intensite_pct": 8.333475204090801
+    }
+  ]
+}

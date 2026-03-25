@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 """
 MODULE 3B : RÈGLES DE SÉLECTION POUR LES TRANSITIONS ATOMIQUES PENTADIQUES
-Formalisation des règles de transition sans vecteur spin
+Version corrigée - harmonisée avec MODULE_4
 Basé sur les 72 pentades de Cl(6,0) et extension Cl(6,6)
 """
 import json
 import math
-import numpy as np
+import os
 from typing import Dict, List, Tuple, Optional, Set
 from dataclasses import dataclass
 from collections import Counter
@@ -19,10 +19,6 @@ try:
     from MODULE_1_72_pentades import Pentade
 except ImportError:
     print("⚠️  MODULE_1 non trouvé - utilisation de la classe locale")
-    
-    from dataclasses import dataclass
-    from typing import Tuple, Set
-    
     @dataclass
     class Pentade:
         structure: Tuple[str, str, str]
@@ -59,7 +55,7 @@ CONSTANTES = {
 }
 
 # =====================================================================
-# CLASSE : ÉTAT ATOMIQUE PENTADIQUE
+# CLASSE : ÉTAT ATOMIQUE PENTADIQUE (HARMONISÉ AVEC MODULE_4)
 # =====================================================================
 @dataclass
 class EtatAtomiquePentadique:
@@ -70,6 +66,11 @@ class EtatAtomiquePentadique:
     ml: int
     energie_eV: float
     particule: str = "electron"
+    
+    def __post_init__(self):
+        """CORRECTION : Validation des contraintes quantiques"""
+        if abs(self.ml) > self.l:
+            raise ValueError(f"ml={self.ml} invalide pour l={self.l} (doit satisfaire |ml| ≤ l)")
     
     def __repr__(self):
         return f"|{self.particule}, n={self.n}, l={self.l}, ml={self.ml}, E={self.energie_eV:.4f} eV>"
@@ -129,8 +130,8 @@ class ReglesConservation:
     
     @staticmethod
     def conservation_parite(etat1: EtatAtomiquePentadique,
-                            etat2: EtatAtomiquePentadique,
-                            photon_type: str = "dipole") -> bool:
+                             etat2: EtatAtomiquePentadique,
+                             photon_type: str = "dipole") -> bool:
         parite1 = (-1) ** etat1.l
         parite2 = (-1) ** etat2.l
         
@@ -222,8 +223,8 @@ class ZeemanPentadique:
     
     @staticmethod
     def splitting_niveaux(etat: EtatAtomiquePentadique, B_Tesla: float):
-        niveaux_splites = []       
-        # DÉFINIR delta_E AVANT utilisation
+        niveaux_splites = []
+        
         muB_eV_T = 5.7883818060e-5
         g_s = 2.00231930436256
         delta_E_spin = g_s * muB_eV_T * B_Tesla
@@ -238,7 +239,6 @@ class ZeemanPentadique:
                     particule=etat.particule
                 )
                 niveaux_splites.append(etat_split)
-        
         elif etat.l == 1:
             for ml in [-1, 0, 1]:
                 for ms in [-0.5, 0.5]:
@@ -250,7 +250,6 @@ class ZeemanPentadique:
                         particule=etat.particule
                     )
                     niveaux_splites.append(etat_split)
-        
         return niveaux_splites
     
     @staticmethod
@@ -260,14 +259,12 @@ class ZeemanPentadique:
         """Liste toutes les transitions Zeeman permises"""
         niveaux_init = ZeemanPentadique.splitting_niveaux(etat_initial, B_Tesla)
         niveaux_final = ZeemanPentadique.splitting_niveaux(etat_final, B_Tesla)
-        
         transitions = []
         
         for ei in niveaux_init:
             for ef in niveaux_final:
-                delta_ml = abs(ei.ml - ef.ml)
-                
-                if delta_ml <= 1:
+                delta_ml = ei.ml - ef.ml
+                if abs(delta_ml) <= 1:
                     if ei.ml == ef.ml:
                         polarisation = 'π'
                     elif ei.ml > ef.ml:
@@ -276,18 +273,16 @@ class ZeemanPentadique:
                         polarisation = 'σ⁻'
                     
                     intensite = abs(ei.energie_eV - ef.energie_eV) ** 3
-                    
                     transitions.append({
                         'initial_ml': ei.ml,
                         'final_ml': ef.ml,
-                        'delta_ml': ei.ml - ef.ml,
+                        'delta_ml': delta_ml,
                         'polarisation': polarisation,
                         'energie_photon_eV': ei.energie_eV - ef.energie_eV,
                         'intensite_relative': intensite,
                         'permise': True
                     })
         
-        # Normaliser les intensités
         if transitions:
             somme = sum(t['intensite_relative'] for t in transitions)
             if somme > 0:
@@ -358,6 +353,7 @@ def valider_regles_selection():
 def exporter_regles_selection(fichier: str = "regles_selection_resultats.json"):
     """Exporte les résultats"""
     resultats_validation = valider_regles_selection()
+    
     transitions_zeeman = ZeemanPentadique.transitions_zeeman_permises(
         exemples_transitions_hydrogene()[2],
         exemples_transitions_hydrogene()[0],
@@ -395,7 +391,8 @@ def exporter_regles_selection(fichier: str = "regles_selection_resultats.json"):
 # =====================================================================
 if __name__ == "__main__":
     print("="*80)
-    print("MODULE 3B : RÈGLES DE SÉLECTION PENTADIQUES")
+    print("MODULE 3B : RÈGLES DE SÉLECTION PENTADIQUES - VERSION CORRIGÉE")
+    print("CORRECTION : Harmonisation avec MODULE_4")
     print("="*80)
     
     resultats = valider_regles_selection()

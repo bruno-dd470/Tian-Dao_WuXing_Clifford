@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-MODULE 4 : ATOME D'HYDROGÈNE COMPLET - VERSION FINALE
+MODULE 4 : ATOME D'HYDROGÈNE COMPLET - VERSION CORRIGÉE
 Intègre : Lamb shift n=1-10, Hyperfine tous états, Compression fichiers
+CORRECTION CRITIQUE : Contrainte |ml| ≤ l appliquée
 Basé sur les 72 pentades de Cl(6,0) et Cl(6,6)
 """
 import json
 import math
 import gzip
+import os
 from decimal import Decimal, getcontext
 from typing import Dict, List, Tuple, Optional
 from dataclasses import dataclass
@@ -25,10 +27,6 @@ try:
     from MODULE_1_72_pentades import Pentade
 except ImportError:
     print("⚠️  MODULE_1 non trouvé - utilisation de la classe locale")
-    
-    from dataclasses import dataclass
-    from typing import Tuple, Set
-    
     @dataclass
     class Pentade:
         structure: Tuple[str, str, str]
@@ -37,7 +35,7 @@ except ImportError:
         signe: int = 1
         famille: str = ""
         
-        def generateurs_presents(self) -> Set[str]:
+        def generateurs_presents(self) -> set:
             presents = set()
             elements = list(self.structure) + [self.feu, self.eau]
             for e in elements:
@@ -79,7 +77,7 @@ CONSTANTES = {
     'g_p': Decimal('5.5856946893'),
     'A_1S_Hz': Decimal('1420405751.768'),
     'mu_reduit': Decimal('0.99945567942'),
-    'compression_niveau': 9,  # ← CORRECTION: Ajout de cette constante
+    'compression_niveau': 9,
 }
 
 # =====================================================================
@@ -87,60 +85,15 @@ CONSTANTES = {
 # =====================================================================
 BETHE_LOGARITHMS = {
     (1, 0): 2.984128555765498,
-    (2, 0): 2.811769893120563,
-    (2, 1): -0.030016708630219,
-    (3, 0): 2.767663068844,
-    (3, 1): -0.038193204,
-    (3, 2): -0.003749872,
-    (4, 0): 2.749811840,
-    (4, 1): -0.0419548,
-    (4, 2): -0.004196,
-    (4, 3): -0.000419,
-    (5, 0): 2.739200,
-    (5, 1): -0.044,
-    (5, 2): -0.0045,
-    (5, 3): -0.0005,
-    (5, 4): -0.00005,
-    (6, 0): 2.732000,
-    (6, 1): -0.045,
-    (6, 2): -0.0046,
-    (6, 3): -0.0005,
-    (6, 4): -0.00006,
-    (6, 5): -0.000006,
-    (7, 0): 2.727000,
-    (7, 1): -0.046,
-    (7, 2): -0.0047,
-    (7, 3): -0.0005,
-    (7, 4): -0.00006,
-    (7, 5): -0.000007,
-    (7, 6): -0.0000007,
-    (8, 0): 2.723000,
-    (8, 1): -0.047,
-    (8, 2): -0.0048,
-    (8, 3): -0.0005,
-    (8, 4): -0.00006,
-    (8, 5): -0.000007,
-    (8, 6): -0.0000008,
-    (8, 7): -0.00000008,
-    (9, 0): 2.720000,
-    (9, 1): -0.048,
-    (9, 2): -0.0049,
-    (9, 3): -0.0005,
-    (9, 4): -0.00006,
-    (9, 5): -0.000007,
-    (9, 6): -0.0000008,
-    (9, 7): -0.00000009,
-    (9, 8): -0.000000009,
-    (10, 0): 2.717000,
-    (10, 1): -0.049,
-    (10, 2): -0.0050,
-    (10, 3): -0.0005,
-    (10, 4): -0.00006,
-    (10, 5): -0.000007,
-    (10, 6): -0.0000008,
-    (10, 7): -0.00000009,
-    (10, 8): -0.00000001,
-    (10, 9): -0.000000001,
+    (2, 0): 2.811769893120563, (2, 1): -0.030016708630219,
+    (3, 0): 2.767663068844, (3, 1): -0.038193204, (3, 2): -0.003749872,
+    (4, 0): 2.749811840, (4, 1): -0.0419548, (4, 2): -0.004196, (4, 3): -0.000419,
+    (5, 0): 2.739200, (5, 1): -0.044, (5, 2): -0.0045, (5, 3): -0.0005, (5, 4): -0.00005,
+    (6, 0): 2.732000, (6, 1): -0.045, (6, 2): -0.0046, (6, 3): -0.0005, (6, 4): -0.00006, (6, 5): -0.000006,
+    (7, 0): 2.727000, (7, 1): -0.046, (7, 2): -0.0047, (7, 3): -0.0005, (7, 4): -0.00006, (7, 5): -0.000007, (7, 6): -0.0000007,
+    (8, 0): 2.723000, (8, 1): -0.047, (8, 2): -0.0048, (8, 3): -0.0005, (8, 4): -0.00006, (8, 5): -0.000007, (8, 6): -0.0000008, (8, 7): -0.00000008,
+    (9, 0): 2.720000, (9, 1): -0.048, (9, 2): -0.0049, (9, 3): -0.0005, (9, 4): -0.00006, (9, 5): -0.000007, (9, 6): -0.0000008, (9, 7): -0.00000009, (9, 8): -0.000000009,
+    (10, 0): 2.717000, (10, 1): -0.049, (10, 2): -0.0050, (10, 3): -0.0005, (10, 4): -0.00006, (10, 5): -0.000007, (10, 6): -0.0000008, (10, 7): -0.00000009, (10, 8): -0.00000001, (10, 9): -0.000000001,
 }
 
 # =====================================================================
@@ -160,6 +113,13 @@ class EtatQuantiquePentadique:
     mF: Optional[int] = None
     energie_eV: Decimal = Decimal('0')
     particule: str = "electron"
+    
+    def __post_init__(self):
+        """CORRECTION CRITIQUE : Validation des contraintes quantiques"""
+        if abs(self.ml) > self.l:
+            raise ValueError(f"ml={self.ml} invalide pour l={self.l} (doit satisfaire |ml| ≤ l)")
+        if self.F is not None and abs(self.mF) > self.F:
+            raise ValueError(f"mF={self.mF} invalide pour F={self.F} (doit satisfaire |mF| ≤ F)")
     
     def to_dict(self, precision: int = 9) -> dict:
         return {
@@ -181,6 +141,7 @@ class EtatQuantiquePentadique:
         """Calcule l'énergie totale avec toutes les corrections"""
         Ry = CONSTANTES['rydberg_eV']
         mu = CONSTANTES['mu_reduit']
+        
         E_Bohr = -Ry * mu / Decimal(self.n**2)
         
         E_fine = Decimal('0')
@@ -205,22 +166,17 @@ class EtatQuantiquePentadique:
         alpha = CONSTANTES['alpha']
         Ry = CONSTANTES['rydberg_eV']
         mu = CONSTANTES['mu_reduit']
-        
         E_n = -Ry * mu / Decimal(self.n**2)
         facteur = (alpha**2 / Decimal(self.n**2))
-        
         j_val = self.j or Decimal(str(self.l + 0.5))
         terme_j = Decimal(self.n) / (j_val + Decimal('0.5'))
-        
         return E_n * facteur * (terme_j - Decimal('0.75'))
     
     def _calculer_lamb_shift(self) -> Decimal:
         ln_k0 = Decimal(str(BETHE_LOGARITHMS.get((self.n, self.l), 2.7)))
-        
         alpha = CONSTANTES['alpha']
         mc2_eV = CONSTANTES['me_MeV'] * Decimal('1e6')
         Zalpha = alpha
-        
         facteur_base = (alpha / Decimal(str(math.pi))) * Zalpha**4 * mc2_eV / Decimal(self.n**3)
         log_term = Decimal(str(-2 * math.log(float(Zalpha))))
         
@@ -233,7 +189,6 @@ class EtatQuantiquePentadique:
         
         lamb_shift = facteur_base * (log_term + ln_k0 + C_41 + C_40)
         lamb_shift *= CONSTANTES['mu_reduit']
-        
         return lamb_shift
     
     def _calculer_hyperfine(self) -> Decimal:
@@ -267,7 +222,7 @@ class EtatQuantiquePentadique:
                 l_val = self.l
                 s_val = 0.5
                 g_j = Decimal(str(
-                    1.0 + (j_val*(j_val+1) - l_val*(l_val+1) + s_val*(s_val+1)) / 
+                    1.0 + (j_val*(j_val+1) - l_val*(l_val+1) + s_val*(s_val+1)) /
                     (2*j_val*(j_val+1))
                 ))
             else:
@@ -289,7 +244,7 @@ class AtomeHydrogenePentadique:
         self.niveaux = {}
         self.transitions = []
     
-    def generer_tous_niveaux(self, n_max: int = 10, 
+    def generer_tous_niveaux(self, n_max: int = 10,
                               inclure_lamb: bool = True,
                               inclure_hf: bool = True) -> Dict:
         """Génère tous les niveaux avec corrections complètes"""
@@ -303,9 +258,8 @@ class AtomeHydrogenePentadique:
                     j_values = [Decimal(l) - Decimal('0.5'), Decimal(l) + Decimal('0.5')]
                 
                 for j in j_values:
-                    mj_step = Decimal('1')
+                    # CORRECTION CRITIQUE : mj parcourt de -j à +j
                     mj_current = -j
-                    
                     while mj_current <= j:
                         if inclure_hf:
                             I = Decimal('0.5')
@@ -316,39 +270,38 @@ class AtomeHydrogenePentadique:
                             F_values = [None]
                         
                         for F in F_values:
-                            mF_values = range(-F, F + 1) if F is not None else [None]
-                            
-                            for mF in mF_values:
-                                if l == 0:
-                                    pentade = Pentade(("iI", "jI", "kI"), "i'i", "1j", 1, "FI")
-                                elif l == 1:
-                                    pentade = Pentade(("iI", "jJ", "kK"), "i'k", "1j", 1, "FI")
-                                else:
-                                    pentade = Pentade(("iI", "jJ", "kK"), "i'k", "1j", 1, "FI")
+                            # CORRECTION CRITIQUE : ml contraint par l, pas par mj
+                            for ml in range(-l, l + 1):
+                                mF_values = range(-F, F + 1) if F is not None else [None]
                                 
-                                etat = EtatQuantiquePentadique(
-                                    pentade=pentade, n=n, l=l, ml=int(mj_current),
-                                    ms=Decimal('0.5'), j=j, mj=mj_current,
-                                    F=F, mF=mF, energie_eV=Decimal('0')
-                                )
-                                
-                                energie = etat.calculer_energie_complete(
-                                    inclure_lamb=inclure_lamb, inclure_hf=inclure_hf
-                                )
-                                
-                                clef = (n, l, float(j), float(mj_current), F, mF)
-                                niveaux[clef] = EtatQuantiquePentadique(
-                                    pentade=pentade, n=n, l=l, ml=int(mj_current),
-                                    ms=Decimal('0.5'), j=j, mj=mj_current,
-                                    F=F, mF=mF, energie_eV=energie
-                                )
-                                
-                                mj_current += mj_step
+                                for mF in mF_values:
+                                    if l == 0:
+                                        pentade = Pentade(("iI", "jI", "kI"), "i'i", "1j", 1, "FI")
+                                    elif l == 1:
+                                        pentade = Pentade(("iI", "jJ", "kK"), "i'k", "1j", 1, "FI")
+                                    else:
+                                        pentade = Pentade(("iI", "jJ", "kK"), "i'k", "1j", 1, "FI")
+                                    
+                                    etat = EtatQuantiquePentadique(
+                                        pentade=pentade, n=n, l=l, ml=ml,
+                                        ms=Decimal('0.5'), j=j, mj=mj_current,
+                                        F=F, mF=mF, energie_eV=Decimal('0')
+                                    )
+                                    energie = etat.calculer_energie_complete(
+                                        inclure_lamb=inclure_lamb, inclure_hf=inclure_hf
+                                    )
+                                    clef = (n, l, float(j), float(mj_current), F, mF, ml)
+                                    niveaux[clef] = EtatQuantiquePentadique(
+                                        pentade=pentade, n=n, l=l, ml=ml,
+                                        ms=Decimal('0.5'), j=j, mj=mj_current,
+                                        F=F, mF=mF, energie_eV=energie
+                                    )
+                                mj_current += Decimal('1')
         
         self.niveaux = niveaux
         return niveaux
     
-    def generer_toutes_transitions(self, n_max: int = 10, 
+    def generer_toutes_transitions(self, n_max: int = 10,
                                     compression: bool = True) -> List[Dict]:
         """Génère toutes les transitions permises AVEC REGROUPEMENT"""
         transitions = []
@@ -360,21 +313,16 @@ class AtomeHydrogenePentadique:
                     continue
                 
                 delta_l = abs(etat1.l - etat2.l)
-                
                 if delta_l == 1:
-                    # CORRECTION : Regrouper par (n,l) pour éviter doublons
-                    clef_transition = (min(etat1.n, etat2.n), etat1.l, 
+                    clef_transition = (min(etat1.n, etat2.n), etat1.l,
                                        max(etat1.n, etat2.n), etat2.l)
-                    
                     if clef_transition in seen:
                         continue
                     seen.add(clef_transition)
                     
                     energie_photon = abs(etat1.energie_eV - etat2.energie_eV)
-                    
                     if energie_photon > Decimal('0'):
                         type_transition = 'émission' if etat1.n > etat2.n else 'absorption'
-                        
                         h_c = CONSTANTES['h_eV_s'] * CONSTANTES['c']
                         lambda_m = h_c / energie_photon
                         lambda_nm = lambda_m * Decimal('1e9')
@@ -395,7 +343,6 @@ class AtomeHydrogenePentadique:
                                 'energie_eV': float(energie_photon),
                                 'longueur_onde_nm': float(lambda_nm),
                             }
-                        
                         transitions.append(transition)
         
         transitions.sort(key=lambda x: x['E' if compression else 'energie_eV'], reverse=True)
@@ -404,8 +351,6 @@ class AtomeHydrogenePentadique:
     
     def exporter_transitions_compressees(self, fichier: str, format: str = 'json'):
         """Exporte les transitions avec compression"""
-        import os
-        
         if format == 'json':
             with open(fichier, 'w', encoding='utf-8') as f:
                 json.dump(self.transitions, f, indent=2, ensure_ascii=False)
@@ -420,13 +365,11 @@ class AtomeHydrogenePentadique:
 # =====================================================================
 # EXPORT DES RÉSULTATS
 # =====================================================================
-def exporter_resultats_hydrogene(atome: AtomeHydrogenePentadique, 
+def exporter_resultats_hydrogene(atome: AtomeHydrogenePentadique,
                                   fichier_base: str = "hydrogene_pentadique",
                                   compression: bool = True):
     """Exporte tous les résultats avec options de compression"""
-    import os
-    
-    niveaux_export = [n.to_dict(precision=CONSTANTES['compression_niveau']) 
+    niveaux_export = [n.to_dict(precision=CONSTANTES['compression_niveau'])
                       for n in atome.niveaux.values()]
     
     with open(f'{fichier_base}_niveaux.json', 'w', encoding='utf-8') as f:
@@ -444,8 +387,7 @@ def exporter_resultats_hydrogene(atome: AtomeHydrogenePentadique,
         f'{fichier_base}_niveaux.json',
         f'{fichier_base}_transitions.json.gz' if compression else f'{fichier_base}_transitions.json',
     ] if os.path.exists(f))
-    
-    print(f"\n📊 Taille totale : {total/1e6:.2f} Mo")
+    print(f"📊 Taille totale : {total/1e6:.2f} Mo")
     
     return niveaux_export, atome.transitions
 
@@ -454,10 +396,9 @@ def exporter_resultats_hydrogene(atome: AtomeHydrogenePentadique,
 # =====================================================================
 def generer_rapport_complet(n_max: int = 10, compression: bool = True):
     """Génère un rapport complet avec toutes les améliorations"""
-    
     print("="*80)
-    print("MODULE 4 : ATOME D'HYDROGÈNE COMPLET - VERSION FINALE")
-    print("Lamb shift n=1-10, Hyperfine tous états, Compression fichiers")
+    print("MODULE 4 : ATOME D'HYDROGÈNE COMPLET - VERSION CORRIGÉE")
+    print("CORRECTION : Contrainte |ml| ≤ l appliquée")
     print("="*80)
     
     atome = AtomeHydrogenePentadique()
@@ -467,6 +408,7 @@ def generer_rapport_complet(n_max: int = 10, compression: bool = True):
     print(f"   - Structure fine : incluse")
     print(f"   - Lamb shift : n=1 à {n_max}")
     print(f"   - Hyperfine : TOUS les états")
+    print(f"   - Contrainte |ml| ≤ l : ✅ APPLIQUÉE")
     
     transitions = atome.generer_toutes_transitions(n_max=n_max, compression=compression)
     
@@ -476,33 +418,44 @@ def generer_rapport_complet(n_max: int = 10, compression: bool = True):
         series_count[n_final] += 1
     
     print(f"\n✅ {len(transitions)} transitions permises")
+    series_noms = ['Lyman', 'Balmer', 'Paschen', 'Brackett', 'Pfund', 'Humphreys']
     for n_final in sorted(series_count.keys()):
-        nom_serie = ['Lyman', 'Balmer', 'Paschen', 'Brackett', 'Pfund', 'Humphreys'][n_final-1] if n_final <= 6 else f'Série n={n_final}'
-        print(f"   {nom_serie} (n→{n_final}) : {series_count[n_final]} transitions")
+        nom = series_noms[n_final-1] if n_final <= 6 else f'Série n={n_final}'
+        print(f"   {nom} (n→{n_final}) : {series_count[n_final]} transitions")
     
     exporter_resultats_hydrogene(atome, compression=compression)
     
     print("\n" + "="*80)
     print("✅ MODULE 4 TERMINÉ AVEC SUCCÈS")
     print("="*80)
-    
     return atome, niveaux, transitions
 
 # =====================================================================
 # MAIN
 # =====================================================================
 if __name__ == "__main__":
-    atome, niveaux, transitions = generer_rapport_complet(n_max=10, compression=True)
+    import sys
+    
+    n_max = 10
+    compression = True
+    
+    for arg in sys.argv[1:]:
+        if arg.startswith('--n_max='):
+            n_max = int(arg.split('=')[1])
+        elif arg == '--no-compress':
+            compression = False
+    
+    atome, niveaux, transitions = generer_rapport_complet(n_max=n_max, compression=compression)
     
     print("\n" + "="*80)
     print("FICHIERS GÉNÉRÉS")
     print("="*80)
-    print("""
+    print(f"""
 1. hydrogene_pentadique_niveaux.json
-2. hydrogene_pentadique_transitions.json.gz (compressé)
+2. hydrogene_pentadique_transitions.{'json.gz' if compression else 'json'}
 
 POUR ALLER PLUS LOIN :
-1. Augmenter n_max pour plus de niveaux
-2. Désactiver compression pour débogage
+1. Augmenter --n_max=15 ou 20 pour plus de niveaux
+2. Désactiver --no-compress pour débogage
 3. Étendre aux ions hydrogénoïdes (He⁺, Li²⁺)
-    """)
+""")

@@ -12,7 +12,7 @@ Building on these insights, we develop a **pentadic physics** – a physics of t
 
 ## Publications
 
-The project includes five main articles, each available in English (click the title to access). French versions are also available in the same folders.
+The project includes seven main articles, each available in English (click the title to access). French versions are also available in the same folders.
 
 | Title (English) | File |
 |-----------------|------|
@@ -22,10 +22,9 @@ The project includes five main articles, each available in English (click the ti
 | **4. Cosmological Unification through Pentadic Systems and Clifford Algebra Cl(6,6)** | [`PUBLICATION_4_UNIFYING_SYNTHESIS.md`](articles/PUBLICATION_4_Rapport_de_Synthese/PUBLICATION_4_UNIFYING_SYNTHESIS.md) |
 | **5. Angular Transitions between Particles – A Geometric Reinterpretation** | [`PUBLICATION_5_PENTADIC_TRANSITIONS.md`](articles/PUBLICATION_5_Transitions_Pentadiques/PUBLICATION_5_PENTADIC_TRANSITIONS.md) |
 | **6. Pentadic Cl(6,6) Model Predictions for the Zeeman Effect and Astrophysical Signatures** | [`PUBLICATION_6_Consolidated.md`](articles/PUBLICATION_6_Zeeman_consolidé/PUBLICATION_6_Consolidated.md) |
+| **7. The Hybrid W Layer: A Mathematical Bridge between Cl(6,6) and the 72D Nebe Lattice** | [`PUBLICATION_7_Hybrid_W_Layer.md`](articles/PUBLICATION_7_Couche_hybride_W/PUBLICATION_7_Hybrid_W_Layer.md) |
 
 
-Pentadic Cl(6,6) Model Predictions for the Zeeman Effect and Astrophysical Signatures: Consolidated Analysis of Magnetar
-Flares with Fermi-LAT
 
 The PDFs and Markdowns are available in the same folders. Each article can be compiled to PDF using Pandoc with the provided LaTeX template (see [Compiling the articles](#compiling-the-articles)).
 
