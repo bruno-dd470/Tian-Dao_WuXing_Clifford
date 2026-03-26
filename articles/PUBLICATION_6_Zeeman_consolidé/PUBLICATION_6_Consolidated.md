@@ -267,6 +267,7 @@ The results presented are theoretical calculations compared to public NIST and F
 
 [8] **De Dominicis, B. (2026). "Discovery of a 200 MeV Gamma Resonance in the Magnetar 1E 1048.1-5937". The Astrophysical Journal Letters (submitted).**
 
+
 # 8. Appendix: Technical Details
 
 ## A.1 Data Structure
@@ -311,6 +312,9 @@ python code/MODULE_4_*.py  # Hydrogen spectra
 # Generate figures
 python scripts/generate_figures.py
 ```
+## Code and Data Availability
+
+Permanent archive: https://doi.org/10.5281/zenodo.19234181
 
 ---
 
