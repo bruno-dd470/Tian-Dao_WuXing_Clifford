@@ -49,3 +49,6 @@ drafts/
 *_old.*
 *copie*
 *(copie)*
+
+# Internal development versions (optional)
+# code/INTERNAL/*
