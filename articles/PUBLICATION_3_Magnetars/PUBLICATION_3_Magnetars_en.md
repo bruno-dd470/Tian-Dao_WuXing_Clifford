@@ -107,14 +107,10 @@ This discovery constitutes:
 
 [7] Ramakrishnan, V., & Desai, S. (2024). *arXiv:2412.03900*.
 
-[8] Lipnick Y. (2026). *Explorer of the Invisible*, 6th edition, Editions Oviloroi.fr
-
-<img src="https://github.com/bruno-dd470/Tian-Dao_WuXing_Clifford/raw/6293ea8e69353c1832f968b018488946f4f5c99f/figures/Pentadic/lipnick_hierarchies_spirituelles_235Ko.jpg" alt="Spiritual Hierarchies according to Yann Lipnick" width="100%">
-
 # Code and Data Availability
 
 The theoretical framework (Cl(6,0), Cl(6,6), 72 pentades) and laboratory validations (Zeeman effect, hydrogen spectra) are presented in a companion paper (De Dominicis 2026, J. Math. Phys., submitted).
 
 # Acknowledgments
 
-The author thanks Professors Jean-Pierre Petit, Peter Rowlands and Gabriele Nebe for their seminal work, as well as Yann Lipnick for the idea of a universe organized into 72-dimensional octaves and the Deepseek assistant, without which this work would have remained at the level of intuition. The Fermi-LAT data are provided by NASA.
+The author thanks Professors Jean-Pierre Petit, Peter Rowlands and Gabriele Nebe for their seminal work. The Fermi-LAT data are provided by NASA.
