@@ -88,7 +88,7 @@ This discovery constitutes:
 
 1.  The validation of the octave structure.
 2.  A confirmation of Nebe's 72D lattice.
-3.  Support for the Janus model.
+3.  A new observational window on high-energy magnetar physics.
 4.  The opening of a new field of physics.
 
 # References
@@ -101,16 +101,23 @@ This discovery constitutes:
 
 [4] Scholz, P., et al. (2014). *Astrophysical Journal*, 786(1), 63.
 
-[5] DD, B. (2026). *Validation of the 72D network using the Zeeman effect* (Article 2).
+[5] DE DOMINICIS BRUNO, (2026). Pentadic Cl(6,6) Model Predictions: Numerical Validation and Astrophysical Signatures (submitted)
 
 [6] Atwood, W. B., et al. (2009). *Astrophysical Journal*, 697(2), 1071-1102.
 
 [7] Ramakrishnan, V., & Desai, S. (2024). *arXiv:2412.03900*.
 
-# Code and Data Availability
-
-The theoretical framework (Cl(6,0), Cl(6,6), 72 pentades) and laboratory validations (Zeeman effect, hydrogen spectra) are presented in a companion paper (De Dominicis 2026, J. Math. Phys., submitted).
 
 # Acknowledgments
 
 The author thanks Professors Jean-Pierre Petit, Peter Rowlands and Gabriele Nebe for their seminal work. The Fermi-LAT data are provided by NASA.
+
+# Code and Data Availability
+
+Permanent archive: https://doi.org/10.5281/zenodo.19234181
+
+All Python scripts and datasets are available on GitHub: https://github.com/bruno-dd470/Tian-Dao_WuXing_Clifford (MIT / CC-BY-4.0 license).
+
+The theoretical framework (Cl(6,0), Cl(6,6), 72 pentades) and laboratory validations (Zeeman effect, hydrogen spectra) are presented in a companion paper (De Dominicis 2026, J. Math. Phys., submitted).
+
+

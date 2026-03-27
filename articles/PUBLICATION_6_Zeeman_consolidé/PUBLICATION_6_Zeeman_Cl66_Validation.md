@@ -239,8 +239,6 @@ Whatever the final theoretical interpretation, these results constitute:
 - A reproducible quantitative test for fundamental physics models
 - An opportunity for collaboration between theoretical and observational communities
 
-**Code and data:** All Python scripts and datasets are available on GitHub: https://github.com/bruno-dd470/Tian-Dao_WuXing_Clifford (MIT / CC-BY-4.0 license). Permanent archive (version pub6-zeeman-v1.0): https://doi.org/10.5281/zenodo.YYYYYY
-
 # Acknowledgments
 
 I thank Fermi-LAT for making data publicly available, as well as the developers of `fermipy` and `easyFermi`. Calculations were performed on a local workstation with Python 3.8+, NumPy, SciPy and Matplotlib.
@@ -315,6 +313,9 @@ python scripts/generate_figures.py
 ## Code and Data Availability
 
 Permanent archive: https://doi.org/10.5281/zenodo.19234181
+
+All Python scripts and datasets are available on GitHub: https://github.com/bruno-dd470/Tian-Dao_WuXing_Clifford (MIT / CC-BY-4.0 license). 
+
 
 ---
 
