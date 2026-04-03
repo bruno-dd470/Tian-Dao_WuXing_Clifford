@@ -41,6 +41,7 @@ data/Zeeman/Processed/
 drafts/
 **/Trash/
 **/script_old/
+**/code/INTERNAL
 
 # === Fichiers de sauvegarde et copies ===
 *.bak
