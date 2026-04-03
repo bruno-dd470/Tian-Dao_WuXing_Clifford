@@ -1,0 +1,67 @@
+{
+  "date_generation": "2026-03-28T23:12:16.383093",
+  "modules": [
+    {
+      "nom": "MODULE_1",
+      "fichier": "MODULE_1_72_pentades.py",
+      "succes": true,
+      "duree_sec": 0.05,
+      "validations_totales": 72,
+      "validations_reussies": 7,
+      "taux_reussite_pct": 9.72,
+      "erreurs": [],
+      "fichiers_generes": [
+        "pentades_72_finales.json"
+      ]
+    },
+    {
+      "nom": "MODULE_2",
+      "fichier": "MODULE_2_PHYSIQUE_DES_PARTICULES_DANS_LE_MODÈLE_PENTADIQUE.py",
+      "succes": true,
+      "duree_sec": 0.24,
+      "validations_totales": 11,
+      "validations_reussies": 11,
+      "taux_reussite_pct": 100.0,
+      "erreurs": [],
+      "fichiers_generes": [
+        "particules_modele_standard.json",
+        "transitions_faibles.json"
+      ]
+    },
+    {
+      "nom": "MODULE_3",
+      "fichier": "MODULE_3_EFFET_ZEEMAN_PENTADIQUE_BOTT.py",
+      "succes": true,
+      "duree_sec": 0.3,
+      "validations_totales": 3,
+      "validations_reussies": 3,
+      "taux_reussite_pct": 100.0,
+      "erreurs": [],
+      "fichiers_generes": [
+        "zeeman_pentadique_avec_incertitudes.json"
+      ]
+    },
+    {
+      "nom": "MODULE_4",
+      "fichier": "MODULE_4_ATOME_D_HYDROGÈNE_COMPLET_BOTT.py",
+      "succes": true,
+      "duree_sec": 73.98,
+      "validations_totales": 5,
+      "validations_reussies": 5,
+      "taux_reussite_pct": 100.0,
+      "erreurs": [],
+      "fichiers_generes": [
+        "hydrogene_pentadique_niveaux.json",
+        "hydrogene_pentadique_transitions.json.gz"
+      ]
+    }
+  ],
+  "statistiques": {
+    "modules_succes": 4,
+    "modules_total": 4,
+    "validations_totales": 91,
+    "validations_reussies": 26,
+    "duree_totale_sec": 74.56294822692871,
+    "fichiers_generes": 6
+  }
+}

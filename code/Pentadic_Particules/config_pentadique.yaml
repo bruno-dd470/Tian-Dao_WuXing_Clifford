@@ -1,0 +1,564 @@
+# =====================================================================
+# CONFIGURATION PENTADIQUE — VERSION 2.0
+# =====================================================================
+# Fichier de configuration centralisé pour le framework pentadique
+# Remplace les constantes hardcoded dans MODULE_1 à MODULE_4
+# Auteur : Bruno DE DOMINICIS
+# Date : Mars 2026
+# License : CC BY 4.0
+# =====================================================================
+
+metadata:
+  version: "2.0.0"
+  date_creation: "2026-03-15"
+  compatible_modules:
+    - MODULE_1_72_pentades.py
+    - MODULE_2_PHYSIQUE_DES_PARTICULES_DANS_LE_MODÈLE_PENTADIQUE.py
+    - MODULE_3_EFFET_ZEEMAN_PENTADIQUE_BOTT.py
+    - MODULE_3B_RÈGLES_DE_SÉLECTION_TRANSITIONS_PENTADIQUES_BOTT.py
+    - MODULE_4_ATOME_D_HYDROGÈNE_COMPLET_BOTT.py
+  references:
+    - "CODATA 2018/2022"
+    - "PDG 2022"
+    - "Nebe 2010 (arXiv:1008.2862)"
+    - "Rowlands 2015 (Zero to Infinity)"
+    - "Petit & Zejli 2024 (HAL-04583560)"
+
+# =====================================================================
+# CONSTANTES FONDAMENTALES (CODATA 2018/2022)
+# =====================================================================
+constantes_fondamentales:
+  hbar:
+    valeur: 1.0545718176461565e-34
+    unite: "J·s"
+    incertitude: 1.5e-50
+    source: "CODATA 2022"
+  
+  h:
+    valeur: 6.62607015e-34
+    unite: "J·s"
+    incertitude: 0.0
+    source: "CODATA 2022 (exact)"
+  
+  c:
+    valeur: 299792458
+    unite: "m/s"
+    incertitude: 0.0
+    source: "CODATA 2022 (exact)"
+  
+  e:
+    valeur: 1.602176634e-19
+    unite: "C"
+    incertitude: 0.0
+    source: "CODATA 2022 (exact)"
+  
+  epsilon_0:
+    valeur: 8.8541878128e-12
+    unite: "F/m"
+    incertitude: 1.3e-21
+    source: "CODATA 2022"
+  
+  mu_0:
+    valeur: 1.25663706212e-6
+    unite: "N/A²"
+    incertitude: 1.9e-16
+    source: "CODATA 2022"
+  
+  alpha:
+    valeur: 7.2973525693e-3
+    unite: "sans dimension"
+    incertitude: 1.1e-12
+    source: "CODATA 2022"
+  
+  alpha_inv:
+    valeur: 137.035999084
+    unite: "sans dimension"
+    incertitude: 2.1e-8
+    source: "CODATA 2022"
+
+# =====================================================================
+# MASSES DES PARTICULES (PDG 2022)
+# =====================================================================
+masses_particules:
+  # Leptons
+  me_MeV:
+    valeur: 0.51099895000
+    unite: "MeV/c²"
+    incertitude: 1.5e-11
+    source: "PDG 2022"
+  
+  mmu_MeV:
+    valeur: 105.6583745
+    unite: "MeV/c²"
+    incertitude: 2.4e-6
+    source: "PDG 2022"
+  
+  mtau_MeV:
+    valeur: 1776.86
+    unite: "MeV/c²"
+    incertitude: 0.12
+    source: "PDG 2022"
+  
+  # Quarks (MS-bar à 2 GeV)
+  mu_quark_MeV:
+    valeur: 2.2
+    unite: "MeV/c²"
+    incertitude: 0.5
+    source: "PDG 2022"
+  
+  md_quark_MeV:
+    valeur: 4.7
+    unite: "MeV/c²"
+    incertitude: 0.5
+    source: "PDG 2022"
+  
+  ms_quark_MeV:
+    valeur: 96
+    unite: "MeV/c²"
+    incertitude: 8
+    source: "PDG 2022"
+  
+  mc_quark_MeV:
+    valeur: 1270
+    unite: "MeV/c²"
+    incertitude: 25
+    source: "PDG 2022"
+  
+  mb_quark_MeV:
+    valeur: 4180
+    unite: "MeV/c²"
+    incertitude: 30
+    source: "PDG 2022"
+  
+  mt_quark_MeV:
+    valeur: 173000
+    unite: "MeV/c²"
+    incertitude: 400
+    source: "PDG 2022"
+  
+  # Hadrons
+  mp_MeV:
+    valeur: 938.27208816
+    unite: "MeV/c²"
+    incertitude: 2.9e-8
+    source: "PDG 2022"
+  
+  mn_MeV:
+    valeur: 939.56542052
+    unite: "MeV/c²"
+    incertitude: 5.4e-8
+    source: "PDG 2022"
+  
+  mpi_plus_MeV:
+    valeur: 139.57039
+    unite: "MeV/c²"
+    incertitude: 1.8e-5
+    source: "PDG 2022"
+  
+  mpi_zero_MeV:
+    valeur: 134.9768
+    unite: "MeV/c²"
+    incertitude: 5e-5
+    source: "PDG 2022"
+  
+  # Bosons de jauge
+  mW_MeV:
+    valeur: 80379
+    unite: "MeV/c²"
+    incertitude: 12
+    source: "PDG 2022"
+  
+  mZ_MeV:
+    valeur: 91187.6
+    unite: "MeV/c²"
+    incertitude: 2.1
+    source: "PDG 2022"
+  
+  mH_MeV:
+    valeur: 125250
+    unite: "MeV/c²"
+    incertitude: 190
+    source: "PDG 2022"
+
+# =====================================================================
+# MOMENTS MAGNÉTIQUES ET FACTEURS G (PDG 2022)
+# =====================================================================
+moments_magnetiques:
+  g_e:
+    valeur: 2.00231930436256
+    incertitude: 3.5e-14
+    source: "PDG 2022"
+  
+  g_p:
+    valeur: 5.5856946893
+    incertitude: 1.6e-9
+    source: "PDG 2022"
+  
+  g_n:
+    valeur: -3.82608545
+    incertitude: 9.0e-8
+    source: "PDG 2022"
+  
+  g_mu:
+    valeur: 2.0023318414
+    incertitude: 1.2e-9
+    source: "PDG 2022"
+
+# =====================================================================
+# MAGNÉTONS (CODATA 2022)
+# =====================================================================
+magnetons:
+  muB_eV_T:
+    valeur: 5.7883818012e-5
+    unite: "eV/T"
+    incertitude: 1.7e-14
+    source: "CODATA 2022"
+  
+  muB_MeV_T:
+    valeur: 5.7883818012e-11
+    unite: "MeV/T"
+    incertitude: 1.7e-20
+    source: "CODATA 2022"
+  
+  muN_eV_T:
+    valeur: 3.1524512550e-8
+    unite: "eV/T"
+    incertitude: 9.5e-18
+    source: "CODATA 2022"
+  
+  muN_MeV_T:
+    valeur: 3.1524512550e-14
+    unite: "MeV/T"
+    incertitude: 9.5e-24
+    source: "CODATA 2022"
+
+# =====================================================================
+# CONSTANTES ATOMIQUES (HYDROGÈNE)
+# =====================================================================
+constantes_atomiques:
+  rydberg_eV:
+    valeur: 13.605693122994
+    unite: "eV"
+    incertitude: 4.2e-11
+    source: "CODATA 2022"
+  
+  rydberg_inf_m:
+    valeur: 10973731.568160
+    unite: "m⁻¹"
+    incertitude: 2.1e-5
+    source: "CODATA 2022"
+  
+  bohr_radius_m:
+    valeur: 5.29177210903e-11
+    unite: "m"
+    incertitude: 8.0e-21
+    source: "CODATA 2022"
+  
+  h_eV_s:
+    valeur: 4.135667696923588e-15
+    unite: "eV·s"
+    incertitude: 0.0
+    source: "CODATA 2022 (dérivé)"
+  
+  A_1S_Hz:
+    valeur: 1420405751.768
+    unite: "Hz"
+    incertitude: 0.002
+    source: "PDG 2022 (21 cm)"
+  
+  mu_reduit:
+    valeur: 0.99945567942
+    unite: "sans dimension"
+    incertitude: 1e-11
+    source: "CODATA 2022"
+
+# =====================================================================
+# PARAMÈTRES PENTADIQUES (EXTRAITS DES VALIDATIONS)
+# =====================================================================
+parametres_pentadiques:
+  # Couplage au réseau 72D (MODULE_3)
+  delta_lattice:
+    valeur: 0.005067
+    pourcentage: 0.5067
+    incertitude: 0.000030
+    source: "Zeeman validation 2026"
+  
+  # Échelle de résonance Bott (MODULE_3)
+  B0_Tesla:
+    valeur: 7.99
+    incertitude: 0.02
+    source: "Zeeman validation 2026"
+  
+  # Couplage bicosmique (Janus)
+  delta_bicosmic:
+    valeur: 0.010000
+    pourcentage: 1.0000
+    incertitude: 0.000050
+    source: "Zeeman validation 2026"
+  
+  # Échelle bicosmique
+  Bc_Tesla:
+    valeur: 100
+    incertitude: 10
+    source: "Zeeman validation 2026"
+  
+  # Facteur de projection octave 5 (magnétars)
+  f_proj_octave5:
+    valeur: 82
+    incertitude: 5
+    source: "Fermi-LAT magnetar 2026"
+  
+  # Dimension effective du réseau
+  D_eff:
+    valeur: 67.7
+    incertitude: 2.3
+    source: "Zeeman validation 2026"
+    reference_theorique: 72
+
+# =====================================================================
+# FACTEURS DE FAMILLE PENTADIQUE (MODULE_2)
+# =====================================================================
+# NOTE : Ces facteurs sont actuellement calibrés empiriquement
+# Objectif futur : dérivés first-principles de Cl(6,0)
+facteurs_famille:
+  FI:
+    valeur: 1.0
+    description: "Famille directe (électron, quarks u/d)"
+  FII:
+    valeur: 1.2
+    description: "Échange Feu-Eau (bosons faibles)"
+  FIII:
+    valeur: 1.5
+    description: "Duale (Rowlands)"
+  FIV:
+    valeur: 1.8
+    description: "Échange dual"
+  FV:
+    valeur: 0.5
+    description: "Espace-Espace (photon)"
+  FVI:
+    valeur: 0.8
+    description: "Charge-Charge (gluon)"
+
+# =====================================================================
+# PÉRIODICITÉ DE BOTT — OCTAVES
+# =====================================================================
+bott_periodicite:
+  octave_fondamentale: 0
+  facteur_echelle: 8
+  dimension_base: 72
+  
+  octaves:
+    - n: 0
+      dimension: 72
+      B0_theorique_T: 8.0
+      B0_observed_T: 8.0
+      domaine: "Laboratoire"
+      energie: "eV – keV"
+      f_proj: 1.0
+    
+    - n: 1
+      dimension: 576
+      B0_theorique_T: 1.0
+      B0_observed_T: 1.0
+      domaine: "Champs pulsés"
+      energie: "keV – MeV"
+      f_proj: 1.0
+    
+    - n: 2
+      dimension: 4608
+      B0_theorique_T: 0.125
+      B0_observed_T: 0.4
+      domaine: "Naines blanches"
+      energie: "MeV – GeV"
+      f_proj: 3.2
+    
+    - n: 3
+      dimension: 36864
+      B0_theorique_T: 0.015625
+      B0_observed_T: 0.08
+      domaine: "Pulsars radio"
+      energie: "GeV – TeV"
+      f_proj: 5.1
+    
+    - n: 4
+      dimension: 294912
+      B0_theorique_T: 0.001953
+      B0_observed_T: 0.02
+      domaine: "Pulsars X"
+      energie: "TeV – PeV"
+      f_proj: 10.0
+    
+    - n: 5
+      dimension: 2359296
+      B0_theorique_T: 0.000244
+      B0_observed_T: 0.0195
+      domaine: "Magnétars"
+      energie: "GeV"
+      f_proj: 80.0
+      resonance_MeV: 200.0
+    
+    - n: 6
+      dimension: 18874368
+      B0_theorique_T: 3.05e-5
+      B0_observed_T: null
+      domaine: "Cosmologie"
+      energie: "EeV – Planck"
+      f_proj: null
+
+# =====================================================================
+# MATRICES DE MÉLANGE (PDG 2022)
+# =====================================================================
+matrices_melange:
+  CKM:
+    description: "Cabibbo-Kobayashi-Maskawa (quarks)"
+    valeurs:
+      - [0.974, 0.225, 0.004]
+      - [0.225, 0.973, 0.041]
+      - [0.009, 0.040, 0.999]
+  
+  PMNS:
+    description: "Pontecorvo-Maki-Nakagawa-Sakata (neutrinos)"
+    valeurs:
+      - [0.821, 0.551, 0.150]
+      - [0.473, 0.592, 0.653]
+      - [0.328, 0.588, 0.740]
+
+# =====================================================================
+# LOGARITHMES DE BETHE (MODULE_4) — n=1 à 10
+# =====================================================================
+bethe_logarithms:
+  description: "Tables pour Lamb shift (n=1 à 10, tous l)"
+  source: "MODULE_4_ATOME_D_HYDROGÈNE_COMPLET_BOTT.py"
+  valeurs:
+    "1,0": 2.984128555765498
+    "2,0": 2.811769893120563
+    "2,1": -0.030016708630219
+    "3,0": 2.767663068844
+    "3,1": -0.038193204
+    "3,2": -0.003749872
+    "4,0": 2.749811840
+    "4,1": -0.0419548
+    "4,2": -0.004196
+    "4,3": -0.000419
+    "5,0": 2.739200
+    "5,1": -0.044
+    "5,2": -0.0045
+    "5,3": -0.0005
+    "5,4": -0.00005
+    "6,0": 2.732000
+    "6,1": -0.045
+    "6,2": -0.0046
+    "6,3": -0.0005
+    "6,4": -0.00006
+    "6,5": -0.000006
+    "7,0": 2.727000
+    "7,1": -0.046
+    "7,2": -0.0047
+    "7,3": -0.0005
+    "7,4": -0.00006
+    "7,5": -0.000007
+    "7,6": -0.0000007
+    "8,0": 2.723000
+    "8,1": -0.047
+    "8,2": -0.0048
+    "8,3": -0.0005
+    "8,4": -0.00006
+    "8,5": -0.000007
+    "8,6": -0.0000008
+    "8,7": -0.00000008
+    "9,0": 2.720000
+    "9,1": -0.048
+    "9,2": -0.0049
+    "9,3": -0.0005
+    "9,4": -0.00006
+    "9,5": -0.000007
+    "9,6": -0.0000008
+    "9,7": -0.00000009
+    "9,8": -0.000000009
+    "10,0": 2.717000
+    "10,1": -0.049
+    "10,2": -0.0050
+    "10,3": -0.0005
+    "10,4": -0.00006
+    "10,5": -0.000007
+    "10,6": -0.0000008
+    "10,7": -0.00000009
+    "10,8": -0.00000001
+    "10,9": -0.000000001
+
+# =====================================================================
+# TOLÉRANCES DE VALIDATION (MODULE_3)
+# =====================================================================
+tolerances_validation:
+  zeeman:
+    electron:
+      tolerance_relative: 0.01
+      description: "1% (très bien mesuré)"
+    proton:
+      tolerance_relative: 0.05
+      description: "5% (composite)"
+    neutron:
+      tolerance_relative: 0.10
+      description: "10% (moment magnétique complexe)"
+  
+  masses:
+    tolerance_max_pct: 1.0
+    description: "Seuil d'alerte pour déviation masse théorique/exp"
+  
+  spectres_H:
+    tolerance_max_pct: 0.03
+    description: "Précision requise pour raies hydrogène"
+
+# =====================================================================
+# PARAMÈTRES DE SIMULATION MONTE CARLO (MODULE_3)
+# =====================================================================
+monte_carlo:
+  n_echantillons: 50000
+  niveau_confiance: 0.95
+  graine_aleatoire: null  # null = aléatoire, entier = reproductible
+
+# =====================================================================
+# PARAMÈTRES D'EXPORT (MODULE_2, MODULE_4)
+# =====================================================================
+export:
+  precision_decimales: 9
+  compression_niveau: 9  # gzip level 0-9
+  format: "json"
+  encodage: "utf-8"
+  
+  fichiers:
+    pentades: "pentades_72_finales.json"
+    particules: "particules_modele_standard.json"
+    transitions_faibles: "transitions_faibles.json"
+    zeeman: "zeeman_pentadique_avec_incertitudes.json"
+    hydrogene_niveaux: "hydrogene_pentadique_niveaux.json"
+    hydrogene_transitions: "hydrogene_pentadique_transitions.json.gz"
+    regles_selection: "regles_selection_resultats.json"
+
+# =====================================================================
+# NOTES MÉTHODOLOGIQUES
+# =====================================================================
+notes_methodologiques:
+  masses_particules: |
+    Les masses dans MODULE_2 sont actuellement CALIBRÉES sur PDG 2022.
+    Une formule de dérivation first-principles (facteurs {1, 207, 3477})
+    est en développement pour la version 3.0.
+  
+  facteurs_famille: |
+    Les facteurs de famille {1.0, 1.2, 1.5, 1.8, 0.5, 0.8} sont empiriques.
+    Objectif : dériver ces facteurs des angles de Cl(6,0) dans une version future.
+  
+  couplage_janus: |
+    Le champ 'signe' (-1/+1) dans les pentades correspond au secteur
+    de masse positive/négative du modèle Janus. Ce couplage est actuellement
+    implémenté mais nécessite validation expérimentale indépendante.
+  
+  periodicite_bott: |
+    La résonance à 200 MeV dans les magnétars valide l'octave 5.
+    Le facteur de projection f_proj ≈ 82 est empirique et nécessite
+    une dérivation first-principles dans le cadre Cl(6,6).
+
+# =====================================================================
+# FIN DU FICHIER DE CONFIGURATION
+# =====================================================================

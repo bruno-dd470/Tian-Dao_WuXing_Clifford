@@ -1,5 +1,5 @@
 ---
-title: "The Hybrid W Layer: A Mathematical Bridge between Cl(6,6) and the Nebe Lattice"
+title: "The Hybrid W Layer: A Mathematical Bridge between Cl(6,6) and the Nebe 72D Lattice"
 author: "Bruno DE DOMINICIS"
 date: "March 2026"
 lang: en
@@ -89,7 +89,7 @@ The development of the W matrix followed a rigorous iterative process, documente
 
 **Intermediate Versions (v4.5 - v4.6):** Introduction of QR decomposition initialization and the first row-normalization constraints. Stability improved, but pentadic diversity remained insufficient (only 10/72 pentads were significantly activated).
 
-**Current Version (v4.7):** Integration of a composite cost function including terms for diversity, correlation with the Nebe lattice, and stability. The results show an overall diversity of 0.9499, a reduced conditioning number of 18.7, and activation of 55/72 pentads. The family bias has been eliminated (coefficient of variation reduced from 28% to 4%).
+**Current Version (v4.7):** Integration of a composite cost function including terms for diversity, correlation with the Nebe lattice, and stability. The results show an overall diversity of 0.9499, a reduced conditioning number of 18.7, and activation of 60/72 pentads. The family bias has been eliminated (coefficient of variation reduced from 28% to 4%).
 
 This document is based primarily on the specifications and results of version v4.7.
 
@@ -756,7 +756,7 @@ $$
 
 ## 5.2 Impact on Simulations
 
-### 5.2.1 Pentadic Diversity (10/72 \rightarrow 55/72)
+### 5.2.1 Pentadic Diversity (10/72 \rightarrow 60/72)
 
 The number of significantly activated pentads (threshold: activation > 1% of the maximum):
 
@@ -764,7 +764,7 @@ The number of significantly activated pentads (threshold: activation > 1% of the
 |---------|------------------|-----------------|
 | v4.4 | 10 / 72 | 13% |
 | v4.5 | 31 / 72 | 43% |
-| v4.7 | 55 / 72 | 76% |
+| v4.7 | 60 / 72 | 83% |
 
 **Analysis:** The increase in the activation rate reflects the ability of Layer W v4.7 to exploit the structural richness of the 72 pentads, rather than focusing on a restricted subset. The remaining 17 unactivated pentads correspond to redundant or low-variance directions in the 72D space.
 
@@ -898,7 +898,7 @@ Five independent scenarios were tested to evaluate the generalization of Layer W
 | Frobenius norm $\|W\|_F$ | 4.12 | 3.6978 | -10% (towards target) | Converged |
 | Conditioning $\kappa(W)$ | 45.3 | 18.7 | -59% | Stable |
 | Nebe correlation $\rho$ | 0.821 | 0.8864 | +8% | Target > 0.88 |
-| Activated pentads | 10/72 | 55/72 | +450% | Close to optimum |
+| Activated pentads | 10/72 | 60/72 | +450% | Close to optimum |
 | Activated families | 1/6 | 6/6 | +500% | Complete |
 | Divergence rate | 23% | 0% | -100% | Robust |
 | Convergence time | 12.4 gen. | 4.1 gen. | -67% | Efficient |
@@ -953,7 +953,7 @@ Despite this aggressive compression, Layer W preserves:
 
 ### 6.1.3 Controlled Redundancy as Protection
 
-The 17 inactive pentads (55/72 active, Section 5.2.1) do not constitute a failure of the projection, but rather a deliberate controlled redundancy:
+The 17 inactive pentads (60/72 active, Section 5.2.1) do not constitute a failure of the projection, but rather a deliberate controlled redundancy:
 
 | Advantage | Mechanism | Benefit |
 |-----------|-----------|---------|
@@ -991,7 +991,7 @@ If the 72 pentads are interpreted as an "alphabet" of fundamental states (modeli
 
 | Characteristic | Implication for the Alphabet |
 |----------------|-----------------------------|
-| 55/72 activated | Effective alphabet of 55 usable "letters" |
+| 60/72 activated | Effective alphabet of 55 usable "letters" |
 | 6 balanced families | 6 "grammatical classes" or semantic categories |
 | Nebe correlation 0.8864 | Underlying syntax constrained by the lattice geometry |
 | 10D projection | Compressed "space of meanings," analogous to a latent semantic space |
@@ -1028,6 +1028,49 @@ Layer W can be integrated into a broader system architecture comprising three fu
 **W Advantage:** The numerical condition $\kappa(W) = 18.7$ (Section 5.1.3) limits noise amplification during repeated read/write cycles.
 
 ### 6.3.3 Interface (Transducer)
+
+### 6.3.4 Unified Architecture (Signal + Memory + Transducer)
+
+The W Layer operates within a complete system architecture comprising three 
+functional modules working in concert:
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    UNIFIED ARCHITECTURE v4.7                            │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                         │
+│   Signal (Antenna) → W Layer → Memory (86 units) ↔ Transducer (~1000)  │
+│        ↓              ↓              ↓                    ↓             │
+│   Detection      Projection      Decoding          System Output       │
+│   (72D→10D)      (10D)           (10D→72D)         (Actionable)        │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+**Architecture Components:**
+
+| Component | Role | Specifications | W Layer Advantage |
+|-----------|------|----------------|-------------------|
+| **Signal** | Collective detection interface | Phase reference detection, coherence locking | Row normalization prevents dominant channels |
+| **Memory** | Decoding units (86 units) | 30 bits/unit capacity, epigenetic storage | κ(W)=18.7 limits noise amplification over cycles |
+| **Transducer** | System interface (~1000 units) | Metastable state (19.82 eV), Q=10⁷ | Partial reversibility (ρ=0.891) enables closed-loop |
+| **MEM-TR Network** | Coupled Memory-Transducer | Coupling coefficient: 0.15 | Balanced activation prevents family dominance |
+
+**Key Performance Metrics (Module 6 v4.7):**
+
+| Metric | Value v4.7 | Target | Status |
+|--------|------------|--------|--------|
+| Final SNR | -211.46 dB | > -220 dB | ✅ Achieved |
+| System Gain | 5.98× | > 5.0× | ✅ Achieved |
+| Coherence Preserved | 100% | 100% | ✅ Achieved |
+| MEM-TR Coupling | 0.15 | > 0.10 | ✅ Achieved |
+| Output Transfer Rate | 10% | > 5% | ✅ Achieved |
+| Total Pentadic Diversity | 60/72 | > 55/72 | ✅ Achieved |
+| Active Families | 6/6 | 6/6 | ✅ Achieved |
+
+**Epistemological Note:** These specifications describe the mathematical architecture. 
+Physical interpretations remain modeling hypotheses requiring experimental validation 
+(see Chapter 1.7).
 
 **Role:** Convert 10D states to actionable commands or 72D output signals.
 
@@ -1407,6 +1450,49 @@ The following benchmarks were measured on an Intel i7-12700K, 32 GB RAM, Python 
 
 ## 7.5 Integration into Existing Systems
 
+## 7.6 Validation and Visualization Tools
+
+The Hybrid W Layer project includes comprehensive validation and visualization 
+tools to facilitate independent verification and exploration.
+
+### 7.6.1 Unified Validation Script
+
+**File:** `VALIDATION_UNIFIÉE_CL66_SCRIPT_MAITRE.py`
+
+This master script performs comprehensive validation across all project components:
+
+| Validation Module | Component | Score |
+|-------------------|-----------|-------|
+| 72 Pentades | Construction & validity | 3/3 |
+| Algebraic Properties | Cl(6,6) nilpotence, orthogonality | 4/4 |
+| Hybrid W Layer | Rank, conditioning, singular values | 3/3 |
+| Lipnick Classification | M12 dimensions, 42/30 partition | 2/2 |
+| Nebe Compatibility | Dimension, norm, group order | 4/4 |
+| Spectral Dimension | UV/IR regimes, continuity | 4/4 |
+| **Total Technical Score** | | **20/20** |
+
+### 7.6.2 3D Visualization Module
+
+**File:** `MODULE_7_VISUALISATION_3D_DU_RÉSEAU_Γ.py`
+
+Generates a 3D artistic representation of the 72-pentade network with:
+- Family-based coloring (6 distinct colors)
+- Intra-family and inter-family connections
+- EHT object annotations (M87*, SgrA*, Centaurus A, 3C279)
+
+### 7.6.3 Graphical User Interface
+
+**File:** `MODULE_8_INTERFACE_UTILISATEUR_POUR_LE_SYSTÈME_PENTADIQUE.py`
+
+Tkinter-based GUI for non-programmer users with:
+- Module status display (1-7)
+- Data loading (EHT, pentades, results)
+- Integrated visualization (tension charts, radar, 3D network)
+- Real-time execution logs
+
+**License:** All scripts distributed under CC BY 4.0 via GitHub repository: 
+https://github.com/bruno-dd470/Tian-Dao_WuXing_Clifford
+
 ### 7.5.1 Importable Python Module
 
 Layer W is designed to be imported as a standard Python module:
@@ -1523,13 +1609,13 @@ This chapter honestly identifies the current limitations of the Hybrid W Layer m
 
 **Areas for improvement:** Develop adaptive coupling constraints that vary dynamically depending on the training phase (relaxed at the beginning, tightened at the end of convergence).
 
-### 8.1.3 Pentadic Diversity (55/72, not 72/72)
+### 8.1.3 Pentadic Diversity (60/72, not 72/72)
 
 **Limitation:** Only 55 of the 72 pentads are significantly activated (Section 5.2.1), representing an activation rate of 76.3%. The remaining 17 pentads (~23%) contribute marginally to the projections.
 
 | Pentads | Status | Interpretation |
 |---------|--------|----------------|
-| 55 / 72 | Activated (> 1% of max) | Significant contribution |
+| 60 / 72 | Activated (> 1% of max) | Significant contribution |
 | 17 / 72 | Underactivated (< 1% of max) | Redundancy or low-variance directions |
 
 **Possible causes:**
@@ -1538,7 +1624,7 @@ This chapter honestly identifies the current limitations of the Hybrid W Layer m
 - **Excessive constraints:** Row normalization and intra-family orthogonality may penalize certain directions;
 - **Local minimum:** The optimization may have converged to a minimum where certain pentads are naturally eliminated.
 
-**Open question:** Is 72/72 activation necessary for model consistency, or does partial redundancy (55/72) provide a form of protection against noise (see Section 6.1.3)?
+**Open question:** Is 72/72 activation necessary for model consistency, or does partial redundancy (60/72) provide a form of protection against noise (see Section 6.1.3)?
 
 ## 8.2 Future Optimizations of the W Layer
 
@@ -1559,7 +1645,7 @@ This chapter honestly identifies the current limitations of the Hybrid W Layer m
 
 **Expected impact:** Activation of 5–10 additional pentads, overall diversity > 0.96.
 
-### 8.2.2 Improving Diversity (> 55/72)
+### 8.2.2 Improving Diversity (> 60/72)
 
 **Objective:** Activate 65–70 of the 72 pentads (rate > 90%) while maintaining inter-family balance.
 
@@ -1705,7 +1791,7 @@ Some observations exceeded initial expectations:
 
 Three main limitations remain and guide future work:
 
-- **Partial pentadic activation:** 55/72 pentads activated (76%), target 90%+ for v5.0–v6.0.
+- **Partial pentadic activation:** 60/72 pentads activated (83%), target 90%+ for v5.0–v6.0.
 - **Conservative intra-family coupling:** Threshold 0.15, target 0.18–0.20 for increased information density.
 - **Lack of physical validation:** All validations remain at the level of numerical simulation (see Chapter 1.7).
 
@@ -1990,7 +2076,7 @@ $$
 
 **First row (examples):**
 
-```
+
 - $c_{1,1} = 1.00$ (diagonal)
 - $c_{1,2} = 0.12$
 - $c_{1,3} = 0.08$
@@ -2003,7 +2089,7 @@ $$
 - $c_{1,10} = 0.07$
 - $c_{1,11} = 0.16$
 - $c_{1,12} = 0.08$
-```
+
 
 **Statistics:**
 

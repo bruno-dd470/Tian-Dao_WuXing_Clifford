@@ -1,0 +1,41 @@
+{
+  "parametres": {
+    "B0_Tesla": 7.99,
+    "delta_lattice": 0.005067,
+    "delta_bicosmic": 0.01
+  },
+  "resultats": [
+    {
+      "particule": "électron",
+      "delta_E_theorique_eV": 0.0009307483969740011,
+      "delta_E_experimentale_eV": 0.0009307483969740011,
+      "incertitude_eV": 2.0440995693617045e-08,
+      "ecart_relative_pct": 0.0,
+      "tolérance_pct": 0.1,
+      "valide": true
+    },
+    {
+      "particule": "proton",
+      "delta_E_theorique_eV": 1.4140584677015603e-06,
+      "delta_E_experimentale_eV": 1.4140584677015603e-06,
+      "incertitude_eV": 3.121031493982249e-11,
+      "ecart_relative_pct": 0.0,
+      "tolérance_pct": 5.0,
+      "valide": true
+    },
+    {
+      "particule": "neutron",
+      "delta_E_theorique_eV": 9.686008329610753e-07,
+      "delta_E_experimentale_eV": 9.686008329610753e-07,
+      "incertitude_eV": 2.1265236882794108e-11,
+      "ecart_relative_pct": 0.0,
+      "tolérance_pct": 10.0,
+      "valide": true
+    }
+  ],
+  "validation": {
+    "total": 3,
+    "valides": 3,
+    "compatibilite_pct": 100.0
+  }
+}

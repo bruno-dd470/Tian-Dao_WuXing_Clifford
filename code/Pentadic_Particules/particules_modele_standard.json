@@ -1,0 +1,255 @@
+[
+  {
+    "nom": "électron",
+    "famille": "FI",
+    "structure": [
+      [
+        "iI",
+        "iJ",
+        "iK"
+      ],
+      "i'k",
+      "1j"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 0.511,
+    "masse_experimentale_MeV": 0.511,
+    "charge": -1,
+    "spin": 0.5,
+    "couleur": false,
+    "saveur": "électron",
+    "generation": 1,
+    "masse_methode": "calibrée",
+    "valide_pentade": true
+  },
+  {
+    "nom": "positron",
+    "famille": "FI",
+    "structure": [
+      [
+        "iI",
+        "iJ",
+        "iK"
+      ],
+      "i'k",
+      "1j"
+    ],
+    "signe": -1,
+    "masse_theorique_MeV": 0.511,
+    "masse_experimentale_MeV": 0.511,
+    "charge": 1,
+    "spin": 0.5,
+    "couleur": false,
+    "saveur": "électron",
+    "generation": 1,
+    "masse_methode": "calibrée",
+    "valide_pentade": true
+  },
+  {
+    "nom": "muon",
+    "famille": "FI",
+    "structure": [
+      [
+        "iI",
+        "iK",
+        "iJ"
+      ],
+      "i'k",
+      "1j"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 105.658,
+    "masse_experimentale_MeV": 105.658,
+    "charge": -1,
+    "spin": 0.5,
+    "couleur": false,
+    "saveur": "muon",
+    "generation": 2,
+    "masse_methode": "calibrée",
+    "valide_pentade": true
+  },
+  {
+    "nom": "tau",
+    "famille": "FI",
+    "structure": [
+      [
+        "kI",
+        "kJ",
+        "kK"
+      ],
+      "i'j",
+      "1i"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 1776.86,
+    "masse_experimentale_MeV": 1776.86,
+    "charge": -1,
+    "spin": 0.5,
+    "couleur": false,
+    "saveur": "tau",
+    "generation": 3,
+    "masse_methode": "calibrée",
+    "valide_pentade": true
+  },
+  {
+    "nom": "quark_up",
+    "famille": "FVII",
+    "structure": [
+      [
+        "iI",
+        "jJ",
+        "kK"
+      ],
+      "i'k",
+      "1j"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 2.2,
+    "masse_experimentale_MeV": 2.2,
+    "charge": 0.667,
+    "spin": 0.5,
+    "couleur": true,
+    "saveur": "up",
+    "generation": 1,
+    "masse_methode": "calibrée",
+    "valide_pentade": true
+  },
+  {
+    "nom": "quark_down",
+    "famille": "FVII",
+    "structure": [
+      [
+        "iJ",
+        "jK",
+        "kI"
+      ],
+      "i'i",
+      "1k"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 4.7,
+    "masse_experimentale_MeV": 4.7,
+    "charge": -0.333,
+    "spin": 0.5,
+    "couleur": true,
+    "saveur": "down",
+    "generation": 1,
+    "masse_methode": "calibrée",
+    "valide_pentade": true
+  },
+  {
+    "nom": "photon",
+    "famille": "FV",
+    "structure": [
+      [
+        "iI",
+        "jJ",
+        "ij"
+      ],
+      "i'k",
+      "1K"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 0.0,
+    "masse_experimentale_MeV": 0.0,
+    "charge": 0,
+    "spin": 1.0,
+    "couleur": false,
+    "saveur": "neutre",
+    "generation": 0,
+    "masse_methode": "calibrée",
+    "valide_pentade": true
+  },
+  {
+    "nom": "W_plus",
+    "famille": "FII",
+    "structure": [
+      [
+        "iI",
+        "iJ",
+        "iK"
+      ],
+      "i'j",
+      "1k"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 80379.0,
+    "masse_experimentale_MeV": 80379.0,
+    "charge": 1,
+    "spin": 1.0,
+    "couleur": false,
+    "saveur": "faible",
+    "generation": 0,
+    "masse_methode": "calibrée",
+    "valide_pentade": true
+  },
+  {
+    "nom": "W_minus",
+    "famille": "FII",
+    "structure": [
+      [
+        "iI",
+        "iJ",
+        "iK"
+      ],
+      "i'j",
+      "1k"
+    ],
+    "signe": -1,
+    "masse_theorique_MeV": 80379.0,
+    "masse_experimentale_MeV": 80379.0,
+    "charge": -1,
+    "spin": 1.0,
+    "couleur": false,
+    "saveur": "faible",
+    "generation": 0,
+    "masse_methode": "calibrée",
+    "valide_pentade": true
+  },
+  {
+    "nom": "proton",
+    "famille": "FVIII",
+    "structure": [
+      [
+        "iI",
+        "jJ",
+        "kK"
+      ],
+      "i'k",
+      "1j"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 938.272,
+    "masse_experimentale_MeV": 938.272,
+    "charge": 1,
+    "spin": 0.5,
+    "couleur": false,
+    "saveur": "composite",
+    "generation": 0,
+    "masse_methode": "calibrée",
+    "valide_pentade": true
+  },
+  {
+    "nom": "neutron",
+    "famille": "FVIII",
+    "structure": [
+      [
+        "iJ",
+        "jK",
+        "kI"
+      ],
+      "i'k",
+      "1j"
+    ],
+    "signe": 1,
+    "masse_theorique_MeV": 939.565,
+    "masse_experimentale_MeV": 939.565,
+    "charge": 0,
+    "spin": 0.5,
+    "couleur": false,
+    "saveur": "composite",
+    "generation": 0,
+    "masse_methode": "calibrée",
+    "valide_pentade": true
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "nom": "désintégration_β_minus",
+    "initial": "neutron",
+    "final": [
+      "proton",
+      "électron",
+      "antineutrino_e"
+    ],
+    "energie_MeV": 0.782,
+    "temps_vie_s": 880.0,
+    "conserve_charge": true,
+    "conserve_lepton": true
+  },
+  {
+    "nom": "désintégration_β_plus",
+    "initial": "proton_noyau",
+    "final": [
+      "neutron",
+      "positron",
+      "neutrino_e"
+    ],
+    "energie_MeV": 1.022,
+    "temps_vie_s": 600.0,
+    "conserve_charge": true,
+    "conserve_lepton": true
+  },
+  {
+    "nom": "desintegration_muon",
+    "initial": "muon",
+    "final": [
+      "électron",
+      "neutrino_mu",
+      "antineutrino_e"
+    ],
+    "energie_MeV": 105.15,
+    "temps_vie_s": 2.197e-06,
+    "conserve_charge": true,
+    "conserve_lepton": true
+  },
+  {
+    "nom": "desintegration_tau",
+    "initial": "tau",
+    "final": [
+      "muon",
+      "neutrino_tau",
+      "antineutrino_mu"
+    ],
+    "energie_MeV": 1671.2,
+    "temps_vie_s": 2.903e-13,
+    "conserve_charge": true,
+    "conserve_lepton": true
+  },
+  {
+    "nom": "fusion_pp",
+    "initial": "proton+proton",
+    "final": [
+      "deuteron",
+      "positron",
+      "neutrino_e"
+    ],
+    "energie_MeV": 1.442,
+    "temps_vie_s": 10000000000.0,
+    "conserve_charge": true,
+    "conserve_lepton": true
+  }
+]
