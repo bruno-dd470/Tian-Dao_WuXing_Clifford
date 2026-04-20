@@ -16,9 +16,9 @@
 
 *这篇奠基性文章提出了一种粒子物理与宇宙学的几何与代数统一理论，用基于克利福德代数 Cl(6,6) 的关系性前几何基底，取代了固定时空背景上的量子场论范式。通过整合 P. Rowlands 的零幂形式论（涌现自旋、活跃真空、原生泡利不相容原理）与 J.-P. Petit 的雅努斯双度量模型（负质量、自生成膨胀、偶极排斥体），我们证明这两种方法是同一个对偶不变量的正交投影。狄拉克方程由代数结构推导得出，并提出了一个统一变分原理，所有运动方程皆由此导出。基本粒子被定义为稳定关系角度的构型，由 Cl(6,6) 叶层化为12个调节叶所产生的144个零幂五元组编码。基本相互作用被重构为由转移算子 T 驱动的几何重排，从而消除了对虚规范玻色子的依赖。宇宙学常数 Λ、暗物质和暗能量作为宇宙与反宇宙扇区之间局域耦合密度的宏观投影而涌现。该架构通过 Bott 周期性实现跨尺度组织，并由磁星中 200 MeV 共振所验证。*
 
-🇬🇧 **Full manuscript:** [PDF](./articles/PUBLICATION_8_WuXing_Cl66/144_pentades5_en.pdf) | [Markdown](./articles/PUBLICATION_8_WuXing_Cl66/144_pentades5_en.md)  
-🇫🇷 **Document complet:** [PDF](./articles/PUBLICATION_8_WuXing_Cl66/144_pentades5_fr.pdf) | [Markdown](./articles/PUBLICATION_8_WuXing_Cl66/144_pentades5_fr.md)  
-📌 **Zenodo DOI**: [10.5281/zenodo.19661820](https://doi.org/10.5281/zenodo.19661820)
+🇬🇧 **Full manuscript:** [PDF](./articles/PUBLICATION_8_WuXing_Cl66/144_pentades5_en_v2.pdf) | [Markdown](./articles/PUBLICATION_8_WuXing_Cl66/144_pentades5_en_v2.md)  
+🇫🇷 **Document complet:** [PDF](./articles/PUBLICATION_8_WuXing_Cl66/144_pentades5_fr_v2.pdf) | [Markdown](./articles/PUBLICATION_8_WuXing_Cl66/144_pentades5_fr_v2.md)  
+📌 **Zenodo DOI**: [10.5281/zenodo.19661820](https://doi.org/10.5281/zenodo.19672149)
 
 
 🧬 **WuXing and Cl(6,6): 144 Pentads for a Unified Relational Physics**
