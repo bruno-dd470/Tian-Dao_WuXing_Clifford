@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using the metadata below."
+title: "WuXing and Cl(6,6): 144 Pentads for a Unified Relational Physics"
+authors:
+  - family-names: "DE DOMINICIS"
+    given-names: "Bruno"
+    orcid: "https://orcid.org/0009-0009-0380-3056"
+version: "1.0.0"  # Remplacez par votre version, par ex. "v2" ou "1.0"
+doi: "10.5281/zenodo.19672149"  # Votre DOI Zenodo
+date-released: "2026-04-21"  # Date de votre version Zenodo
+url: "https://github.com/brunodedominicis/WuXing-CL6-6"  # L'URL de votre dépôt
+repository-code: "https://github.com/brunodedominicis/WuXing-CL6-6"  # La même chose
+license: "CC-BY-NC-4.0"  # Votre licence
+type: "dataset" selon ce qui est le plus approprié
+abstract: >
+  We propose a geometric and algebraic unification of particle physics and cosmology
+  by replacing the paradigm of quantum fields on a fixed spacetime background with
+  a relational pre-geometric substrate based on the Clifford algebra Cl(6,6).
+# Optionnel : si vous avez un article de journal à citer de préférence
+
