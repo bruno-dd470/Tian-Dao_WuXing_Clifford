@@ -1,3 +1,8 @@
+echo -e "# ⚠️ Archived Repository\n\n**Reason**: Incorrect design of the Cl(6,0)→Cl(6,6) extension. Under revision.\n\n**New version**: See [Tian-Dao-Wuxing-Cl66-Pentads](https://github.com/bruno-dd470/Tian-Dao-Wuxing-Cl66-Pentads) (corrected).\n\n$(cat README.md)" > README_temp.md && mv README_temp.md README.md
+
+echo -e "# ⚠️ 已归档的仓库\n\n**原因**：Cl(6,0)→Cl(6,6) 的扩展设计存在错误。正在修订中。\n\n**新版本**：请参考 [Tian-Dao-Wuxing-Cl66-Pentads](https://github.com/bruno-dd470/Tian-Dao-Wuxing-Cl66-Pentads)（已修正）。\n\n$(cat README.md)" > README_temp.md && mv README_temp.md README.md
+
+
 天道五行 Clifford (Tiān Dào Wǔ Xíng Clifford)
 English | Français | 中文
 A relational physics of particles and cosmosUne physique relationnelle des particules et du cosmos一种粒子与宇宙的关系物理学
