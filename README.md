@@ -1,6 +1,30 @@
-echo -e "# ⚠️ Archived Repository\n\n**Reason**: Incorrect design of the Cl(6,0)→Cl(6,6) extension. Under revision.\n\n**New version**: See [Tian-Dao-Wuxing-Cl66-Pentads](https://github.com/bruno-dd470/Tian-Dao-Wuxing-Cl66-Pentads) (corrected).\n\n$(cat README.md)" > README_temp.md && mv README_temp.md README.md
+# ⚠️ 已归档的仓库
 
-echo -e "# ⚠️ 已归档的仓库\n\n**原因**：Cl(6,0)→Cl(6,6) 的扩展设计存在错误。正在修订中。\n\n**新版本**：请参考 [Tian-Dao-Wuxing-Cl66-Pentads](https://github.com/bruno-dd470/Tian-Dao-Wuxing-Cl66-Pentads)（已修正）。\n\n$(cat README.md)" > README_temp.md && mv README_temp.md README.md
+**原因**：Cl(6,0)→Cl(6,6) 的扩展设计存在错误。正在修订中。
+
+**新版本**：请参考 [Tian-Dao-Wuxing-Cl66-Pentads](https://github.com/bruno-dd470/Tian-Dao-Wuxing-Cl66-Pentads)（已修正）。
+
+# ⚠️ Archived Repository
+
+**Reason**: Incorrect design of the Cl(6,0)→Cl(6,6) extension. Under revision.
+
+**New version**: See [Tian-Dao-Wuxing-Cl66-Pentads](https://github.com/bruno-dd470/Tian-Dao-Wuxing-Cl66-Pentads) (corrected).
+
+echo -e "# ⚠️ Archived Repository
+
+**Reason**: Incorrect design of the Cl(6,0)→Cl(6,6) extension. Under revision.
+
+**New version**: See [Tian-Dao-Wuxing-Cl66-Pentads](https://github.com/bruno-dd470/Tian-Dao-Wuxing-Cl66-Pentads) (corrected).
+
+$(cat README.md)" > README_temp.md && mv README_temp.md README.md
+
+echo -e "# ⚠️ 已归档的仓库
+
+**原因**：Cl(6,0)→Cl(6,6) 的扩展设计存在错误。正在修订中。
+
+**新版本**：请参考 [Tian-Dao-Wuxing-Cl66-Pentads](https://github.com/bruno-dd470/Tian-Dao-Wuxing-Cl66-Pentads)（已修正）。
+
+$(cat README.md)" > README_temp.md && mv README_temp.md README.md
 
 
 天道五行 Clifford (Tiān Dào Wǔ Xíng Clifford)
@@ -25,9 +49,9 @@ This foundational article presents a geometric and algebraic unification of part
 
 Elementary particles are defined as stable configurations of relational angles, encoded by 144 nilpotent pentads arising from a spectral partition of Cl(6,6) into 12 regulatory leaves. Fundamental interactions are reformulated as geometric rearrangements driven by a transition operator $T$, eliminating virtual gauge bosons and naturally regularizing UV/IR divergences.
 
-Using Gabriele Nebe's extremal unimodular lattice $\Lambda_{72}$, we diagonalize its Gram matrix to obtain 72 eigenvalues that serve as spectral frequencies for the pentad network. Applying combinatorial rules based on Merkabah triplets and Bott-periodic pre-geometric bundles, we reproduce the masses of light hadrons ($\pi$, $K$, $p$) with deviations $<0.05\%$, and the muon, $W$, $Z$, and Higgs bosons with deviations $<0.5\%$. The electron is treated as a model constant, while heavier quarkonia ($J/\psi$, $\Upsilon$) are reproduced within $\sim5\text{--}8\%$.
+Using Gabriele Nebe's extremal unimodular lattice $\Lambda_{72}$, we diagonalize its Gram matrix to obtain 72 eigenvalues that serve as spectral frequencies for the pentad network. Applying combinatorial rules based on Merkabah triplets and Bott-periodic pre-geometric bundles, we reproduce the masses of light hadrons ($\pi$, $K$, $p$) with deviations $<0.05\%$, and the muon, $W$, $Z$, and Higgs bosons with deviations $<0.5\%$. The electron is treated as a model constant, while heavier quarkonia ($J/\psi$, $\Upsilon$) are reproduced within $\sim5	ext{--}8\%$.
 
-The cosmological constant $\Lambda$, dark matter, and dark energy emerge as macroscopic projections of the local coupling density between cosmic and anti-cosmic sectors. The architecture is organized across scales by Bott periodicity, with the 200 MeV resonance in magnetars identified as an inter-octave transition. This self-regulating relational framework yields testable observational signatures—including a predicted low-energy deviation in $e^+e^-\to\gamma\gamma$ cross-sections, annular negative lensing around cosmic voids, and a strict $E_{\text{res}}\propto B^2$ scaling in magnetars—and paves the way for a unified physics where micro and macro scales, as well as algebra and geometry, are two facets of the same relational invariant.
+The cosmological constant $\Lambda$, dark matter, and dark energy emerge as macroscopic projections of the local coupling density between cosmic and anti-cosmic sectors. The architecture is organized across scales by Bott periodicity, with the 200 MeV resonance in magnetars identified as an inter-octave transition. This self-regulating relational framework yields testable observational signatures—including a predicted low-energy deviation in $e^+e^-	o\gamma\gamma$ cross-sections, annular negative lensing around cosmic voids, and a strict $E_{	ext{res}}\propto B^2$ scaling in magnetars—and paves the way for a unified physics where micro and macro scales, as well as algebra and geometry, are two facets of the same relational invariant.
 
 🇬🇧 Full manuscript:[PDF](./articles/PUBLICATION_8_WuXing_Cl66/144_pentades6_en.pdf) | [Markdown](./articles/PUBLICATION_8_WuXing_Cl66/144_pentades6_en.md)
 📌 Zenodo DOI: [10.5281/zenodo.19672149](https://doi.org/10.5281/zenodo.19672149)
